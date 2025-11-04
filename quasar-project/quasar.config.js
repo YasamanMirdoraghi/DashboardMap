@@ -90,11 +90,20 @@ export default defineConfig((ctx) => {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
     devServer: {
-      // https: true,
-      open: true, // opens browser window automatically
+      host: 'dashboard.devtechco.com',
+      port: 9001,                     
     },
 
-    // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
+    // 🧩 تنظیمات اضافه برای Vite
+    extendViteConf(viteConf) {
+      viteConf.server = {
+        ...(viteConf.server || {}),
+        allowedHosts: ['dashboard.devtechco.com'],
+	host: '0.0.0.0',
+      }
+    },
+    
+// https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
     framework: {
       config: {},
 
@@ -205,7 +214,7 @@ export default defineConfig((ctx) => {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'my-app',
+        appId: 'quasar-project',
       },
     },
 
