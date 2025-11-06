@@ -3,31 +3,69 @@
     <div class="map-background fixed-full bg-center bg-cover"></div>
 
     <!--AnimationDot-->
-    <div class="fixed-full z-1" style="pointer-events: none;">
+    <div class="fixed-full z-1" style="pointer-events: none">
       <div v-for="n in 10" :key="n" class="dot" :class="`dot-${n}`"></div>
     </div>
 
     <!-- Login-->
-    <div class="flex justify-center items-center window-height q-px-md z-max relative">
-      <q-card class="login-card full-width q-pa-xl z-5 text-center">
+    <div class="flex justify-center items-center window-height q-px-md z-max relative" >
+      <q-card
+        class="login-card full-width q-pa-xl z-5 text-center"
+        :class="{
+          'q-pa-lg': $q.screen.lt.sm,
+          'q-pa-xl': $q.screen.gt.xs,
+          'mobile-width': $q.screen.lt.sm,
+          'desktop-width': $q.screen.gt.xs,
+        }"
+      >
         <!-- Logo -->
-        <div class="logo-area flex justify-center items-center overflow-hidden z-1 relative">
-          <q-icon name="place" size="35px" color="white" />
+        <div
+          class="logo-area flex justify-center items-center overflow-hidden z-1 relative "
+          :class="{
+            'logo-mobile': $q.screen.lt.sm,
+            'logo-desktop': $q.screen.gt.xs,
+          }"
+        >
+          <q-icon
+            name="place"
+            size="35px"
+            color="white"
+            :class="{
+              'icon-mobile': $q.screen.lt.sm,
+              'icon-desktop': $q.screen.gt.xs,
+            }"
+          />
         </div>
 
         <!-- Title -->
-        <h2 class="text-h4 text-weight-bold q-mb-lg text-center">Welcome My App</h2>
+        <h2
+          class="text-h4 text-weight-bold q-mb-lg text-center"
+          :class="{
+            'text-h5': $q.screen.lt.sm,
+            'text-h4': $q.screen.gt.xs,
+          }"
+        >
+          Welcome My App
+        </h2>
 
         <!-- Filed User-->
         <q-input
           v-model="userId"
           label="User ID"
           placeholder="Enter your User ID"
-          class="q-mb-md custom-input"
+          class="q-mb-5 custom-input"
           :rules="[(val) => !!val || 'User ID is required']"
         >
           <template v-slot:prepend>
-            <q-icon size="23px" name="person" class="input-icon" />
+            <q-icon
+              size="23px"
+              name="person"
+              class="input-icon"
+              :class="{
+                'input-icon-mobile': $q.screen.lt.sm,
+                'input-icon-desktop': $q.screen.gt.xs,
+              }"
+            />
           </template>
         </q-input>
 
@@ -38,29 +76,65 @@
           placeholder="Enter your Password"
           type="password"
           class="q-mb-lg custom-input"
-          :rules="[(val) => !!val || 'Password is required']"
+          :rules="[
+            (val) => !!val || 'User ID is required',
+            (val) => val.length >= 3 || 'Must be at least 3 characters',
+            (val) => /^[a-zA-Z0-9]+$/.test(val) || 'Only letters and numbers allowed',
+          ]"
+          :class="{
+            'input-mobile': $q.screen.lt.sm,
+            'input-desktop': $q.screen.gt.xs,
+          }"
         >
           <template v-slot:prepend>
-            <q-icon size="23px" name="lock" class="input-icon" />
+            <q-icon
+              size="23px"
+              name="lock"
+              class="input-icon"
+              :class="{
+                'input-icon-mobile': $q.screen.lt.sm,
+                'input-icon-desktop': $q.screen.gt.xs,
+              }"
+            />
           </template>
         </q-input>
 
         <!--ButtonLogin -->
         <q-btn
           label="Sign In"
-          class="login-btn full-width"
-          size="lg"
+          class="login-btn full-width q-pa-sm"
           @click="handleLogin"
           :loading="loading"
+          :size="$q.screen.lt.sm ? 'md' : 'lg'"
         />
         <!-- ForgotLink-->
-        <p class="forgot-password q-mt-md">
+        <p
+          class="forgot-password q-mt-md decoration-none fz-14"
+          :class="{
+            'text-caption': $q.screen.lt.sm,
+            'text-body2': $q.screen.gt.xs,
+          }"
+        >
           <a href="#" class="text-center">Forgot your password?</a>
         </p>
 
         <!-- AlertSafe -->
-        <div class="security-notice q-mt-lg">
-          <q-icon name="security" size="sm" class="q-mr-xs" />
+        <div
+          class="security-notice q-mt-lg q-pa-sm fz-12"
+          :class="{
+            'text-caption': $q.screen.lt.sm,
+            'text-body2': $q.screen.gt.xs,
+          }"
+        >
+          <q-icon
+            name="security"
+            size="sm"
+            class="q-mr-xs"
+            :class="{
+              'q-mr-xs': $q.screen.lt.sm,
+              'q-mr-sm': $q.screen.gt.xs,
+            }"
+          />
           Your information is securely encrypted
         </div>
       </q-card>
@@ -69,7 +143,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useQuasar } from "quasar";
 
 export default {
@@ -79,6 +153,18 @@ export default {
     const userId = ref("");
     const password = ref("");
     const loading = ref(false);
+
+    // computed برای سایز دکمه
+    const buttonSize = computed(() => {
+      return $q.screen.lt.sm ? "md" : "lg";
+    });
+
+    // computed برای قوانین پسورد
+    const passwordRules = computed(() => [
+      (val) => !!val || "Password is required",
+      (val) => val.length >= 3 || "Must be at least 3 characters",
+      (val) => /^[a-zA-Z0-9]+$/.test(val) || "Only letters and numbers allowed",
+    ]);
 
     const handleLogin = async () => {
       if (!userId.value || !password.value) {
@@ -105,6 +191,8 @@ export default {
       userId,
       password,
       loading,
+      buttonSize,
+      passwordRules,
       handleLogin,
     };
   },
@@ -112,87 +200,6 @@ export default {
 </script>
 
 <style scoped>
-/* Alert Safe*/
-.security-notice {
-  padding: 10px;
-  background: rgba(152, 205, 246, 0.1);
-  border-radius: 8px !important;
-  font-size: 12px;
-  color: #0081eaff;
-  animation: fadeIn 1s forwards 1s;
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.forgot-password a {
-  color: #0081eaff;
-  text-decoration: none;
-  transition: color 0.3s;
-  font-size: 14px;
-}
-
-.forgot-password a:hover {
-  color: #555;
-  text-decoration: underline;
-}
-
-.login-btn {
-  background: linear-gradient(135deg, #0058c3ff, #0095da) !important;
-  color: white !important;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(28, 149, 255, 0.22);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.login-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(22, 146, 255, 0.22);
-}
-
-.login-btn:active {
-  transform: translateY(0);
-}
-
-
-.login-card :deep(.q-field--error .q-field__control),
-.login-card :deep(.q-field--error .q-field__label),
-.login-card :deep(.q-field--error .q-field__messages),
-.login-card :deep(.q-field--error .q-icon) {
-  color: #ff4f00 !important;
-  border-color: #ff4f00 !important;
-}
-.custom-input {
-  margin-bottom: 20px;
-}
-
-.custom-input :deep(.q-field__control) {
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  transition: all 0.3s ease;
-}
-
-.custom-input :deep(.q-field__control:hover) {
-  transform: translateY(-2px);
-}
-
-.custom-input :deep(.q-field--focused .q-field__control) {
-  border-color: #33a7ffff;
-  box-shadow: 0 0 5px rgba(51, 105, 255, 0.5);
-}
-
-.input-icon {
-  color: #aaa;
-  font-size: 18px;
-  margin-left: 10px;
-}
-
 /* Start */
 .map-background {
   background-image: url("https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg?mbid=social_retweet");
@@ -351,12 +358,85 @@ export default {
     transform: scale(1);
   }
 }
-.logo-area{
+.logo-area {
   width: 70px;
   height: 70px;
   background: linear-gradient(135deg, #0058c3ff, #0095da) !important;
   border-radius: 20% !important;
   margin: -35px auto 30px auto;
   box-shadow: 0 5px 15px rgba(51, 177, 255, 0.4);
+}
+/* Btn */
+.login-btn {
+  background: linear-gradient(135deg, #0058c3ff, #0095da) !important;
+  color: white !important;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(28, 149, 255, 0.22);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(22, 146, 255, 0.22);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+/* inputs */
+.login-card :deep(.q-field--error .q-field__control),
+.login-card :deep(.q-field--error .q-field__label),
+.login-card :deep(.q-field--error .q-field__messages),
+.login-card :deep(.q-field--error .q-icon) {
+  color: #ff4f00 !important;
+  border-color: #ff4f00 !important;
+}
+
+.custom-input :deep(.q-field__control) {
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.custom-input :deep(.q-field__control:hover) {
+  transform: translateY(-2px);
+}
+
+.custom-input :deep(.q-field--focused .q-field__control) {
+  border-color: #33a7ffff;
+  box-shadow: 0 0 5px rgba(51, 105, 255, 0.5);
+}
+
+.input-icon {
+  color: #aaa;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Alert Safe*/
+.security-notice {
+  background: rgba(152, 205, 246, 0.1);
+  border-radius: 8px !important;
+  color: #0081eaff;
+  animation: fadeIn 1s forwards 1s;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* forgotpassword */
+.forgot-password a {
+  color: #0081eaff;
+  transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+  color: #555;
+  text-decoration: underline;
 }
 </style>
