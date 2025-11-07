@@ -3,12 +3,12 @@
     <!-- Side Menu -->
     <div class="col-3 q-pa-md dashboard-section">
       <!-- Header -->
-      <div class="text-h4 q-mb-md text-primary">Tracking System</div>
+      <div class="text-h4  q-mb-md">Tracking System</div>
 
       <!-- Main Menu - shown when not in device list -->
       <div v-if="currentView === 'mainMenu'" class="main-menu">
         <!-- Menu Cards -->
-        <q-card class="q-mb-md cursor-pointer" @click="showDeviceList">
+        <q-card class="q-mb-md cursor-pointer glass-card" @click="showDeviceList">
           <q-card-section class="row items-center">
             <q-icon name="sensors" size="32px" color="primary" class="q-mr-md" />
             <div>
@@ -63,56 +63,66 @@
           <div class="text-h6">Device List</div>
         </div>
 
+        <!-- Search Input -->
+        <q-input
+          v-model="searchQuery"
+          placeholder="Search devices..."
+          class="q-mb-md"
+          outlined
+          dense
+          clearable
+        >
+          <template v-slot:prepend>
+            <q-icon name="search" />
+          </template>
+        </q-input>
+
         <!-- Vehicle List -->
-        <q-list bordered separator>
+        <q-list bordered separator class="rounded-borders">
           <q-item
-            v-for="vehicle in vehicles"
+            v-for="vehicle in filteredVehicles"
             :key="vehicle.id"
             clickable
             v-ripple
             @click="selectVehicle(vehicle)"
-            :class="{'bg-blue-1': selectedVehicle?.id === vehicle.id}"
+            :class="{
+              'bg-blue-1 selected-vehicle': selectedVehicle?.id === vehicle.id,
+              'vehicle-item': true
+            }"
           >
             <q-item-section avatar>
               <div class="vehicle-avatar" :class="getStatusClass(vehicle.status)">
-                <q-icon name="location_on" size="20px" color="white" />
+                <q-icon name="sensors" size="20px" color="white" />
               </div>
             </q-item-section>
+
             <q-item-section>
-              <q-item-label>{{ vehicle.name }}</q-item-label>
-              <q-item-label caption>Plate: {{ vehicle.plate }}</q-item-label>
-              <q-item-label caption>
-                <q-icon name="speed" size="16px" class="q-mr-xs" />
-                Speed: {{ vehicle.speed }} km/h
+              <q-item-label class="text-weight-bold">{{ vehicle.name }}</q-item-label>
+              <q-item-label caption class="q-mt-xs">
+                <q-icon
+                  name="fiber_manual_record"
+                  size="8px"
+                  :color="getStatusColor(vehicle.status)"
+                  class="q-mr-xs"
+                />
+                {{ getStatusDisplay(vehicle) }}
               </q-item-label>
             </q-item-section>
-            <q-item-section side>
-              <q-badge :color="getStatusColor(vehicle.status)">
-                {{ getStatusText(vehicle.status) }}
-              </q-badge>
+
+            <q-item-section side top>
+              <div class="text-caption text-grey">
+                {{ vehicle.lastUpdate }}
+              </div>
+            </q-item-section>
+          </q-item>
+
+          <!-- No results message -->
+          <q-item v-if="filteredVehicles.length === 0" class="text-center text-grey">
+            <q-item-section>
+              No devices found
             </q-item-section>
           </q-item>
         </q-list>
-
-        <!-- Quick Actions -->
-        <div class="q-mt-lg">
-          <div class="text-subtitle1 q-mb-sm">Quick Actions</div>
-          <div class="row q-gutter-sm">
-            <q-btn
-              color="primary"
-              icon="refresh"
-              label="Refresh"
-              outline
-              @click="refreshLocations"
-            />
-            <q-btn
-              color="green"
-              icon="add"
-              label="Add Device"
-              outline
-            />
-          </div>
-        </div>
       </div>
     </div>
 
@@ -129,7 +139,7 @@
           left: vehicle.position.x + '%',
           top: vehicle.position.y + '%'
         }"
-        @click="selectVehicle(vehicle)"
+        @click="handleMapVehicleClick(vehicle)"
       >
         <!-- Circle behind icon -->
         <div class="location-pin">
@@ -151,100 +161,145 @@
           class="vehicle-tooltip q-pa-xs bg-white rounded-borders shadow-2"
         >
           <div class="text-weight-bold">{{ vehicle.name }}</div>
-          <div class="text-caption">{{ vehicle.plate }}</div>
-          <div class="text-caption">
-            <q-icon name="speed" size="14px" class="q-mr-xs" />
-            Speed: {{ vehicle.speed }} km/h
-          </div>
           <div class="text-caption" :class="`text-${getStatusColor(vehicle.status)}`">
-            {{ getStatusText(vehicle.status) }}
+            {{ getStatusDisplay(vehicle) }}
+          </div>
+          <div class="text-caption text-grey">
+            {{ vehicle.lastUpdate }}
           </div>
         </div>
-      </div>
-
-      <!-- Map Controls -->
-      <div class="absolute-top-right q-pa-md">
-        <q-btn-group rounded>
-          <q-btn
-            icon="zoom_in"
-            color="white"
-            text-color="black"
-            @click="zoomIn"
-          />
-          <q-btn
-            icon="zoom_out"
-            color="white"
-            text-color="black"
-            @click="zoomOut"
-          />
-          <q-btn
-            icon="my_location"
-            color="primary"
-            @click="centerMap"
-          />
-          <q-btn
-            icon="gps_fixed"
-            color="white"
-            text-color="black"
-            @click="refreshLocations"
-          />
-        </q-btn-group>
       </div>
     </div>
   </q-page>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const currentView = ref('mainMenu') // 'mainMenu' or 'deviceList'
 const selectedVehicle = ref(null)
+const searchQuery = ref('')
 
-// Sample vehicle data
+// Sample vehicle data - fixed status values
 const vehicles = ref([
   {
     id: 1,
-    name: 'Vehicle 1',
-    plate: 'ABC123',
-    status: 'moving',
+    name: 'Device 1',
+    status: 'online',
     position: { x: 25, y: 40 },
-    speed: 60,
     lastUpdate: '2 minutes ago'
   },
   {
     id: 2,
-    name: 'Vehicle 2',
-    plate: 'DEF456',
-    status: 'idle',
+    name: 'Device 2',
+    status: 'offline',
     position: { x: 60, y: 30 },
-    speed: 0,
-    lastUpdate: '5 minutes ago'
+    lastUpdate: '15 hours ago'
   },
   {
     id: 3,
-    name: 'Vehicle 3',
-    plate: 'GHI789',
-    status: 'offline',
+    name: 'Device 3',
+    status: 'online',
     position: { x: 45, y: 65 },
-    speed: 0,
-    lastUpdate: '1 hour ago'
+    lastUpdate: '1 minute ago'
+  },
+  {
+    id: 4,
+    name: 'Device 4',
+    status: 'idle',
+    position: { x: 30, y: 20 },
+    lastUpdate: '5 minutes ago'
+  },
+  {
+    id: 5,
+    name: 'Device 5',
+    status: 'offline',
+    position: { x: 70, y: 50 },
+    lastUpdate: '3 hours ago'
+  },
+  {
+    id: 6,
+    name: 'Device 6',
+    status: 'offline',
+    position: { x: 60, y: 20 },
+    lastUpdate: '3 hours ago'
+  },
+  {
+    id: 7,
+    name: 'Device 7',
+    status: 'offline',
+    position: { x: 30, y: 40 },
+    lastUpdate: '3 hours ago'
+  },
+  {
+    id: 8,
+    name: 'Device 8',
+    status: 'offline',
+    position: { x: 70, y: 60 },
+    lastUpdate: '3 hours ago'
+  },
+  {
+    id: 9,
+    name: 'Device 9',
+    status: 'offline',
+    position: { x: 80, y: 50 },
+    lastUpdate: '3 hours ago'
+  },
+  {
+    id: 10,
+    name: 'Device 10',
+    status: 'online',
+    position: { x: 50, y: 50 },
+    lastUpdate: '3 hours ago'
   }
 ])
+
+// Computed property for filtered vehicles based on search
+const filteredVehicles = computed(() => {
+  if (!searchQuery.value) {
+    return vehicles.value
+  }
+
+  const query = searchQuery.value.toLowerCase()
+  return vehicles.value.filter(vehicle =>
+    vehicle.name.toLowerCase().includes(query)
+  )
+})
 
 // View management functions
 const showMainMenu = () => {
   currentView.value = 'mainMenu'
   selectedVehicle.value = null
+  searchQuery.value = ''
 }
 
 const showDeviceList = () => {
   currentView.value = 'deviceList'
+  searchQuery.value = ''
+}
+
+// Vehicle selection with auto-switch to device list
+const selectVehicle = (vehicle) => {
+  selectedVehicle.value = vehicle
+  // Ensure we're in device list view when selecting from list
+  if (currentView.value !== 'deviceList') {
+    currentView.value = 'deviceList'
+  }
+}
+
+// Handle map vehicle click - switches to device list and selects vehicle
+const handleMapVehicleClick = (vehicle) => {
+  selectedVehicle.value = vehicle
+  // Switch to device list view when clicking on map
+  if (currentView.value !== 'deviceList') {
+    currentView.value = 'deviceList'
+  }
 }
 
 // Helper functions
 const getStatusColor = (status) => {
   const colors = {
-    moving: 'green',
+    online: 'green',
     idle: 'orange',
     offline: 'red'
   }
@@ -253,42 +308,33 @@ const getStatusColor = (status) => {
 
 const getStatusClass = (status) => {
   const classes = {
-    moving: 'status-moving',
+    online: 'status-online',
     idle: 'status-idle',
     offline: 'status-offline'
   }
   return classes[status] || ''
 }
 
-const getStatusText = (status) => {
-  const texts = {
-    moving: 'Moving',
-    idle: 'Idle',
-    offline: 'Offline'
+// const getStatusText = (status) => {
+//   const texts = {
+//     online: 'Online',
+//     idle: 'Idle',
+//     offline: 'Offline'
+//   }
+//   return texts[status] || 'Unknown'
+// }
+
+// New function to get display text for status with time
+const getStatusDisplay = (vehicle) => {
+  if (vehicle.status === 'online') {
+    return 'Online now'
+  } else if (vehicle.status === 'idle') {
+    return `Idle - ${vehicle.lastUpdate}`
+  } else {
+    return `Offline - ${vehicle.lastUpdate}`
   }
-  return texts[status] || 'Unknown'
 }
 
-const selectVehicle = (vehicle) => {
-  selectedVehicle.value = vehicle
-}
-
-const zoomIn = () => {
-  console.log('Zoom In')
-}
-
-const zoomOut = () => {
-  console.log('Zoom Out')
-}
-
-const centerMap = () => {
-  console.log('Center Map')
-}
-
-const refreshLocations = () => {
-  console.log('Refresh Locations')
-  // Add your refresh logic here
-}
 </script>
 
 <style scoped>
@@ -308,8 +354,8 @@ const refreshLocations = () => {
 }
 
 .dashboard-section {
-  background-color: #f8f9fa;
-  border-left: 1px solid #e0e0e0;
+  background-color: #fbfbfb;
+  border-left: 2px solid #0095da;
   overflow-y: auto;
 }
 
@@ -340,7 +386,8 @@ const refreshLocations = () => {
   transition: all 0.3s ease;
 }
 
-.vehicle-avatar.status-moving {
+
+.vehicle-avatar.status-online {
   background-color: #4caf50; /* Green */
 }
 
@@ -363,7 +410,8 @@ const refreshLocations = () => {
 .circle {
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: #ffffff;
+  border:1px solid #0095da;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -375,7 +423,7 @@ const refreshLocations = () => {
 }
 
 .circle.selected {
-  box-shadow: 0 0 0 3px blue, 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 3px #0095da, 0 2px 6px rgba(0, 0, 0, 0.3);
   transform: scale(1.1);
 }
 
@@ -391,7 +439,7 @@ const refreshLocations = () => {
   animation: pulse 2s infinite;
 }
 
-.pulse.status-moving {
+.pulse.status-online {
   color: #4caf50;
 }
 
@@ -431,5 +479,35 @@ const refreshLocations = () => {
 .q-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced list item styles */
+.vehicle-item {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.vehicle-item:hover {
+  background-color: rgba(207, 230, 248, 0.759) !important;
+  border-left: 3px solid #0095da;
+}
+.vehicle-item:hover .vehicle-avatar {
+  transform: scale(1.1);
+  rotate: 10deg;
+}
+
+.selected-vehicle {
+  background-color: #bbdefb !important;
+  border-left: 3px solid #0095da;
+  font-weight: bold;
+}
+
+/* Search input styling */
+:deep(.q-field--outlined .q-field__control) {
+  border-radius: 8px;
+}
+
+:deep(.q-field--outlined .q-field__control:hover) {
+  border-color: #fafafa;
 }
 </style>
