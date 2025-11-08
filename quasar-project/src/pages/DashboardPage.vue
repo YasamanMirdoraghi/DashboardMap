@@ -5,10 +5,9 @@
       <!-- Header -->
       <div class="text-h4  q-mb-md">Tracking System</div>
 
-      <!-- Main Menu - shown when not in device list -->
       <div v-if="currentView === 'mainMenu'" class="main-menu">
-        <!-- Menu Cards -->
-        <q-card class="q-mb-md cursor-pointer glass-card" @click="showDeviceList">
+        <!-- Menu Dashboard-->
+        <q-card class="q-mb-md cursor-pointer" @click="showDeviceList">
           <q-card-section class="row items-center">
             <q-icon name="sensors" size="32px" color="primary" class="q-mr-md" />
             <div>
@@ -51,6 +50,7 @@
 
       <!-- Device List View - shown when in device list -->
       <div v-if="currentView === 'deviceList'" class="device-list-view">
+
         <!-- Back Button and Header -->
         <div class="row items-center q-mb-md">
           <q-btn
@@ -77,7 +77,7 @@
           </template>
         </q-input>
 
-        <!-- Vehicle List -->
+        <!-- Device List -->
         <q-list bordered separator class="rounded-borders">
           <q-item
             v-for="vehicle in filteredVehicles"
@@ -123,6 +123,7 @@
             </q-item-section>
           </q-item>
         </q-list>
+
       </div>
     </div>
 
@@ -130,7 +131,7 @@
     <div class="col-9 relative-position map-section">
       <div class="map-background absolute-full bg-center bg-cover"></div>
 
-      <!-- Vehicle Icons on Map -->
+      <!-- Location Icons on Map -->
       <div
         v-for="vehicle in vehicles"
         :key="vehicle.id"
@@ -141,7 +142,7 @@
         }"
         @click="handleMapVehicleClick(vehicle)"
       >
-        <!-- Circle behind icon -->
+        <!-- Circle behind iconLocation -->
         <div class="location-pin">
           <!-- Pulse animation -->
           <div class="pulse" :class="getStatusClass(vehicle.status)"></div>
@@ -156,7 +157,7 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
           v-if="selectedVehicle?.id === vehicle.id"
           class="vehicle-tooltip q-pa-xs bg-white rounded-borders shadow-2"
         >
@@ -167,12 +168,16 @@
           <div class="text-caption text-grey">
             {{ vehicle.lastUpdate }}
           </div>
-        </div>
+        </div> -->
+
       </div>
     </div>
   </q-page>
 </template>
 
+
+
+<!-- Script -->
 <script setup>
 import { ref, computed } from 'vue'
 
@@ -337,6 +342,9 @@ const getStatusDisplay = (vehicle) => {
 
 </script>
 
+
+
+<!-- Styles -->
 <style scoped>
 .map-background {
   background-image: url("https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg?mbid=social_retweet");
@@ -364,7 +372,7 @@ const getStatusDisplay = (vehicle) => {
   z-index: 10;
 }
 
-.vehicle-tooltip {
+/* .vehicle-tooltip {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -373,7 +381,7 @@ const getStatusDisplay = (vehicle) => {
   white-space: nowrap;
   z-index: 20;
   min-width: 140px;
-}
+} */
 
 /* Style for small icons in list */
 .vehicle-avatar {
