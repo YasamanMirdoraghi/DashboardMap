@@ -13,15 +13,247 @@ Y88b.Y8b88P Y88b 888 888  888      X88 888  888 888
  App • Using quasar.config.js in "esm" format
  App •  TIP  • 🚀  You are using the --port parameter. It is recommended to use a different devServer port for each Quasar mode to avoid browser cache issues
 
- App • ⚠️  ️️Setting port to closest one available: 9002
-
-
- » Reported at............ 11/2/2025 8:39:52 PM
+ » Reported at............ 11/9/2025 6:27:03 PM
  » App dir................ /home/kian/projects/elmer/quasar-project
- » App URL................ http://dashboard.devtechco.com:9002/
+ » App URL................ http://localhost:9001/
+                           http://91.107.140.38:9001/
  » Dev mode............... spa
  » Pkg quasar............. v2.18.5
  » Pkg @quasar/app-vite... v2.4.0
  » Browser target......... es2022|firefox115|chrome115|safari14
 
-Killed
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+The request id "/proc/self/environ" is outside of Vite serving allow list.
+
+- /home/kian/projects/elmer/quasar-project
+
+Refer to docs https://vite.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m121[39m:[33m58[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:37:52 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:121:58
+  119 |          <div class="panel-header">
+  120 |            <h3>📈 گزارش‌ها و تحلیل‌ها</h3>
+  121 |            <button @click="closePanel" class="close-btn">✕</close-btn>
+      |                                                            ^
+  122 |          </div>
+  123 |          <div class="panel-content">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m121[39m:[33m59[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:38:10 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:121:59
+  119 |          <div class="panel-header">
+  120 |            <h3>📈 گزارش‌ها و تحلیل‌ها</h3>
+  121 |            <button @click="closePanel" class="close-btn">✕ </close-btn>
+      |                                                             ^
+  122 |          </div>
+  123 |          <div class="panel-content">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m121[39m:[33m60[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:38:13 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:121:60
+  119 |          <div class="panel-header">
+  120 |            <h3>📈 گزارش‌ها و تحلیل‌ها</h3>
+  121 |            <button @click="closePanel" class="close-btn"> ✕ </close-btn>
+      |                                                              ^
+  122 |          </div>
+  123 |          <div class="panel-content">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: missing-end-tag-name. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m121[39m:[33m62[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:38:49 PM [vite] Internal server error: End tag name was expected.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:121:62
+  119 |          <div class="panel-header">
+  120 |            <h3>📈 گزارش‌ها و تحلیل‌ها</h3>
+  121 |            <button @click="closePanel" class="close-btn"> ✕ </>
+      |                                                                ^
+  122 |          </div>
+  123 |          <div class="panel-content">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at Object.emitError [as onerr] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Tokenizer.stateBeforeClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:774:18)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1163:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+      at async handleHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28599:28)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m121[39m:[33m60[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:38:51 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:121:60
+  119 |          <div class="panel-header">
+  120 |            <h3>📈 گزارش‌ها و تحلیل‌ها</h3>
+  121 |            <button @click="closePanel" class="close-btn"> ✕ </by>
+      |                                                              ^
+  122 |          </div>
+  123 |          <div class="panel-content">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+4:05:46 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:8:3: Unknown word font-family
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:370:2
+  6  |    overflow: hidden;
+  7  |    pad
+  8  |    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+     |    ^
+  9  |  }
+  10 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+4:06:10 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:9:3: Unknown word font-family
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:371:2
+  7  |    padding: 20px;
+  8  |    bac
+  9  |    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+     |    ^
+  10 |  }
+  11 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+4:25:38 PM [vite] Internal server error: Failed to resolve import "./components/Dashboard.vue" from "src/App.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/App.vue:10:49
+  1  |  import {QPageContainer,QLayout} from 'quasar';import Dashboard from './components/Dashboard.vue'
+     |                                                                       ^
+  2  |  
+  3  |  const _sfc_main = {
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 1)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+
+ App • The quasar.config file (or its dependencies) changed. Reading it again...
+ App •  TIP  • 🚀  You are using the --port parameter. It is recommended to use a different devServer port for each Quasar mode to avoid browser cache issues
+ App • Scheduled to apply quasar.config changes in 550ms
+ App • Applying quasar.config file changes...
+
+ » Reported at............ 11/10/2025 4:29:40 PM
+ » App dir................ /home/kian/projects/elmer/quasar-project
+ » App URL................ http://localhost:9001/
+                           http://91.107.140.38:9001/
+ » Dev mode............... spa
+ » Pkg quasar............. v2.18.5
+ » Pkg @quasar/app-vite... v2.4.0
+ » Browser target......... es2022|firefox115|chrome115|safari14
+
+
+ App • The quasar.config file (or its dependencies) changed. Reading it again...
+ App •  TIP  • 🚀  You are using the --port parameter. It is recommended to use a different devServer port for each Quasar mode to avoid browser cache issues
+ App • Scheduled to apply quasar.config changes in 550ms
+ App • Applying quasar.config file changes...
+
+ » Reported at............ 11/10/2025 4:30:02 PM
+ » App dir................ /home/kian/projects/elmer/quasar-project
+ » App URL................ http://localhost:9001/
+                           http://91.107.140.38:9001/
+ » Dev mode............... spa
+ » Pkg quasar............. v2.18.5
+ » Pkg @quasar/app-vite... v2.4.0
+ » Browser target......... es2022|firefox115|chrome115|safari14
+
