@@ -257,3 +257,2183 @@ Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_us
  » Pkg @quasar/app-vite... v2.4.0
  » Browser target......... es2022|firefox115|chrome115|safari14
 
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m232[39m:[33m15[39m
+
+  [0m [90m 230 |[39m
+   [90m 231 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 232 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 233 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 234 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 235 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m323[39m:[33m7[39m
+
+  [0m [90m 321 |[39m
+   [90m 322 |[39m [90m// سایر متدها مانند کد قبلی[39m
+  [31m[1m>[22m[39m[90m 323 |[39m [36mconst[39m selectDevice [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 324 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 325 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {
+   [90m 326 |[39m     map[33m.[39mpanTo([device[33m.[39mlat[33m,[39m device[33m.[39mlng])[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m232[39m:[33m15[39m
+
+  [0m [90m 230 |[39m
+   [90m 231 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 232 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 233 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 234 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 235 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m323[39m:[33m7[39m
+
+  [0m [90m 321 |[39m
+   [90m 322 |[39m [90m// سایر متدها مانند کد قبلی[39m
+  [31m[1m>[22m[39m[90m 323 |[39m [36mconst[39m selectDevice [33m=[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 324 |[39m  (device) [33m=>[39m {
+   [90m 325 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 326 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m232[39m:[33m15[39m
+
+  [0m [90m 230 |[39m
+   [90m 231 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 232 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 233 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 234 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 235 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m232[39m:[33m15[39m
+
+  [0m [90m 230 |[39m
+   [90m 231 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 232 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 233 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 234 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 235 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m323[39m:[33m7[39m
+
+  [0m [90m 321 |[39m
+   [90m 322 |[39m [90m// سایر متدها مانند کد قبلی[39m
+  [31m[1m>[22m[39m[90m 323 |[39m [36mconst[39m selectDevice [33m=[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 324 |[39m  (device) [33m=>[39m {
+   [90m 325 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 326 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m15[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'onMounted' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m25[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'onUnmounted' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m36[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'L' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m276[39m:[33m8[39m
+
+  [0m [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+   [90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+  [31m[1m>[22m[39m[90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m     |[39m        [31m[1m^[22m[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m
+   [90m 279 |[39m [90m// [کد JavaScript با قابلیت‌های جدید - مشابه کد اصلی اما با ویژگی‌های اضافه][39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'map' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m290[39m:[33m5[39m
+
+  [0m [90m 288 |[39m [36mconst[39m notificationTitle [33m=[39m ref([32m''[39m)
+   [90m 289 |[39m [36mconst[39m notificationMessage [33m=[39m ref([32m''[39m)
+  [31m[1m>[22m[39m[90m 290 |[39m [36mlet[39m map [33m=[39m [36mnull[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 291 |[39m [36mlet[39m markers [33m=[39m []
+   [90m 292 |[39m
+   [90m 293 |[39m [90m// داده‌های نمونه گسترده‌تر[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'markers' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m291[39m:[33m5[39m
+
+  [0m [90m 289 |[39m [36mconst[39m notificationMessage [33m=[39m ref([32m''[39m)
+   [90m 290 |[39m [36mlet[39m map [33m=[39m [36mnull[39m
+  [31m[1m>[22m[39m[90m 291 |[39m [36mlet[39m markers [33m=[39m []
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 292 |[39m
+   [90m 293 |[39m [90m// داده‌های نمونه گسترده‌تر[39m
+   [90m 294 |[39m [36mconst[39m realTimeMetrics [33m=[39m ref([[0m
+
+[31m[ESLint] Found 6 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m15[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'onMounted' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m25[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'onUnmounted' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m36[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'L' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m276[39m:[33m8[39m
+
+  [0m [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+   [90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+  [31m[1m>[22m[39m[90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m     |[39m        [31m[1m^[22m[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m
+   [90m 279 |[39m [90m// [کد JavaScript با قابلیت‌های جدید - مشابه کد اصلی اما با ویژگی‌های اضافه][39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'L' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m276[39m:[33m8[39m
+
+  [0m [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+   [90m 275 |[39m [36mimport[39m { ref } [36mfrom[39m [32m'vue'[39m
+  [31m[1m>[22m[39m[90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m     |[39m        [31m[1m^[22m[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m
+   [90m 279 |[39m [90m// [کد JavaScript با قابلیت‌های جدید - مشابه کد اصلی اما با ویژگی‌های اضافه][39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'computed' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m15[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'onMounted' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m25[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m                         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'onUnmounted' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m275[39m:[33m36[39m
+
+  [0m [90m 273 |[39m
+   [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+   [90m     |[39m                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'L' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m276[39m:[33m8[39m
+
+  [0m [90m 274 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+   [90m 275 |[39m [36mimport[39m { ref[33m,[39m computed[33m,[39m onMounted[33m,[39m onUnmounted } [36mfrom[39m [32m'vue'[39m
+  [31m[1m>[22m[39m[90m 276 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m'leaflet'[39m
+   [90m     |[39m        [31m[1m^[22m[39m
+   [90m 277 |[39m [36mimport[39m [32m'leaflet/dist/leaflet.css'[39m
+   [90m 278 |[39m
+   [90m 279 |[39m [90m// [کد JavaScript با قابلیت‌های جدید - مشابه کد اصلی اما با ویژگی‌های اضافه][39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'map' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m290[39m:[33m5[39m
+
+  [0m [90m 288 |[39m [36mconst[39m notificationTitle [33m=[39m ref([32m''[39m)
+   [90m 289 |[39m [36mconst[39m notificationMessage [33m=[39m ref([32m''[39m)
+  [31m[1m>[22m[39m[90m 290 |[39m [36mlet[39m map [33m=[39m [36mnull[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 291 |[39m [36mlet[39m markers [33m=[39m []
+   [90m 292 |[39m
+   [90m 293 |[39m [90m// داده‌های نمونه گسترده‌تر[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'markers' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m291[39m:[33m5[39m
+
+  [0m [90m 289 |[39m [36mconst[39m notificationMessage [33m=[39m ref([32m''[39m)
+   [90m 290 |[39m [36mlet[39m map [33m=[39m [36mnull[39m
+  [31m[1m>[22m[39m[90m 291 |[39m [36mlet[39m markers [33m=[39m []
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 292 |[39m
+   [90m 293 |[39m [90m// داده‌های نمونه گسترده‌تر[39m
+   [90m 294 |[39m [36mconst[39m realTimeMetrics [33m=[39m ref([[0m
+
+[31m[ESLint] Found 6 errors and 0 warning[39m
+9:17:57 AM [vite] Internal server error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1871:7)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+      at async handleHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28599:28)
+      at async onHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28131:35)
+      at async FSWatcher.<anonymous> (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28156:3)
+9:17:57 AM [vite] Internal server error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1871:7)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+      at async handleHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28599:28)
+      at async onHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28131:35)
+      at async FSWatcher.<anonymous> (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28156:3)
+9:26:36 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:59:3: Unknown word b
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:630:2
+  57 |  .icon-sidebar.expanded {
+  58 |    width: 250px;
+  59 |    b
+     |    ^
+  60 |  }
+  61 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+9:26:37 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:59:3: Unknown word ba
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:630:2
+  57 |  .icon-sidebar.expanded {
+  58 |    width: 250px;
+  59 |    ba
+     |    ^
+  60 |  }
+  61 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+9:44:25 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:9:10: Missed semicolon
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:580:9
+  7  |    background: 
+  8  |    /* linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 100%); */
+  9  |    display: flex;
+     |           ^
+  10 |    align-items: center;
+  11 |    justify-content: center;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.checkMissedSemicolon (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:138:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:296:12)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:44:29 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:8:3: Missed semicolon
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:579:2
+  6  |    padding: 20px;
+  7  |    background: tr
+  8  |    /* linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 100%); */
+     |    ^
+  9  |    display: flex;
+  10 |    align-items: center;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.checkMissedSemicolon (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:138:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:296:12)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:44:31 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:8:3: Missed semicolon
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:579:2
+  6  |    padding: 20px;
+  7  |    background: transparent
+  8  |    /* linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 100%); */
+     |    ^
+  9  |    display: flex;
+  10 |    align-items: center;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.checkMissedSemicolon (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:138:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:296:12)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:45:03 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:46:4: Missed semicolon
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:617:3
+  44 |    height: 100%;
+  45 |    background:transparent
+  46 |     /* linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 100%); */
+     |     ^
+  47 |    backdrop-filter: blur(20px);
+  48 |    border-radius: 0;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.checkMissedSemicolon (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:138:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:296:12)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:47:07 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:60:3: Unknown word jfc
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:631:2
+  58 |    width: 250px;
+  59 |    /* background:transparent; */
+  60 |    jfc
+     |    ^
+  61 |  }
+  62 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'recentReadings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m326[39m:[33m7[39m
+
+  [0m [90m 324 |[39m ])
+   [90m 325 |[39m
+  [31m[1m>[22m[39m[90m 326 |[39m [36mconst[39m recentReadings [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 327 |[39m   { id[33m:[39m [35m1[39m[33m,[39m label[33m:[39m [32m'Temperature'[39m[33m,[39m value[33m:[39m [32m'23.3°C'[39m[33m,[39m icon[33m:[39m [32m'thermostat'[39m[33m,[39m color[33m:[39m [32m'negative'[39m }[33m,[39m
+   [90m 328 |[39m   { id[33m:[39m [35m2[39m[33m,[39m label[33m:[39m [32m'Humidity'[39m[33m,[39m value[33m:[39m [32m'65%'[39m[33m,[39m icon[33m:[39m [32m'water_drop'[39m[33m,[39m color[33m:[39m [32m'primary'[39m }[33m,[39m
+   [90m 329 |[39m   { id[33m:[39m [35m3[39m[33m,[39m label[33m:[39m [32m'Power'[39m[33m,[39m value[33m:[39m [32m'1.25 kW'[39m[33m,[39m icon[33m:[39m [32m'bolt'[39m[33m,[39m color[33m:[39m [32m'warning'[39m }[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'filteredDevices' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m333[39m:[33m7[39m
+
+  [0m [90m 331 |[39m
+   [90m 332 |[39m [90m// Computed properties[39m
+  [31m[1m>[22m[39m[90m 333 |[39m [36mconst[39m filteredDevices [33m=[39m computed(() [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 334 |[39m   [36mlet[39m filtered [33m=[39m iotDevices[33m.[39mvalue
+   [90m 335 |[39m
+   [90m 336 |[39m   [36mif[39m (activeDeviceTab[33m.[39mvalue [33m!==[39m [32m'all'[39m) {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m368[39m:[33m7[39m
+
+  [0m [90m 366 |[39m }
+   [90m 367 |[39m
+  [31m[1m>[22m[39m[90m 368 |[39m [36mconst[39m selectDevice [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 369 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 370 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {
+   [90m 371 |[39m     map[33m.[39mpanTo([device[33m.[39mlat[33m,[39m device[33m.[39mlng])[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'showDeviceDetails' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m375[39m:[33m7[39m
+
+  [0m [90m 373 |[39m }
+   [90m 374 |[39m
+  [31m[1m>[22m[39m[90m 375 |[39m [36mconst[39m showDeviceDetails [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 376 |[39m   console[33m.[39mlog([32m'Device details:'[39m[33m,[39m device)
+   [90m 377 |[39m   [90m// Implement device details modal[39m
+   [90m 378 |[39m }[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'resolveAlert' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m380[39m:[33m7[39m
+
+  [0m [90m 378 |[39m }
+   [90m 379 |[39m
+  [31m[1m>[22m[39m[90m 380 |[39m [36mconst[39m resolveAlert [33m=[39m (alertId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 381 |[39m   alerts[33m.[39mvalue [33m=[39m alerts[33m.[39mvalue[33m.[39mfilter(alert [33m=>[39m alert[33m.[39mid [33m!==[39m alertId)
+   [90m 382 |[39m }
+   [90m 383 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getAlertIcon' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m401[39m:[33m7[39m
+
+  [0m [90m 399 |[39m }
+   [90m 400 |[39m
+  [31m[1m>[22m[39m[90m 401 |[39m [36mconst[39m getAlertIcon [33m=[39m (priority) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 402 |[39m   [36mconst[39m icons [33m=[39m {
+   [90m 403 |[39m     error[33m:[39m [32m'error'[39m[33m,[39m
+   [90m 404 |[39m     warning[33m:[39m [32m'warning'[39m[33m,[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getAlertColor' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m410[39m:[33m7[39m
+
+  [0m [90m 408 |[39m }
+   [90m 409 |[39m
+  [31m[1m>[22m[39m[90m 410 |[39m [36mconst[39m getAlertColor [33m=[39m (priority) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 411 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m 412 |[39m     error[33m:[39m [32m'negative'[39m[33m,[39m
+   [90m 413 |[39m     warning[33m:[39m [32m'warning'[39m[33m,[39m[0m
+
+[31m[ESLint] Found 7 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token } (null)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m417[39m:[33m[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'recentReadings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m326[39m:[33m7[39m
+
+  [0m [90m 324 |[39m ])
+   [90m 325 |[39m
+  [31m[1m>[22m[39m[90m 326 |[39m [36mconst[39m recentReadings [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 327 |[39m   { id[33m:[39m [35m1[39m[33m,[39m label[33m:[39m [32m'Temperature'[39m[33m,[39m value[33m:[39m [32m'23.3°C'[39m[33m,[39m icon[33m:[39m [32m'thermostat'[39m[33m,[39m color[33m:[39m [32m'negative'[39m }[33m,[39m
+   [90m 328 |[39m   { id[33m:[39m [35m2[39m[33m,[39m label[33m:[39m [32m'Humidity'[39m[33m,[39m value[33m:[39m [32m'65%'[39m[33m,[39m icon[33m:[39m [32m'water_drop'[39m[33m,[39m color[33m:[39m [32m'primary'[39m }[33m,[39m
+   [90m 329 |[39m   { id[33m:[39m [35m3[39m[33m,[39m label[33m:[39m [32m'Power'[39m[33m,[39m value[33m:[39m [32m'1.25 kW'[39m[33m,[39m icon[33m:[39m [32m'bolt'[39m[33m,[39m color[33m:[39m [32m'warning'[39m }[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'filteredDevices' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m333[39m:[33m7[39m
+
+  [0m [90m 331 |[39m
+   [90m 332 |[39m [90m// Computed properties[39m
+  [31m[1m>[22m[39m[90m 333 |[39m [36mconst[39m filteredDevices [33m=[39m computed(() [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 334 |[39m   [36mlet[39m filtered [33m=[39m iotDevices[33m.[39mvalue
+   [90m 335 |[39m
+   [90m 336 |[39m   [36mif[39m (activeDeviceTab[33m.[39mvalue [33m!==[39m [32m'all'[39m) {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m368[39m:[33m7[39m
+
+  [0m [90m 366 |[39m }
+   [90m 367 |[39m
+  [31m[1m>[22m[39m[90m 368 |[39m [36mconst[39m selectDevice [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 369 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 370 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {
+   [90m 371 |[39m     map[33m.[39mpanTo([device[33m.[39mlat[33m,[39m device[33m.[39mlng])[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'showDeviceDetails' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m375[39m:[33m7[39m
+
+  [0m [90m 373 |[39m }
+   [90m 374 |[39m
+  [31m[1m>[22m[39m[90m 375 |[39m [36mconst[39m showDeviceDetails [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 376 |[39m   console[33m.[39mlog([32m'Device details:'[39m[33m,[39m device)
+   [90m 377 |[39m   [90m// Implement device details modal[39m
+   [90m 378 |[39m }[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'resolveAlert' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m380[39m:[33m7[39m
+
+  [0m [90m 378 |[39m }
+   [90m 379 |[39m
+  [31m[1m>[22m[39m[90m 380 |[39m [36mconst[39m resolveAlert [33m=[39m (alertId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 381 |[39m   alerts[33m.[39mvalue [33m=[39m alerts[33m.[39mvalue[33m.[39mfilter(alert [33m=>[39m alert[33m.[39mid [33m!==[39m alertId)
+   [90m 382 |[39m }
+   [90m 383 |[39m[0m
+
+[31m[ESLint] Found 5 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'alerts' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m320[39m:[33m7[39m
+
+  [0m [90m 318 |[39m ])
+   [90m 319 |[39m
+  [31m[1m>[22m[39m[90m 320 |[39m [36mconst[39m alerts [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 321 |[39m   { id[33m:[39m [35m1[39m[33m,[39m title[33m:[39m [32m'Air Quality Alert'[39m[33m,[39m message[33m:[39m [32m'AQI above threshold'[39m[33m,[39m priority[33m:[39m [32m'warning'[39m[33m,[39m time[33m:[39m [32m'5 min ago'[39m }[33m,[39m
+   [90m 322 |[39m   { id[33m:[39m [35m2[39m[33m,[39m title[33m:[39m [32m'Connection Lost'[39m[33m,[39m message[33m:[39m [32m'Wind sensor offline'[39m[33m,[39m priority[33m:[39m [32m'error'[39m[33m,[39m time[33m:[39m [32m'12 min ago'[39m }[33m,[39m
+   [90m 323 |[39m   { id[33m:[39m [35m3[39m[33m,[39m title[33m:[39m [32m'Calibration Due'[39m[33m,[39m message[33m:[39m [32m'Temperature sensor needs calibration'[39m[33m,[39m priority[33m:[39m [32m'info'[39m[33m,[39m time[33m:[39m [32m'1 hour ago'[39m }[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'recentReadings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m326[39m:[33m7[39m
+
+  [0m [90m 324 |[39m ])
+   [90m 325 |[39m
+  [31m[1m>[22m[39m[90m 326 |[39m [36mconst[39m recentReadings [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 327 |[39m   { id[33m:[39m [35m1[39m[33m,[39m label[33m:[39m [32m'Temperature'[39m[33m,[39m value[33m:[39m [32m'23.3°C'[39m[33m,[39m icon[33m:[39m [32m'thermostat'[39m[33m,[39m color[33m:[39m [32m'negative'[39m }[33m,[39m
+   [90m 328 |[39m   { id[33m:[39m [35m2[39m[33m,[39m label[33m:[39m [32m'Humidity'[39m[33m,[39m value[33m:[39m [32m'65%'[39m[33m,[39m icon[33m:[39m [32m'water_drop'[39m[33m,[39m color[33m:[39m [32m'primary'[39m }[33m,[39m
+   [90m 329 |[39m   { id[33m:[39m [35m3[39m[33m,[39m label[33m:[39m [32m'Power'[39m[33m,[39m value[33m:[39m [32m'1.25 kW'[39m[33m,[39m icon[33m:[39m [32m'bolt'[39m[33m,[39m color[33m:[39m [32m'warning'[39m }[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'filteredDevices' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m333[39m:[33m7[39m
+
+  [0m [90m 331 |[39m
+   [90m 332 |[39m [90m// Computed properties[39m
+  [31m[1m>[22m[39m[90m 333 |[39m [36mconst[39m filteredDevices [33m=[39m computed(() [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 334 |[39m   [36mlet[39m filtered [33m=[39m iotDevices[33m.[39mvalue
+   [90m 335 |[39m
+   [90m 336 |[39m   [36mif[39m (activeDeviceTab[33m.[39mvalue [33m!==[39m [32m'all'[39m) {[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'alerts' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m320[39m:[33m7[39m
+
+  [0m [90m 318 |[39m ])
+   [90m 319 |[39m
+  [31m[1m>[22m[39m[90m 320 |[39m [36mconst[39m alerts [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 321 |[39m   { id[33m:[39m [35m1[39m[33m,[39m title[33m:[39m [32m'Air Quality Alert'[39m[33m,[39m message[33m:[39m [32m'AQI above threshold'[39m[33m,[39m priority[33m:[39m [32m'warning'[39m[33m,[39m time[33m:[39m [32m'5 min ago'[39m }[33m,[39m
+   [90m 322 |[39m   { id[33m:[39m [35m2[39m[33m,[39m title[33m:[39m [32m'Connection Lost'[39m[33m,[39m message[33m:[39m [32m'Wind sensor offline'[39m[33m,[39m priority[33m:[39m [32m'error'[39m[33m,[39m time[33m:[39m [32m'12 min ago'[39m }[33m,[39m
+   [90m 323 |[39m   { id[33m:[39m [35m3[39m[33m,[39m title[33m:[39m [32m'Calibration Due'[39m[33m,[39m message[33m:[39m [32m'Temperature sensor needs calibration'[39m[33m,[39m priority[33m:[39m [32m'info'[39m[33m,[39m time[33m:[39m [32m'1 hour ago'[39m }[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'recentReadings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m320[39m:[33m7[39m
+
+  [0m [90m 318 |[39m ])
+   [90m 319 |[39m
+  [31m[1m>[22m[39m[90m 320 |[39m [36mconst[39m recentReadings [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 321 |[39m   { id[33m:[39m [35m1[39m[33m,[39m label[33m:[39m [32m'Temperature'[39m[33m,[39m value[33m:[39m [32m'23.3°C'[39m[33m,[39m icon[33m:[39m [32m'thermostat'[39m[33m,[39m color[33m:[39m [32m'negative'[39m }[33m,[39m
+   [90m 322 |[39m ])
+   [90m 323 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'filteredDevices' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m325[39m:[33m7[39m
+
+  [0m [90m 323 |[39m
+   [90m 324 |[39m [90m// Computed properties[39m
+  [31m[1m>[22m[39m[90m 325 |[39m [36mconst[39m filteredDevices [33m=[39m computed(() [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 326 |[39m   [36mlet[39m filtered [33m=[39m iotDevices[33m.[39mvalue
+   [90m 327 |[39m
+   [90m 328 |[39m   [36mif[39m (activeDeviceTab[33m.[39mvalue [33m!==[39m [32m'all'[39m) {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m360[39m:[33m7[39m
+
+  [0m [90m 358 |[39m }
+   [90m 359 |[39m
+  [31m[1m>[22m[39m[90m 360 |[39m [36mconst[39m selectDevice [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 361 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 362 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {
+   [90m 363 |[39m     map[33m.[39mpanTo([device[33m.[39mlat[33m,[39m device[33m.[39mlng])[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'showDeviceDetails' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m367[39m:[33m7[39m
+
+  [0m [90m 365 |[39m }
+   [90m 366 |[39m
+  [31m[1m>[22m[39m[90m 367 |[39m [36mconst[39m showDeviceDetails [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 368 |[39m   console[33m.[39mlog([32m'Device details:'[39m[33m,[39m device)
+   [90m 369 |[39m }
+   [90m 370 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'resolveAlert' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m371[39m:[33m7[39m
+
+  [0m [90m 369 |[39m }
+   [90m 370 |[39m
+  [31m[1m>[22m[39m[90m 371 |[39m [36mconst[39m resolveAlert [33m=[39m (alertId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 372 |[39m   alerts[33m.[39mvalue [33m=[39m alerts[33m.[39mvalue[33m.[39mfilter(alert [33m=>[39m alert[33m.[39mid [33m!==[39m alertId)
+   [90m 373 |[39m }
+   [90m 374 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getAlertIcon' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m392[39m:[33m7[39m
+
+  [0m [90m 390 |[39m }
+   [90m 391 |[39m
+  [31m[1m>[22m[39m[90m 392 |[39m [36mconst[39m getAlertIcon [33m=[39m (priority) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 393 |[39m   [36mconst[39m icons [33m=[39m {
+   [90m 394 |[39m     error[33m:[39m [32m'error'[39m[33m,[39m
+   [90m 395 |[39m     warning[33m:[39m [32m'warning'[39m[33m,[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getAlertColor' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m401[39m:[33m7[39m
+
+  [0m [90m 399 |[39m }
+   [90m 400 |[39m
+  [31m[1m>[22m[39m[90m 401 |[39m [36mconst[39m getAlertColor [33m=[39m (priority) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 402 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m 403 |[39m     error[33m:[39m [32m'negative'[39m[33m,[39m
+   [90m 404 |[39m     warning[33m:[39m [32m'warning'[39m[33m,[39m[0m
+
+[31m[ESLint] Found 7 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'recentReadings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m320[39m:[33m7[39m
+
+  [0m [90m 318 |[39m ])
+   [90m 319 |[39m
+  [31m[1m>[22m[39m[90m 320 |[39m [36mconst[39m recentReadings [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 321 |[39m   { id[33m:[39m [35m1[39m[33m,[39m label[33m:[39m [32m'Temperature'[39m[33m,[39m value[33m:[39m [32m'23.3°C'[39m[33m,[39m icon[33m:[39m [32m'thermostat'[39m[33m,[39m color[33m:[39m [32m'negative'[39m }[33m,[39m
+   [90m 322 |[39m ])
+   [90m 323 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'filteredDevices' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m325[39m:[33m7[39m
+
+  [0m [90m 323 |[39m
+   [90m 324 |[39m [90m// Computed properties[39m
+  [31m[1m>[22m[39m[90m 325 |[39m [36mconst[39m filteredDevices [33m=[39m computed(() [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 326 |[39m   [36mlet[39m filtered [33m=[39m iotDevices[33m.[39mvalue
+   [90m 327 |[39m
+   [90m 328 |[39m   [36mif[39m (activeDeviceTab[33m.[39mvalue [33m!==[39m [32m'all'[39m) {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectDevice' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m360[39m:[33m7[39m
+
+  [0m [90m 358 |[39m }
+   [90m 359 |[39m
+  [31m[1m>[22m[39m[90m 360 |[39m [36mconst[39m selectDevice [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 361 |[39m   selectedDevice[33m.[39mvalue [33m=[39m device
+   [90m 362 |[39m   [36mif[39m (map [33m&&[39m device[33m.[39mlat [33m&&[39m device[33m.[39mlng) {
+   [90m 363 |[39m     map[33m.[39mpanTo([device[33m.[39mlat[33m,[39m device[33m.[39mlng])[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'showDeviceDetails' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m367[39m:[33m7[39m
+
+  [0m [90m 365 |[39m }
+   [90m 366 |[39m
+  [31m[1m>[22m[39m[90m 367 |[39m [36mconst[39m showDeviceDetails [33m=[39m (device) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 368 |[39m   console[33m.[39mlog([32m'Device details:'[39m[33m,[39m device)
+   [90m 369 |[39m }
+   [90m 370 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'resolveAlert' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m371[39m:[33m7[39m
+
+  [0m [90m 369 |[39m }
+   [90m 370 |[39m
+  [31m[1m>[22m[39m[90m 371 |[39m [36mconst[39m resolveAlert [33m=[39m (alertId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 372 |[39m   alerts[33m.[39mvalue [33m=[39m alerts[33m.[39mvalue[33m.[39mfilter(alert [33m=>[39m alert[33m.[39mid [33m!==[39m alertId)
+   [90m 373 |[39m }
+   [90m 374 |[39m[0m
+
+[31m[ESLint] Found 5 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token } (null)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m373[39m:[33m[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'alerts' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m316[39m:[33m7[39m
+
+  [0m [90m 314 |[39m ])
+   [90m 315 |[39m
+  [31m[1m>[22m[39m[90m 316 |[39m [36mconst[39m alerts [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 317 |[39m   { id[33m:[39m [35m1[39m[33m,[39m title[33m:[39m [32m'Air Quality Alert'[39m[33m,[39m message[33m:[39m [32m'AQI above threshold'[39m[33m,[39m priority[33m:[39m [32m'warning'[39m[33m,[39m time[33m:[39m [32m'5 min ago'[39m }[33m,[39m
+   [90m 318 |[39m ])
+   [90m 319 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'recentReadings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m320[39m:[33m7[39m
+
+  [0m [90m 318 |[39m ])
+   [90m 319 |[39m
+  [31m[1m>[22m[39m[90m 320 |[39m [36mconst[39m recentReadings [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 321 |[39m   { id[33m:[39m [35m1[39m[33m,[39m label[33m:[39m [32m'Temperature'[39m[33m,[39m value[33m:[39m [32m'23.3°C'[39m[33m,[39m icon[33m:[39m [32m'thermostat'[39m[33m,[39m color[33m:[39m [32m'negative'[39m }[33m,[39m
+   [90m 322 |[39m ])
+   [90m 323 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'filteredDevices' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m325[39m:[33m7[39m
+
+  [0m [90m 323 |[39m
+   [90m 324 |[39m [90m// Computed properties[39m
+  [31m[1m>[22m[39m[90m 325 |[39m [36mconst[39m filteredDevices [33m=[39m computed(() [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 326 |[39m   [36mlet[39m filtered [33m=[39m iotDevices[33m.[39mvalue
+   [90m 327 |[39m
+   [90m 328 |[39m   [36mif[39m (activeDeviceTab[33m.[39mvalue [33m!==[39m [32m'all'[39m) {[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+10:38:37 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:145:3: Unknown word bo
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:607:2
+  143 |  .icon-item-wrapper:hover {
+  144 |    background: rgba(255, 255, 255, 0.1);
+  145 |    bo
+      |    ^
+  146 |  }
+  147 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+10:38:38 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:145:3: Unknown word bo
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:607:2
+  143 |  .icon-item-wrapper:hover {
+  144 |    background: rgba(255, 255, 255, 0.1);
+  145 |    bo
+      |    ^
+  146 |  }
+  147 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+10:38:39 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:145:3: Unknown word border
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:607:2
+  143 |  .icon-item-wrapper:hover {
+  144 |    background: rgba(255, 255, 255, 0.1);
+  145 |    border
+      |    ^
+  146 |  }
+  147 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+10:38:40 AM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:145:3: Unknown word border
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:607:2
+  143 |  .icon-item-wrapper:hover {
+  144 |    background: rgba(255, 255, 255, 0.1);
+  145 |    border
+      |    ^
+  146 |  }
+  147 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+The request id "/proc/self/environ" is outside of Vite serving allow list.
+
+- /home/kian/projects/elmer/quasar-project
+
+Refer to docs https://vite.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: missing-whitespace-between-attributes. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m288[39m:[33m34[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+8:00:22 PM [vite] Internal server error: Expected a pseudo-class or pseudo-element.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css
+      at /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:159:1
+      at Root._error (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:6720:18)
+      at Root.error (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:5177:21)
+      at Parser.error (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7185:23)
+      at Parser.expected (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7512:21)
+      at Parser.pseudo (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7301:21)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7474:16)
+      at Parser.loop (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7443:14)
+      at new Parser (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:6713:12)
+      at Processor._root (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7651:20)
+      at Processor._runSync (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7689:23)
+8:29:47 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:178:3: Unknown word ba
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:742:2
+  176 |    align-items: center;
+  177 |    justify-content: center;
+  178 |    ba
+      |    ^
+  179 |  }
+  180 |  .custom-svg-icon:hover svg {
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+8:29:52 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:178:3: Unknown word bac
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css:742:2
+  176 |    align-items: center;
+  177 |    justify-content: center;
+  178 |    bac
+      |    ^
+  179 |  }
+  180 |  .custom-svg-icon:hover svg {
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+8:35:05 PM [vite] Internal server error: Expected a pseudo-class or pseudo-element.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue?vue&type=style&index=0&scoped=eca6fb6d&lang.css
+      at /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:254:1
+      at Root._error (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:6720:18)
+      at Root.error (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:5177:21)
+      at Parser.error (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7185:23)
+      at Parser.expected (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7512:21)
+      at Parser.pseudo (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7301:21)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7474:16)
+      at Parser.loop (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7443:14)
+      at new Parser (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:6713:12)
+      at Processor._root (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7651:20)
+      at Processor._runSync (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:7689:23)
+The request id "/root/.ssh/authorized_keys" is outside of Vite serving allow list.
+The request id "/root/.ssh/authorized_keys" is outside of Vite serving allow list.
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getStatusColor' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m521[39m:[33m7[39m
+
+  [0m [90m 519 |[39m }[33m;[39m
+   [90m 520 |[39m
+  [31m[1m>[22m[39m[90m 521 |[39m [36mconst[39m getStatusColor [33m=[39m (status) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 522 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m 523 |[39m     online[33m:[39m [32m"positive"[39m[33m,[39m
+   [90m 524 |[39m     offline[33m:[39m [32m"negative"[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getStatusColor' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m521[39m:[33m7[39m
+
+  [0m [90m 519 |[39m }[33m;[39m
+   [90m 520 |[39m
+  [31m[1m>[22m[39m[90m 521 |[39m [36mconst[39m getStatusColor [33m=[39m (status) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 522 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m 523 |[39m     online[33m:[39m [32m"positive"[39m[33m,[39m
+   [90m 524 |[39m     offline[33m:[39m [32m"negative"[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getStatusColor' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m521[39m:[33m7[39m
+
+  [0m [90m 519 |[39m }[33m;[39m
+   [90m 520 |[39m
+  [31m[1m>[22m[39m[90m 521 |[39m [36mconst[39m getStatusColor [33m=[39m (status) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 522 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m 523 |[39m     online[33m:[39m [32m"positive"[39m[33m,[39m
+   [90m 524 |[39m     offline[33m:[39m [32m"negative"[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getStatusColor' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m521[39m:[33m7[39m
+
+  [0m [90m 519 |[39m }[33m;[39m
+   [90m 520 |[39m
+  [31m[1m>[22m[39m[90m 521 |[39m [36mconst[39m getStatusColor [33m=[39m (status) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 522 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m 523 |[39m     online[33m:[39m [32m"positive"[39m[33m,[39m
+   [90m 524 |[39m     offline[33m:[39m [32m"negative"[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token < (null)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:[33m529[39m:[33m2[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+9:21:32 PM [vite] (client) Pre-transform error: Failed to resolve import "./Sidebar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+9:21:32 PM [vite] Internal server error: Failed to resolve import "./Sidebar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:22:19 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:22:19 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar.vue
+9:22:19 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:22:19 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar.vue
+[1m[33m[@vue/compiler-sfc][0m[33m `defineProps` is a compiler macro and no longer needs to be imported.[0m
+
+[1m[33m[@vue/compiler-sfc][0m[33m `defineEmits` is a compiler macro and no longer needs to be imported.[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Component name "Sidebar" should always be multi-word. (vue/multi-word-component-names)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/Sidebar.vue:[33m1[39m:[33m1[39m
+
+  [0m [90m 1 |[39m [33m<[39m[33mtemplate[39m[33m>[39m
+   [90m 2 |[39m   [33m<[39m[33mdiv[39m [36mclass[39m[33m=[39m[32m"sidebar-container"[39m[33m>[39m
+   [90m 3 |[39m     [33m<[39m[33m![39m[33m--[39m نوار آیکون‌ها [33m--[39m[33m>[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Component name "Sidebar" should always be multi-word. (vue/multi-word-component-names)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/Sidebar.vue:[33m1[39m:[33m1[39m
+
+  [0m [90m 1 |[39m
+   [90m 2 |[39m [33m<[39m[33mtemplate[39m[33m>[39m
+   [90m 3 |[39m   [33m<[39m[33mdiv[39m [36mclass[39m[33m=[39m[32m"sidebar-container"[39m[33m>[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+9:23:32 PM [vite] (client) Pre-transform error: Failed to resolve import "./Sidebar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+9:23:33 PM [vite] Internal server error: Failed to resolve import "./Sidebar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:23:38 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:23:38 PM [vite] (client) Pre-transform error: Failed to resolve import "./MenuIcon.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:60:22
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+     |                        ^
+  3  |  import PanelContent from './PanelContent.vue';
+  4  |  
+9:23:38 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:23:38 PM [vite] (client) Pre-transform error: Failed to resolve import "./MenuIcon.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:60:22
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+     |                        ^
+  3  |  import PanelContent from './PanelContent.vue';
+  4  |  
+9:24:34 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:24:34 PM [vite] (client) Pre-transform error: Failed to resolve import "./MenuIcon.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:60:22
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+     |                        ^
+  3  |  import PanelContent from './PanelContent.vue';
+  4  |  
+9:24:34 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:24:34 PM [vite] (client) Pre-transform error: Failed to resolve import "./MenuIcon.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:60:22
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+     |                        ^
+  3  |  import PanelContent from './PanelContent.vue';
+  4  |  
+9:24:49 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:24:49 PM [vite] (client) Pre-transform error: Failed to resolve import "./MenuIcon.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:60:22
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+     |                        ^
+  3  |  import PanelContent from './PanelContent.vue';
+  4  |  
+9:24:49 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:24:49 PM [vite] (client) Pre-transform error: Failed to resolve import "./MenuIcon.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:60:22
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+     |                        ^
+  3  |  import PanelContent from './PanelContent.vue';
+  4  |  
+9:25:06 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:25:06 PM [vite] (client) Pre-transform error: Failed to resolve import "./PanelContent.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:61:26
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+  3  |  import PanelContent from './PanelContent.vue';
+     |                            ^
+  4  |  
+  5  |  
+9:25:06 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MenuIcon.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MenuIcon.vue
+9:25:06 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:25:06 PM [vite] (client) Pre-transform error: Failed to resolve import "./PanelContent.vue" from "src/components/SideBar.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/SideBar.vue:61:26
+  1  |  import {QBtn,QCard} from 'quasar';
+  2  |  import MenuIcon from './MenuIcon.vue';
+  3  |  import PanelContent from './PanelContent.vue';
+     |                            ^
+  4  |  
+  5  |  
+9:25:06 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MenuIcon.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MenuIcon.vue
+9:25:43 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:25:43 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/PanelContent.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/PanelContent.vue
+9:25:43 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:26:36 PM [vite] (client) Pre-transform error: Failed to resolve import "./StatusBar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:38:23
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+     |                         ^
+  7  |  
+  8  |  // Fix Leaflet default marker icon
+9:26:36 PM [vite] (client) Pre-transform error: Failed to resolve import "./PanelHeader.vue" from "src/components/PanelContent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/PanelContent.vue:70:25
+  1  |  import {QIcon,QInput} from 'quasar';import { ref } from 'vue';
+  2  |  import PanelHeader from './PanelHeader.vue';
+     |                           ^
+  3  |  import SettingsContent from './SettingsContent.vue';
+  4  |  
+9:26:36 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/DeviceCard.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DeviceCard.vue
+9:26:36 PM [vite] Internal server error: Failed to resolve import "./StatusBar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:38:23
+  4  |  import Sidebar from './SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+     |                         ^
+  7  |  
+  8  |  // Fix Leaflet default marker icon
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:26:36 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/DeviceCard.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DeviceCard.vue
+9:27:05 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/StatusBar.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/StatusBar.vue
+9:27:05 PM [vite] (client) Pre-transform error: Failed to resolve import "./PanelHeader.vue" from "src/components/PanelContent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/PanelContent.vue:70:25
+  1  |  import {QIcon,QInput} from 'quasar';import { ref } from 'vue';
+  2  |  import PanelHeader from './PanelHeader.vue';
+     |                           ^
+  3  |  import SettingsContent from './SettingsContent.vue';
+  4  |  
+9:27:06 PM [vite] Internal server error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/StatusBar.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/StatusBar.vue
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1871:7)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at transformMain (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1633:33)
+      at TransformPluginContext.handler (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:2045:27)
+      at EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:51)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+9:27:06 PM [vite] Internal server error: Failed to resolve import "./PanelHeader.vue" from "src/components/PanelContent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/PanelContent.vue:70:25
+  1  |  import {QIcon,QInput} from 'quasar';import { ref } from 'vue';
+  2  |  import PanelHeader from './PanelHeader.vue';
+     |                           ^
+  3  |  import SettingsContent from './SettingsContent.vue';
+  4  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+Vim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?2004l[>4;m[?2004h[>4;2m[?25l[24;1H<ect/node_modules/vite/dist/node/chunks/config.js"[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m<st/node/chunks/config.js" [noeol] 36197L, 1343382B[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[1;1H[33mimport[m [36m{[m __commonJS, __require, __toDynamicImportESM, __toESM [36m}[m from [31m"./chunk.jss[2;1H"[m;[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m [36m{[m CLIENT_DIR, CLIENT_ENTRY, CLIENT_PUBLIC_PATH, CSS_LANGS_RE, DEFAULT_ASSS[4;1HETS_INLINE_LIMIT, DEFAULT_ASSETS_RE, DEFAULT_CLIENT_CONDITIONS, DEFAULT_CLIENT_MM[5;1HAIN_FIELDS, DEFAULT_CONFIG_FILES, DEFAULT_DEV_PORT, DEFAULT_EXTERNAL_CONDITIONS,,[6;1H DEFAULT_PREVIEW_PORT, DEFAULT_SERVER_CONDITIONS, DEFAULT_SERVER_MAIN_FIELDS, DEE[7;1HP_VERSION_RE, DEV_PROD_CONDITION, ENV_ENTRY, ENV_PUBLIC_PATH, ERR_FILE_NOT_FOUNDD[8;1H_IN_OPTIMIZED_DEP_DIR, ERR_OPTIMIZE_DEPS_PROCESSING_ERROR, ESBUILD_BASELINE_WIDEE[9;1HLY_AVAILABLE_TARGET, FS_PREFIX, JS_TYPES_RE, KNOWN_ASSET_TYPES, LogLevels, METADD[10;1HATA_FILENAME, OPTIMIZABLE_ENTRY_RE, ROLLUP_HOOKS, SPECIAL_QUERY_RE, VERSION, VITT[11;1HE_PACKAGE_DIR, createLogger, defaultAllowedOrigins, loopbackHosts, printServerUrr[12;1Hls, require_picocolors, wildcardHosts [36m}[m from [31m"./logger.js"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m [36m{[m builtinModules, createRequire [36m}[m from [31m"node:module"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m [36m{[m parseAst, parseAstAsync [36m}[m from [31m"rollup/parseAst"[m;
+[33mimport[m * as fs$1 from [31m"node:fs"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m fs, [36m{[m existsSync, promises, readFileSync [36m}[m from [31m"node:fs"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m path, [36m{[m basename, dirname, extname, isAbsolute, join, normalize, posix, rr[18;1Helative, resolve, sep [36m}[m from [31m"node:path"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m fsp, [36m{[m constants [36m}[m from [31m"node:fs/promises"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m [36m{[m URL as URL$1, fileURLToPath, pathToFileURL [36m}[m from [31m"node:url"[m;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m [36m{[m format, inspect, promisify, stripVTControlCharacters [36m}[m from [31m"node:util""[m[22;1H;[?2004l[>4;m[?2004h[>4;2m
+[33mimport[m [36m{[m performance as performance$1 [36m}[m from [31m"node:perf_hooks"[m;[24;63H1,1[11CTop[1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?2004h[>4;2m[24;1H[?2004l[>4;m[?1004l[?2004l[?1l>[>4;m[?1049l[23;0;0tVim: Error reading input, exiting...
+Vim: Finished.
+[24;1H[23;2t[23;1t
+
+Could not open config.js in the editor.
+The editor process exited with an error: (code 1).
+
+9:38:24 PM [vite] (client) Pre-transform error: Failed to load url /src/components/DeviceCard.vue (resolved id: /home/kian/projects/elmer/quasar-project/src/components/DeviceCard.vue) in /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue. Does the file exist?
+9:38:24 PM [vite] (client) Pre-transform error: Failed to resolve import "./PanelHeader.vue" from "src/components/PanelContent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/PanelContent.vue:70:25
+  1  |  import {QIcon,QInput} from 'quasar';import { ref } from 'vue';
+  2  |  import PanelHeader from './PanelHeader.vue';
+     |                           ^
+  3  |  import SettingsContent from './SettingsContent.vue';
+  4  |  
+9:46:46 PM [vite] (client) Pre-transform error: Failed to resolve import "./Sidebar/Sidebar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar/Sidebar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+9:46:47 PM [vite] Internal server error: Failed to resolve import "./Sidebar/Sidebar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar/Sidebar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:47:48 PM [vite] (client) Pre-transform error: Failed to resolve import "./Sidebar/Side?bar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar/Side?bar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+9:47:48 PM [vite] Internal server error: Failed to resolve import "./Sidebar/Side?bar.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:36:21
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar/Side?bar.vue';
+     |                       ^
+  5  |  import DeviceCard from './DeviceCard.vue';
+  6  |  import StatusBar from './StatusBar.vue';
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:47:59 PM [vite] (client) Pre-transform error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar/SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+9:47:59 PM [vite] (client) Pre-transform error: Failed to resolve import "./panels/RfidPanel.vue" from "src/components/Sidebar/PanelContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/PanelContainer.vue:16:23
+  1  |  import {QCard} from 'quasar';import HomePanel from './panels/HomePanel.vue';
+  2  |  import GeofencePanel from './panels/GeofencePanel.vue';
+  3  |  import RfidPanel from './panels/RfidPanel.vue';
+     |                         ^
+  4  |  import AlarmsPanel from './panels/AlarmsPanel.vue';
+  5  |  import SettingsPanel from './panels/SettingsPanel.vue';
+9:47:59 PM [vite] Internal server error: Failed to resolve import "./DeviceCard.vue" from "src/components/MapComponent.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue:37:24
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import Sidebar from './Sidebar/SideBar.vue';
+  5  |  import DeviceCard from './DeviceCard.vue';
+     |                          ^
+  6  |  import StatusBar from './StatusBar.vue';
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:48:55 PM [vite] Internal server error: Failed to resolve import "./panels/RfidPanel.vue" from "src/components/Sidebar/PanelContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/PanelContainer.vue:16:23
+  1  |  import {QCard} from 'quasar';import HomePanel from './panels/HomePanel.vue';
+  2  |  import GeofencePanel from './panels/GeofencePanel.vue';
+  3  |  import RfidPanel from './panels/RfidPanel.vue';
+     |                         ^
+  4  |  import AlarmsPanel from './panels/AlarmsPanel.vue';
+  5  |  import SettingsPanel from './panels/SettingsPanel.vue';
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:51:05 PM [vite] (client) Pre-transform error: Failed to resolve import "./panels/AlarmsPanel.vue" from "src/components/Sidebar/PanelContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/PanelContainer.vue:17:25
+  2  |  import GeofencePanel from './panels/GeofencePanel.vue';
+  3  |  import RfidPanel from './panels/RfidPanel.vue';
+  4  |  import AlarmsPanel from './panels/AlarmsPanel.vue';
+     |                           ^
+  5  |  import SettingsPanel from './panels/SettingsPanel.vue';
+  6  |  
+9:51:05 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/RfidPanel.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/RfidPanel.vue
+9:51:06 PM [vite] Internal server error: Failed to resolve import "./panels/AlarmsPanel.vue" from "src/components/Sidebar/PanelContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/PanelContainer.vue:17:25
+  2  |  import GeofencePanel from './panels/GeofencePanel.vue';
+  3  |  import RfidPanel from './panels/RfidPanel.vue';
+  4  |  import AlarmsPanel from './panels/AlarmsPanel.vue';
+     |                           ^
+  5  |  import SettingsPanel from './panels/SettingsPanel.vue';
+  6  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:51:06 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/RfidPanel.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/RfidPanel.vue
+9:51:36 PM [vite] (client) Pre-transform error: Failed to resolve import "./panels/SettingsPanel.vue" from "src/components/Sidebar/PanelContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/PanelContainer.vue:18:27
+  3  |  import RfidPanel from './panels/RfidPanel.vue';
+  4  |  import AlarmsPanel from './panels/AlarmsPanel.vue';
+  5  |  import SettingsPanel from './panels/SettingsPanel.vue';
+     |                             ^
+  6  |  
+  7  |  
+9:51:36 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/AlarmsPanel.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/AlarmsPanel.vue
+9:51:37 PM [vite] Internal server error: Failed to resolve import "./panels/SettingsPanel.vue" from "src/components/Sidebar/PanelContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/PanelContainer.vue:18:27
+  3  |  import RfidPanel from './panels/RfidPanel.vue';
+  4  |  import AlarmsPanel from './panels/AlarmsPanel.vue';
+  5  |  import SettingsPanel from './panels/SettingsPanel.vue';
+     |                             ^
+  6  |  
+  7  |  
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+9:51:37 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/AlarmsPanel.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/AlarmsPanel.vue
+9:52:02 PM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/SettingsPanel.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/SettingsPanel.vue
+9:52:04 PM [vite] Internal server error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/SettingsPanel.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/Sidebar/panels/SettingsPanel.vue
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1871:7)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at transformMain (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1633:33)
+      at TransformPluginContext.handler (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:2045:27)
+      at EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:51)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'MapMarkers' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapContainer.vue:[33m9[39m:[33m8[39m
+
+  [0m [90m  7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mMapMarkers[39m [36mfrom[39m [32m'./MapMarkers.vue'[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m
+   [90m 11 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'device-selected'[39m])[33m;[39m
+   [90m 12 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'MapMarkers' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapContainer.vue:[33m9[39m:[33m8[39m
+
+  [0m [90m  7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mMapMarkers[39m [36mfrom[39m [32m'./MapMarkers.vue'[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m
+   [90m 11 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'device-selected'[39m])[33m;[39m
+   [90m 12 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m The template requires child element. (vue/valid-template-root)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapMarkers.vue:[33m1[39m:[33m1[39m
+
+  [0m[31m[1m>[22m[39m[90m 1 |[39m [33m<[39m[33mtemplate[39m[33m>[39m
+   [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 2 |[39m   [33m<[39m[33m![39m[33m--[39m این کامپوننت برای مدیریت مارکرها به صورت جداگانه [33m--[39m[33m>[39m
+   [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+  [31m[1m>[22m[39m[90m 3 |[39m [33m<[39m[33m/[39m[33mtemplate[39m[33m>[39m
+   [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 4 |[39m
+   [90m 5 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+   [90m 6 |[39m [90m// برای گسترش آینده - مدیریت پیشرفته مارکرها[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'MapMarkers' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapContainer.vue:[33m9[39m:[33m8[39m
+
+  [0m [90m  7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mMapMarkers[39m [36mfrom[39m [32m'./MapMarkers.vue'[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m
+   [90m 11 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'device-selected'[39m])[33m;[39m
+   [90m 12 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'MapMarkers' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapContainer.vue:[33m9[39m:[33m8[39m
+
+  [0m [90m  7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mMapMarkers[39m [36mfrom[39m [32m'./MapMarkers.vue'[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m
+   [90m 11 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'device-selected'[39m])[33m;[39m
+   [90m 12 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'MapMarkers' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapContainer.vue:[33m9[39m:[33m8[39m
+
+  [0m [90m  7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mMapMarkers[39m [36mfrom[39m [32m'./'[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m
+   [90m 11 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'device-selected'[39m])[33m;[39m
+   [90m 12 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'MapMarkers' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/map/MapContainer.vue:[33m9[39m:[33m8[39m
+
+  [0m [90m  7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m  8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mMapMarkers[39m [36mfrom[39m [32m'./MapMarkers.vue'[39m[33m;[39m
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m
+   [90m 11 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'device-selected'[39m])[33m;[39m
+   [90m 12 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Unexpected mutation of "isDarkMode" prop. (vue/no-mutating-props)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/dashboard/IconSidebar.vue:[33m323[39m:[33m36[39m
+
+  [0m [90m 321 |[39m                   [33m<[39m[33mspan[39m [36mclass[39m[33m=[39m[32m"setting-description"[39m[33m>[39m[33mSwitch[39m to dark theme[33m<[39m[33m/[39m[33mspan[39m[33m>[39m
+   [90m 322 |[39m                 [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 323 |[39m                 [33m<[39m[33mq[39m[33m-[39mtoggle v[33m-[39mmodel[33m=[39m[32m"isDarkMode"[39m [33m@[39mupdate[33m:[39mmodel[33m-[39mvalue[33m=[39m[32m"$emit('toggle-dark-mode', $event)"[39m color[33m=[39m[32m"primary"[39m [33m/[39m[33m>[39m
+   [90m     |[39m                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 324 |[39m               [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 325 |[39m             [33m<[39m[33m/[39m[33mq[39m[33m-[39mcard[33m>[39m
+   [90m 326 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'props' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/dashboard/IconSidebar.vue:[33m351[39m:[33m7[39m
+
+  [0m [90m 349 |[39m [36mimport[39m { ref } [36mfrom[39m [32m"vue"[39m[33m;[39m
+   [90m 350 |[39m
+  [31m[1m>[22m[39m[90m 351 |[39m [36mconst[39m props [33m=[39m defineProps({
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 352 |[39m   isDarkMode[33m:[39m [33mBoolean[39m
+   [90m 353 |[39m })[33m;[39m
+   [90m 354 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'emit' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/dashboard/IconSidebar.vue:[33m355[39m:[33m7[39m
+
+  [0m [90m 353 |[39m })[33m;[39m
+   [90m 354 |[39m
+  [31m[1m>[22m[39m[90m 355 |[39m [36mconst[39m emit [33m=[39m defineEmits([[32m'toggle-dark-mode'[39m])[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 356 |[39m
+   [90m 357 |[39m [90m// Reactive state[39m
+   [90m 358 |[39m [36mconst[39m activePanel [33m=[39m ref([36mnull[39m)[33m;[39m[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+11:42:30 AM [vite] Internal server error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1871:7)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+      at async handleHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28599:28)
+      at async onHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28131:35)
+      at async FSWatcher.<anonymous> (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28156:3)
+11:44:14 AM [vite] (client) Pre-transform error: v-model cannot be used on a prop, because local prop bindings are not writable.
+Use a v-bind binding combined with a v-on listener that emits update:x event instead.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:323:36
+  321 |                    <span class="setting-description">Switch to dark theme</span>
+  322 |                  </div>
+  323 |                  <q-toggle v-model="isDarkMode" @update:model-value="$emit('toggle-dark-mode', $event)" color="primary...
+      |                                      ^
+  324 |                </div>
+  325 |              </q-card>
+11:44:14 AM [vite] Internal server error: v-model cannot be used on a prop, because local prop bindings are not writable.
+Use a v-bind binding combined with a v-on listener that emits update:x event instead.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:323:36
+  321 |                    <span class="setting-description">Switch to dark theme</span>
+  322 |                  </div>
+  323 |                  <q-toggle v-model="isDarkMode" @update:model-value="$emit('toggle-dark-mode', $event)" color="primary...
+      |                                      ^
+  324 |                </div>
+  325 |              </q-card>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at Object.transformModel (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:6370:21)
+      at transformModel (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:219:35)
+      at buildProps (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:5802:48)
+      at Array.postTransformElement (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:5424:32)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3624:15)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+11:44:56 AM [vite] (client) Pre-transform error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+11:44:56 AM [vite] Internal server error: At least one <template> or <script> is required in a single file component. /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1871:7)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+      at async handleHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28599:28)
+      at async onHMRUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28131:35)
+      at async FSWatcher.<anonymous> (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:28156:3)
+11:46:23 AM [vite] (client) Pre-transform error: Failed to load url /src/components/MapComponent.vue (resolved id: /home/kian/projects/elmer/quasar-project/src/components/MapComponent.vue) in /home/kian/projects/elmer/quasar-project/src/pages/DashboardPage.vue. Does the file exist?
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'name' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m83[39m:[33m19[39m
+
+  [0m [90m 81 |[39m [90m// آیکون‌های SVG مدرن[39m
+   [90m 82 |[39m [36mconst[39m createModernIcon [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 83 |[39m   [36mconst[39m { status[33m,[39m name } [33m=[39m device[33m;[39m
+   [90m    |[39m                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 84 |[39m   
+   [90m 85 |[39m   [90m// رنگ‌های مدرن بر اساس وضعیت[39m
+   [90m 86 |[39m   [36mconst[39m colors [33m=[39m {[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'name' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m83[39m:[33m19[39m
+
+  [0m [90m 81 |[39m [90m// آیکون‌های SVG مدرن[39m
+   [90m 82 |[39m [36mconst[39m createModernIcon [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 83 |[39m   [36mconst[39m { status[33m,[39m name } [33m=[39m device[33m;[39m
+   [90m    |[39m                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 84 |[39m
+   [90m 85 |[39m   [90m// رنگ‌های مدرن بر اساس وضعیت[39m
+   [90m 86 |[39m   [36mconst[39m colors [33m=[39m {[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'name' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m83[39m:[33m19[39m
+
+  [0m [90m 81 |[39m [90m// آیکون‌های SVG مدرن[39m
+   [90m 82 |[39m [36mconst[39m createModernIcon [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 83 |[39m   [36mconst[39m { status[33m,[39m name } [33m=[39m device[33m;[39m
+   [90m    |[39m                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 84 |[39m
+   [90m 85 |[39m   [90m// رنگ‌های مدرن بر اساس وضعیت[39m
+   [90m 86 |[39m   [36mconst[39m colors [33m=[39m {[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+12:33:46 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:52:3: Unknown word ذ
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:231:2
+  50 |    position: relative;
+  51 |    z-index: 10;
+  52 |    ذ
+     |    ^
+  53 |  }
+  54 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+12:33:47 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:52:3: Unknown word ذ
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:231:2
+  50 |    position: relative;
+  51 |    z-index: 10;
+  52 |    ذ
+     |    ^
+  53 |  }
+  54 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+12:33:51 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:52:3: Unknown word bac
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:231:2
+  50 |    position: relative;
+  51 |    z-index: 10;
+  52 |    bac
+     |    ^
+  53 |  }
+  54 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+12:33:51 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:52:3: Unknown word bac
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:231:2
+  50 |    position: relative;
+  51 |    z-index: 10;
+  52 |    bac
+     |    ^
+  53 |  }
+  54 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m685[39m:[33m1[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+12:38:03 PM [vite] Internal server error: Invalid end tag.
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+12:38:04 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:69:10: Unknown word ref,
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:248:9
+  67 |  
+  68 |  <script setup>
+  69 |  import { ref, onMounted, onUnmounted } from "vue";
+     |           ^
+  70 |  import L from "leaflet";
+  71 |  import "leaflet/dist/leaflet.css";
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m92[39m:[33m9[39m
+
+  [0m [90m 90 |[39m   }[33m;[39m
+   [90m 91 |[39m
+  [31m[1m>[22m[39m[90m 92 |[39m   [36mconst[39m color [33m=[39m colors[status] [33m||[39m [32m"#6b7280"[39m[33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 93 |[39m
+   [90m 94 |[39m   [90m// آیکون‌های Font Awesome[39m
+   [90m 95 |[39m   [36mlet[39m iconClass[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'colors' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m86[39m:[33m9[39m
+
+  [0m [90m 84 |[39m
+   [90m 85 |[39m   [90m// رنگ‌ها بر اساس وضعیت[39m
+  [31m[1m>[22m[39m[90m 86 |[39m   [36mconst[39m colors [33m=[39m {
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 87 |[39m     online[33m:[39m [32m"#10b981"[39m[33m,[39m
+   [90m 88 |[39m     warning[33m:[39m [32m"#f59e0b"[39m[33m,[39m
+   [90m 89 |[39m     offline[33m:[39m [32m"#ef4444"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m92[39m:[33m9[39m
+
+  [0m [90m 90 |[39m   }[33m;[39m
+   [90m 91 |[39m
+  [31m[1m>[22m[39m[90m 92 |[39m   [36mconst[39m color [33m=[39m colors[status] [33m||[39m [32m"#6b7280"[39m[33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 93 |[39m
+   [90m 94 |[39m   [90m// آیکون‌های Font Awesome[39m
+   [90m 95 |[39m   [36mlet[39m iconClass[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'statusو' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m83[39m:[33m11[39m
+
+  [0m [90m 81 |[39m [90m// استفاده از Font Awesome icons به جای SVG[39m
+   [90m 82 |[39m [36mconst[39m createCustomIcon [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 83 |[39m   [36mconst[39m { statusو } [33m=[39m device[33m;[39m
+   [90m    |[39m           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 84 |[39m
+   [90m 85 |[39m   [90m// رنگ‌ها بر اساس وضعیت[39m
+   [90m 86 |[39m   [36mconst[39m colors [33m=[39m {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m92[39m:[33m9[39m
+
+  [0m [90m 90 |[39m   }[33m;[39m
+   [90m 91 |[39m
+  [31m[1m>[22m[39m[90m 92 |[39m   [36mconst[39m color [33m=[39m colors[status] [33m||[39m [32m"#6b7280"[39m[33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 93 |[39m
+   [90m 94 |[39m   [90m// آیکون‌های Font Awesome[39m
+   [90m 95 |[39m   [36mlet[39m iconClass[33m;[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m92[39m:[33m9[39m
+
+  [0m [90m 90 |[39m   }[33m;[39m
+   [90m 91 |[39m
+  [31m[1m>[22m[39m[90m 92 |[39m   [36mconst[39m color [33m=[39m colors[status] [33m||[39m [32m"#6b7280"[39m[33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 93 |[39m
+   [90m 94 |[39m   [90m// آیکون‌های Font Awesome[39m
+   [90m 95 |[39m   [36mlet[39m iconClass[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Identifier 'color' has already been declared (null)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m92[39m:[33m8[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m92[39m:[33m9[39m
+
+  [0m [90m 90 |[39m   }[33m;[39m
+   [90m 91 |[39m
+  [31m[1m>[22m[39m[90m 92 |[39m   [36mconst[39m color [33m=[39m colors[status] [33m||[39m [32m"#6b7280"[39m[33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 93 |[39m
+   [90m 94 |[39m   [90m// آیکون‌های Font Awesome[39m
+   [90m 95 |[39m   [36mlet[39m iconClass[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m29[39m:[33m9[39m
+
+  [0m [90m 27 |[39m   }[33m;[39m
+   [90m 28 |[39m
+  [31m[1m>[22m[39m[90m 29 |[39m   [36mconst[39m color [33m=[39m colors[status][33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 30 |[39m
+   [90m 31 |[39m   [36mreturn[39m [33mL[39m[33m.[39mdivIcon({
+   [90m 32 |[39m     className[33m:[39m [32m`simple-marker ${status}`[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m29[39m:[33m9[39m
+
+  [0m [90m 27 |[39m   }[33m;[39m
+   [90m 28 |[39m
+  [31m[1m>[22m[39m[90m 29 |[39m   [36mconst[39m color [33m=[39m colors[status][33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 30 |[39m
+   [90m 31 |[39m   [36mreturn[39m [33mL[39m[33m.[39mdivIcon({
+   [90m 32 |[39m     className[33m:[39m [32m`simple-marker ${status}`[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m29[39m:[33m9[39m
+
+  [0m [90m 27 |[39m   }[33m;[39m
+   [90m 28 |[39m
+  [31m[1m>[22m[39m[90m 29 |[39m   [36mconst[39m color [33m=[39m colors[status][33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 30 |[39m
+   [90m 31 |[39m   [36mreturn[39m [33mL[39m[33m.[39mdivIcon({
+   [90m 32 |[39m     className[33m:[39m [32m`simple-marker ${status}`[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m29[39m:[33m9[39m
+
+  [0m [90m 27 |[39m   }[33m;[39m
+   [90m 28 |[39m
+  [31m[1m>[22m[39m[90m 29 |[39m   [36mconst[39m color [33m=[39m colors[status][33m;[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 30 |[39m
+   [90m 31 |[39m   [36mreturn[39m [33mL[39m[33m.[39mdivIcon({
+   [90m 32 |[39m     className[33m:[39m [32m`simple-marker ${status}`[39m[33m,[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'color' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m98[39m:[33m7[39m
+
+  [0m [90m  96 |[39m       [36mbreak[39m[33m;[39m
+   [90m  97 |[39m     [36mdefault[39m[33m:[39m
+  [31m[1m>[22m[39m[90m  98 |[39m       color [33m=[39m [32m'#6b7280'[39m[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m  99 |[39m   }
+   [90m 100 |[39m
+   [90m 101 |[39m   [90m// ایجاد HTML برای مارکر[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+1:31:19 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:89:3: Unknown word animation
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:261:2
+  87 |    border-radius: 50%;
+  88 |    border: 3px solid; ضخیم‌تر
+  89 |    animation: leaflet-pulse 2s infinite;
+     |    ^
+  90 |    opacity: 0.7;
+  91 |    z-index: 5;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+1:38:46 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:24:3: Unknown word display
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:196:2
+  22 |    border-radius: 50%;
+  23 |    background: #1a1a1a; مشکی تیره برای پایه
+  24 |    display: flex;
+     |    ^
+  25 |    align-items: center;
+  26 |    justify-content: center;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+1:38:49 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:24:3: Unknown word display
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:196:2
+  22 |    border-radius: 50%;
+  23 |    background: #1a1a1a; مشکه
+  24 |    display: flex;
+     |    ^
+  25 |    align-items: center;
+  26 |    justify-content: center;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+1:46:47 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:39:26: Unknown word آبی
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:195:25
+  37 |    width: 52px;
+  38 |    height: 52px;
+  39 |    border-color: #1e40af; آبی تیره
+     |                           ^
+  40 |  }
+  41 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
