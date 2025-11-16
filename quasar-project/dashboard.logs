@@ -2437,3 +2437,2015 @@ Use a v-bind binding combined with a v-on listener that emits update:x event ins
       at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
       at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+The request id "/proc/self/environ" is outside of Vite serving allow list.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+9:23:18 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:221:3: Unknown word background
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:622:2
+  219 |    /* padding: 20px; */
+  220 |    w
+  221 |    background: var(--accent-gradient);
+      |    ^
+  222 |    color: white;
+  223 |  }
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:23:21 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:221:3: Unknown word background
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:622:2
+  219 |    /* padding: 20px; */
+  220 |    w70
+  221 |    background: var(--accent-gradient);
+      |    ^
+  222 |    color: white;
+  223 |  }
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:24:19 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:221:3: Unknown word height
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:622:2
+  219 |    padding: 20px;
+  220 |    p
+  221 |    height: 70px;
+      |    ^
+  222 |    background: var(--accent-gradient);
+  223 |    color: white;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:24:21 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:221:3: Unknown word height
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:622:2
+  219 |    padding: 20px;
+  220 |    pr
+  221 |    height: 70px;
+      |    ^
+  222 |    background: var(--accent-gradient);
+  223 |    color: white;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:24:23 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:221:3: Unknown word height
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:622:2
+  219 |    padding: 20px;
+  220 |    pr20
+  221 |    height: 70px;
+      |    ^
+  222 |    background: var(--accent-gradient);
+  223 |    color: white;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+9:35:11 PM [vite] Internal server error: Element is missing end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:5:7
+  3  |    <div class="sidebar-container">
+  4  |      <q-card class="icon-sidebar" elevated>
+  5  |        <div class="sidebar-header">
+     |         ^
+  6  |          <div class="app-info">
+  7  |            <!-- <div class="app-icon">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2350:13)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: nested-comment. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m36[39m:[33m19[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m114[39m:[33m7[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m115[39m:[33m5[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m116[39m:[33m3[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'menuItems' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m126[39m:[33m7[39m
+
+  [0m [90m 124 |[39m
+   [90m 125 |[39m [90m// Data - منوی 5 آیتمی[39m
+  [31m[1m>[22m[39m[90m 126 |[39m [36mconst[39m menuItems [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 127 |[39m   { id[33m:[39m [32m"home"[39m[33m,[39m title[33m:[39m [32m"Home"[39m }[33m,[39m
+   [90m 128 |[39m   { id[33m:[39m [32m"geofence"[39m[33m,[39m title[33m:[39m [32m"Geofence"[39m }[33m,[39m
+   [90m 129 |[39m   { id[33m:[39m [32m"rfid"[39m[33m,[39m title[33m:[39m [32m"RFID"[39m }[33m,[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'setActiveItem' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m135[39m:[33m7[39m
+
+  [0m [90m 133 |[39m
+   [90m 134 |[39m [90m// Methods[39m
+  [31m[1m>[22m[39m[90m 135 |[39m [36mconst[39m setActiveItem [33m=[39m (itemId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 136 |[39m   activeItem[33m.[39mvalue [33m=[39m itemId[33m;[39m
+   [90m 137 |[39m   [90m// اینجا می‌تونید emit اضافه کنید تا به کامپوننت والد اطلاع بدید[39m
+   [90m 138 |[39m   [90m// emit('menu-item-changed', itemId);[39m[0m
+
+[31m[ESLint] Found 6 errors and 0 warning[39m
+9:35:29 PM [vite] Internal server error: Element is missing end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:4:5
+  2  |    <!-- Sidebar با آیکون‌ها و متن زیرشان -->
+  3  |    <div class="sidebar-container">
+  4  |      <q-card class="icon-sidebar" elevated>
+     |       ^
+  5  |        <div class="sidebar-header">
+  6  |          <div class="app-info">
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2350:13)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+6:58:13 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:181:3: Unknown word margin-
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:582:2
+  179 |    border-radius: 0;
+  180 |    border-right: 1px solid var(--border-color);
+  181 |    margin-;
+      |    ^
+  182 |  }
+  183 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+6:58:13 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:181:3: Unknown word margin-
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:582:2
+  179 |    border-radius: 0;
+  180 |    border-right: 1px solid var(--border-color);
+  181 |    margin-;
+      |    ^
+  182 |  }
+  183 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+6:58:13 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:181:3: Unknown word margin-
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:582:2
+  179 |    border-radius: 0;
+  180 |    border-right: 1px solid var(--border-color);
+  181 |    margin-;
+      |    ^
+  182 |  }
+  183 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+6:58:26 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:183:3: Unknown word mb
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:584:2
+  181 |    margin-left: 20px;
+  182 |    margin-top: 20px;
+  183 |    mb
+      |    ^
+  184 |  }
+  185 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+6:58:26 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:183:3: Unknown word mb
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:584:2
+  181 |    margin-left: 20px;
+  182 |    margin-top: 20px;
+  183 |    mb
+      |    ^
+  184 |  }
+  185 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+6:58:26 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:183:3: Unknown word mb
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:584:2
+  181 |    margin-left: 20px;
+  182 |    margin-top: 20px;
+  183 |    mb
+      |    ^
+  184 |  }
+  185 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+The request id "/proc/self/environ" is outside of Vite serving allow list.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+2:47:11 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:373:9
+  371 |              />
+  372 |            </div>
+  373 |          </div>
+      |           ^
+  374 |        </div>
+  375 |      </q-card>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m373[39m:[33m9[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m374[39m:[33m7[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m375[39m:[33m5[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m376[39m:[33m3[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m377[39m:[33m1[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'geofenceSearch' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m384[39m:[33m7[39m
+
+  [0m [90m 382 |[39m [90m// Reactive state - Home همیشه فعال است[39m
+   [90m 383 |[39m [36mconst[39m activePanel [33m=[39m ref([32m"home"[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 384 |[39m [36mconst[39m geofenceSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 385 |[39m [36mconst[39m rfidSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m 386 |[39m [36mconst[39m sidebarExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m
+   [90m 387 |[39m [36mconst[39m hoveredItem [33m=[39m ref([36mnull[39m)[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'rfidSearch' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m385[39m:[33m7[39m
+
+  [0m [90m 383 |[39m [36mconst[39m activePanel [33m=[39m ref([32m"home"[39m)[33m;[39m
+   [90m 384 |[39m [36mconst[39m geofenceSearch [33m=[39m ref([32m""[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 385 |[39m [36mconst[39m rfidSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 386 |[39m [36mconst[39m sidebarExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m
+   [90m 387 |[39m [36mconst[39m hoveredItem [33m=[39m ref([36mnull[39m)[33m;[39m
+   [90m 388 |[39m [36mconst[39m homeExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m [90m// حالت گسترده پنل Home[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'settings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m391[39m:[33m7[39m
+
+  [0m [90m 389 |[39m
+   [90m 390 |[39m [90m// Settings[39m
+  [31m[1m>[22m[39m[90m 391 |[39m [36mconst[39m settings [33m=[39m ref({
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 392 |[39m   autoRefresh[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 393 |[39m   notifications[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 394 |[39m })[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'closePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m429[39m:[33m7[39m
+
+  [0m [90m 427 |[39m }[33m;[39m
+   [90m 428 |[39m
+  [31m[1m>[22m[39m[90m 429 |[39m [36mconst[39m closePanel [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 430 |[39m   [90m// فقط پنل‌های غیر از Home می‌توانند بسته شوند[39m
+   [90m 431 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m!==[39m [32m"home"[39m) {
+   [90m 432 |[39m     activePanel[33m.[39mvalue [33m=[39m [32m"home"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 9 errors and 0 warning[39m
+2:47:12 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:373:9
+  371 |              />
+  372 |            </div>
+  373 |          </div>
+      |           ^
+  374 |        </div>
+  375 |      </q-card>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m294[39m:[33m9[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m295[39m:[33m7[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m296[39m:[33m5[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m297[39m:[33m3[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m298[39m:[33m1[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'geofenceSearch' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m305[39m:[33m7[39m
+
+  [0m [90m 303 |[39m [90m// Reactive state - Home همیشه فعال است[39m
+   [90m 304 |[39m [36mconst[39m activePanel [33m=[39m ref([32m"home"[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 305 |[39m [36mconst[39m geofenceSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 306 |[39m [36mconst[39m rfidSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m 307 |[39m [36mconst[39m sidebarExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m
+   [90m 308 |[39m [36mconst[39m hoveredItem [33m=[39m ref([36mnull[39m)[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'rfidSearch' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m306[39m:[33m7[39m
+
+  [0m [90m 304 |[39m [36mconst[39m activePanel [33m=[39m ref([32m"home"[39m)[33m;[39m
+   [90m 305 |[39m [36mconst[39m geofenceSearch [33m=[39m ref([32m""[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 306 |[39m [36mconst[39m rfidSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 307 |[39m [36mconst[39m sidebarExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m
+   [90m 308 |[39m [36mconst[39m hoveredItem [33m=[39m ref([36mnull[39m)[33m;[39m
+   [90m 309 |[39m [36mconst[39m homeExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m [90m// حالت گسترده پنل Home[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'settings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m312[39m:[33m7[39m
+
+  [0m [90m 310 |[39m
+   [90m 311 |[39m [90m// Settings[39m
+  [31m[1m>[22m[39m[90m 312 |[39m [36mconst[39m settings [33m=[39m ref({
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 313 |[39m   autoRefresh[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 314 |[39m   notifications[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 315 |[39m })[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'menuItems' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m318[39m:[33m7[39m
+
+  [0m [90m 316 |[39m
+   [90m 317 |[39m [90m// Data - منوی 5 آیتمی بر اساس تصویر[39m
+  [31m[1m>[22m[39m[90m 318 |[39m [36mconst[39m menuItems [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 319 |[39m   { id[33m:[39m [32m"home"[39m[33m,[39m title[33m:[39m [32m"Home"[39m }[33m,[39m
+   [90m 320 |[39m   { id[33m:[39m [32m"geofence"[39m[33m,[39m title[33m:[39m [32m"Geofence"[39m }[33m,[39m
+   [90m 321 |[39m   { id[33m:[39m [32m"rfid"[39m[33m,[39m title[33m:[39m [32m"RFID"[39m }[33m,[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'togglePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m335[39m:[33m7[39m
+
+  [0m [90m 333 |[39m }[33m;[39m
+   [90m 334 |[39m
+  [31m[1m>[22m[39m[90m 335 |[39m [36mconst[39m togglePanel [33m=[39m (panelId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 336 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m===[39m panelId) {
+   [90m 337 |[39m     [90m// اگر روی Home کلیک شد، هیچ کاری نکن (همیشه باز بماند)[39m
+   [90m 338 |[39m     [36mif[39m (panelId [33m!==[39m [32m"home"[39m) {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'closePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m350[39m:[33m7[39m
+
+  [0m [90m 348 |[39m }[33m;[39m
+   [90m 349 |[39m
+  [31m[1m>[22m[39m[90m 350 |[39m [36mconst[39m closePanel [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 351 |[39m   [90m// فقط پنل‌های غیر از Home می‌توانند بسته شوند[39m
+   [90m 352 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m!==[39m [32m"home"[39m) {
+   [90m 353 |[39m     activePanel[33m.[39mvalue [33m=[39m [32m"home"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'handleMouseEnter' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m357[39m:[33m7[39m
+
+  [0m [90m 355 |[39m }[33m;[39m
+   [90m 356 |[39m
+  [31m[1m>[22m[39m[90m 357 |[39m [36mconst[39m handleMouseEnter [33m=[39m (itemId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 358 |[39m   hoveredItem[33m.[39mvalue [33m=[39m itemId[33m;[39m
+   [90m 359 |[39m }[33m;[39m
+   [90m 360 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'handleMouseLeave' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m361[39m:[33m7[39m
+
+  [0m [90m 359 |[39m }[33m;[39m
+   [90m 360 |[39m
+  [31m[1m>[22m[39m[90m 361 |[39m [36mconst[39m handleMouseLeave [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 362 |[39m   hoveredItem[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m 363 |[39m }[33m;[39m
+   [90m 364 |[39m [33m<[39m[33m/[39m[33mscript[39m[33m>[39m[0m
+
+[31m[ESLint] Found 13 errors and 0 warning[39m
+2:50:43 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:294:9
+  292 |              />
+  293 |            </div>
+  294 |          </div>
+      |           ^
+  295 |        </div>
+  296 |      </q-card>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+2:50:44 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:294:9
+  292 |              />
+  293 |            </div>
+  294 |          </div>
+      |           ^
+  295 |        </div>
+  296 |      </q-card>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'menuItems' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m313[39m:[33m7[39m
+
+  [0m [90m 311 |[39m
+   [90m 312 |[39m [90m// Data - منوی 5 آیتمی بر اساس تصویر[39m
+  [31m[1m>[22m[39m[90m 313 |[39m [36mconst[39m menuItems [33m=[39m ref([
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 314 |[39m   { id[33m:[39m [32m"home"[39m[33m,[39m title[33m:[39m [32m"Home"[39m }[33m,[39m
+   [90m 315 |[39m   { id[33m:[39m [32m"geofence"[39m[33m,[39m title[33m:[39m [32m"Geofence"[39m }[33m,[39m
+   [90m 316 |[39m   { id[33m:[39m [32m"rfid"[39m[33m,[39m title[33m:[39m [32m"RFID"[39m }[33m,[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'togglePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m330[39m:[33m7[39m
+
+  [0m [90m 328 |[39m }[33m;[39m
+   [90m 329 |[39m
+  [31m[1m>[22m[39m[90m 330 |[39m [36mconst[39m togglePanel [33m=[39m (panelId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 331 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m===[39m panelId) {
+   [90m 332 |[39m     [90m// اگر روی Home کلیک شد، هیچ کاری نکن (همیشه باز بماند)[39m
+   [90m 333 |[39m     [36mif[39m (panelId [33m!==[39m [32m"home"[39m) {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'handleMouseEnter' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m352[39m:[33m7[39m
+
+  [0m [90m 350 |[39m }[33m;[39m
+   [90m 351 |[39m
+  [31m[1m>[22m[39m[90m 352 |[39m [36mconst[39m handleMouseEnter [33m=[39m (itemId) [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 353 |[39m   hoveredItem[33m.[39mvalue [33m=[39m itemId[33m;[39m
+   [90m 354 |[39m }[33m;[39m
+   [90m 355 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'handleMouseLeave' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m356[39m:[33m7[39m
+
+  [0m [90m 354 |[39m }[33m;[39m
+   [90m 355 |[39m
+  [31m[1m>[22m[39m[90m 356 |[39m [36mconst[39m handleMouseLeave [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 357 |[39m   hoveredItem[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m 358 |[39m }[33m;[39m
+   [90m 359 |[39m [33m<[39m[33m/[39m[33mscript[39m[33m>[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m130[39m:[33m17[39m
+
+  [0m [90m 128 |[39m             [33m>[39m
+   [90m 129 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 130 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 132 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 133 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:53:23 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:15
+  127 |                @click="toggleHomePanel"
+  128 |              >
+  129 |                <svg
+      |                 ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:53:23 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:15
+  127 |                @click="toggleHomePanel"
+  128 |              >
+  129 |                <svg
+      |                 ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: unexpected-character-in-attribute-name. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m128[39m:[33m15[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m129[39m:[33m17[39m
+
+  [0m [90m 127 |[39m               [33m@[39mclick[33m=[39m[32m"toggleHomePanel"[39m
+   [90m 128 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 129 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 130 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 131 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 132 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-namespace. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m130[39m:[33m17[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m137[39m:[33m15[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+2:53:33 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:137:15
+  135 |                >
+  136 |                  <path d="M480-360 280-560h400L480-360Z"/>
+  137 |                </svg>
+      |                 ^
+  138 |              >
+  139 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+2:53:33 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:137:15
+  135 |                >
+  136 |                  <path d="M480-360 280-560h400L480-360Z"/>
+  137 |                </svg>
+      |                 ^
+  138 |              >
+  139 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m130[39m:[33m17[39m
+
+  [0m [90m 128 |[39m             [33m>[39m
+   [90m 129 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 130 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 132 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 133 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:53:34 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:15
+  127 |                @click="toggleHomePanel"
+  128 |              >
+  129 |                <svg
+      |                 ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:53:34 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:15
+  127 |                @click="toggleHomePanel"
+  128 |              >
+  129 |                <svg
+      |                 ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m139[39m:[33m17[39m
+
+  [0m [90m 137 |[39m               [33m>[39m
+   [90m 138 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 139 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 140 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 141 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 142 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:53:51 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:138:15
+  136 |                  fill="currentColor"
+  137 |                >
+  138 |                <svg
+      |                 ^
+  139 |                  v-else
+  140 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3611:9)
+2:53:51 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:138:15
+  136 |                  fill="currentColor"
+  137 |                >
+  138 |                <svg
+      |                 ^
+  139 |                  v-else
+  140 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3611:9)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m133[39m:[33m17[39m
+
+  [0m [90m 131 |[39m
+   [90m 132 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 133 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 134 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 135 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 136 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:07 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:132:15
+  130 |            
+  131 |  
+  132 |                <svg
+      |                 ^
+  133 |                  v-else
+  134 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:07 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:132:15
+  130 |            
+  131 |  
+  132 |                <svg
+      |                 ^
+  133 |                  v-else
+  134 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m131[39m:[33m17[39m
+
+  [0m [90m 129 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 130 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 131 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 133 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 134 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:12 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:12 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m131[39m:[33m17[39m
+
+  [0m [90m 129 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 130 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 131 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 133 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 134 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:16 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:16 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m131[39m:[33m17[39m
+
+  [0m [90m 129 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 130 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 131 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 133 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 134 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:17 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:18 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m131[39m:[33m17[39m
+
+  [0m [90m 129 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 130 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 131 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 133 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 134 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:22 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:22 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m131[39m:[33m17[39m
+
+  [0m [90m 129 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 130 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 131 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 133 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 134 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:27 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:27 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:15
+  128 |              >
+  129 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  130 |                <svg
+      |                 ^
+  131 |                  v-else
+  132 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m130[39m:[33m17[39m
+
+  [0m [90m 128 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 129 |[39m               [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 130 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 132 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 133 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:54:36 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:15
+  127 |              <q-btn round dense flat class="menu-toggle-btn" @click="toggleHomePanel">
+  128 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  129 |                <svg
+      |                 ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:54:36 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:15
+  127 |              <q-btn round dense flat class="menu-toggle-btn" @click="toggleHomePanel">
+  128 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  129 |                <svg
+      |                 ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'v-else' directives require being preceded by the element which has a 'v-if' or 'v-else-if' directive. (vue/valid-v-else)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m130[39m:[33m17[39m
+
+  [0m [90m 128 |[39m               [33m<[39m[33m![39m[33m--[39m آیکون فلش رو به پایین وقتی پنل بسته است [33m--[39m[33m>[39m
+   [90m 129 |[39m                [33m<[39m[33msvg[39m
+  [31m[1m>[22m[39m[90m 130 |[39m                 v[33m-[39m[36melse[39m
+   [90m     |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m                 xmlns[33m=[39m[32m"http://www.w3.org/2000/svg"[39m
+   [90m 132 |[39m                 height[33m=[39m[32m"24px"[39m
+   [90m 133 |[39m                 viewBox[33m=[39m[32m"0 -960 960 960"[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+2:56:39 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:16
+  127 |              <q-btn round dense flat class="menu-toggle-btn" @click="toggleHomePanel">
+  128 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  129 |                 <svg
+      |                  ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:56:39 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:129:16
+  127 |              <q-btn round dense flat class="menu-toggle-btn" @click="toggleHomePanel">
+  128 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  129 |                 <svg
+      |                  ^
+  130 |                  v-else
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+2:56:43 PM [vite] Internal server error: Legal directive name was expected.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:17
+  128 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  129 |                 <svg
+  130 |                  v-
+      |                   ^
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+  132 |                  height="24px"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.ondirname (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2385:7)
+      at Tokenizer.stateInDirName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:862:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1107:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+2:56:43 PM [vite] Internal server error: Legal directive name was expected.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:130:17
+  128 |                <!-- آیکون فلش رو به پایین وقتی پنل بسته است -->
+  129 |                 <svg
+  130 |                  v-
+      |                   ^
+  131 |                  xmlns="http://www.w3.org/2000/svg"
+  132 |                  height="24px"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.ondirname (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2385:7)
+      at Tokenizer.stateInDirName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:862:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1107:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+2:56:48 PM [vite] Internal server error: Legal directive name was expected.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:141:17
+  139 |                <!-- آیکون فلش رو به بالا وقتی پنل باز است -->
+  140 |                <svg
+  141 |                  v-
+      |                   ^
+  142 |                  xmlns="http://www.w3.org/2000/svg"
+  143 |                  height="24px"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.ondirname (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2385:7)
+      at Tokenizer.stateInDirName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:862:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1107:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+2:56:49 PM [vite] Internal server error: Legal directive name was expected.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:141:17
+  139 |                <!-- آیکون فلش رو به بالا وقتی پنل باز است -->
+  140 |                <svg
+  141 |                  v-
+      |                   ^
+  142 |                  xmlns="http://www.w3.org/2000/svg"
+  143 |                  height="24px"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.ondirname (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2385:7)
+      at Tokenizer.stateInDirName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:862:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1107:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+3:09:35 PM [vite] Internal server error: Failed to resolve import "leaflet.markercluster/dist/MarkerCluster.css" from "src/components/MapContainer/MapContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:9:8
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import "leaflet.markercluster/dist/MarkerCluster.css";
+     |          ^
+  5  |  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+  6  |  import "leaflet.markercluster";
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+3:09:35 PM [vite] Internal server error: Failed to resolve import "leaflet.markercluster/dist/MarkerCluster.css" from "src/components/MapContainer/MapContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:9:8
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import "leaflet.markercluster/dist/MarkerCluster.css";
+     |          ^
+  5  |  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+  6  |  import "leaflet.markercluster";
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+3:09:50 PM [vite] (client) Pre-transform error: Failed to resolve import "leaflet.markercluster/dist/MarkerCluster.css" from "src/components/MapContainer/MapContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:9:8
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import "leaflet.markercluster/dist/MarkerCluster.css";
+     |          ^
+  5  |  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+  6  |  import "leaflet.markercluster";
+3:09:52 PM [vite] Internal server error: Failed to resolve import "leaflet.markercluster/dist/MarkerCluster.css" from "src/components/MapContainer/MapContainer.vue". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:9:8
+  2  |  import L from "leaflet";
+  3  |  import "leaflet/dist/leaflet.css";
+  4  |  import "leaflet.markercluster/dist/MarkerCluster.css";
+     |          ^
+  5  |  import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+  6  |  import "leaflet.markercluster";
+      at TransformPluginContext._formatLog (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31106:43)
+      at TransformPluginContext.error (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:31103:14)
+      at normalizeUrl (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29590:18)
+      at async file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29648:32
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:29616:4)
+      at async EnvironmentPluginContainer.transform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:30905:14)
+      at async loadAndTransform (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:26043:26)
+      at async viteTransformMiddleware (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:27118:20)
+
+ App • The quasar.config file (or its dependencies) changed. Reading it again...
+ App •  TIP  • 🚀  You are using the --port parameter. It is recommended to use a different devServer port for each Quasar mode to avoid browser cache issues
+ App • Scheduled to apply quasar.config changes in 550ms
+ App • Applying quasar.config file changes...
+3:14:55 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:173:5: Unknown word background
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:416:4
+  171 |    height: 40px;
+  172 |    border-radius: 50%;
+  173 |   // background: linear-gradient(135deg, #ff6b30, #ff3d00);
+      |      ^
+  174 |    color: white;
+  175 |    display: flex;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.decl (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:236:16)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:401:18)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+3:14:59 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:169:1: Unclosed block
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:412:0
+  167 |  }
+  168 |  
+  169 |  :deep(.cluster-marker) {
+      |  ^
+  170 |    width: 40px;
+  171 |    height: 40px;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBlock (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:575:22)
+      at Parser.endFile (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:335:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:476:10)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token iotDevices (null)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m229[39m:[33m2[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:23:31 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:224:6: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:474:5
+  222 |  }
+  223 |  
+  224 |  :deep(.cluster-container .cluster-pulse-ring:nth-child(1) {
+      |       ^
+  225 |    width: 50px;
+  226 |    height: 50px;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+3:23:51 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:231:6: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:481:5
+  229 |  }
+  230 |  
+  231 |  :deep(.cluster-container .cluster-pulse-ring:nth-child(2) {
+      |       ^
+  232 |    width: 60px;
+  233 |    height: 60px;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+3:24:03 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:258:6: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/MapContainer/MapContainer.vue?vue&type=style&index=0&scoped=9a0e3728&lang.css:508:5
+  256 |  }
+  257 |  
+  258 |  :deep(.cluster-container .cluster-marker.medium ~ .cluster-pulse-ring:nth-child(3) {
+      |       ^
+  259 |    width: 80px;
+  260 |    height: 80px;
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+3:45:34 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:170:7
+  168 |  
+  169 |      <!-- پنل‌های دیگر - فقط زمانی نمایش داده می‌شوند که active باشد -->
+  170 |     /* <q-card
+      |         ^
+  171 |        v-else-if="activePanel && activePanel !== 'home'"
+  172 |        class="sliding-panel"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at transform (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3511:3)
+3:45:34 PM [vite] Internal server error: v-else/v-else-if has no adjacent v-if or v-else-if.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:170:7
+  168 |  
+  169 |      <!-- پنل‌های دیگر - فقط زمانی نمایش داده می‌شوند که active باشد -->
+  170 |     /* <q-card
+      |         ^
+  171 |        v-else-if="activePanel && activePanel !== 'home'"
+  172 |        class="sliding-panel"
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at processIf (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4760:11)
+      at /home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:4660:12
+      at Array.<anonymous> (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3641:26)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3583:38)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at traverseChildren (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3575:5)
+      at traverseNode (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3618:7)
+      at transform (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3511:3)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m353[39m:[33m5[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:45:37 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:353:5
+  351 |          </div>
+  352 |        </div>
+  353 |      </q-card>
+      |       ^
+  354 |  
+  355 |    </div>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+3:45:38 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:353:5
+  351 |          </div>
+  352 |        </div>
+  353 |      </q-card>
+      |       ^
+  354 |  
+  355 |    </div>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: nested-comment. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m175[39m:[33m11[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m353[39m:[33m5[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+3:45:41 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:353:5
+  351 |          </div>
+  352 |        </div>
+  353 |      </q-card>
+      |       ^
+  354 |  
+  355 |    </div>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+3:45:41 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:353:5
+  351 |          </div>
+  352 |        </div>
+  353 |      </q-card>
+      |       ^
+  354 |  
+  355 |    </div>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: nested-comment. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m176[39m:[33m11[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: x-invalid-end-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m354[39m:[33m5[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+3:45:46 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:354:5
+  352 |          </div>
+  353 |        </div>
+  354 |      </q-card>
+      |       ^
+  355 |  
+  356 |    </div>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+3:45:46 PM [vite] Internal server error: Invalid end tag.
+  Plugin: vite:vue
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:354:5
+  352 |          </div>
+  353 |        </div>
+  354 |      </q-card>
+      |       ^
+  355 |  
+  356 |    </div>
+      at createCompilerError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2360:9)
+      at Tokenizer.stateInClosingTagName (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/kian/projects/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/kian/projects/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'geofenceSearch' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m356[39m:[33m7[39m
+
+  [0m [90m 354 |[39m [90m// Reactive state - Home همیشه فعال است[39m
+   [90m 355 |[39m [36mconst[39m activePanel [33m=[39m ref([32m"home"[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 356 |[39m [36mconst[39m geofenceSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 357 |[39m [36mconst[39m rfidSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m 358 |[39m [36mconst[39m sidebarExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m
+   [90m 359 |[39m [36mconst[39m hoveredItem [33m=[39m ref([36mnull[39m)[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'rfidSearch' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m357[39m:[33m7[39m
+
+  [0m [90m 355 |[39m [36mconst[39m activePanel [33m=[39m ref([32m"home"[39m)[33m;[39m
+   [90m 356 |[39m [36mconst[39m geofenceSearch [33m=[39m ref([32m""[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 357 |[39m [36mconst[39m rfidSearch [33m=[39m ref([32m""[39m)[33m;[39m
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 358 |[39m [36mconst[39m sidebarExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m
+   [90m 359 |[39m [36mconst[39m hoveredItem [33m=[39m ref([36mnull[39m)[33m;[39m
+   [90m 360 |[39m [36mconst[39m homeExpanded [33m=[39m ref([36mfalse[39m)[33m;[39m [90m// حالت گسترده پنل Home[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'settings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m363[39m:[33m7[39m
+
+  [0m [90m 361 |[39m
+   [90m 362 |[39m [90m// Settings[39m
+  [31m[1m>[22m[39m[90m 363 |[39m [36mconst[39m settings [33m=[39m ref({
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 364 |[39m   autoRefresh[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 365 |[39m   notifications[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 366 |[39m })[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'closePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m401[39m:[33m7[39m
+
+  [0m [90m 399 |[39m }[33m;[39m
+   [90m 400 |[39m
+  [31m[1m>[22m[39m[90m 401 |[39m [36mconst[39m closePanel [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 402 |[39m   [90m// فقط پنل‌های غیر از Home می‌توانند بسته شوند[39m
+   [90m 403 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m!==[39m [32m"home"[39m) {
+   [90m 404 |[39m     activePanel[33m.[39mvalue [33m=[39m [32m"home"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'settings' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m363[39m:[33m7[39m
+
+  [0m [90m 361 |[39m
+   [90m 362 |[39m [90m// Settings[39m
+  [31m[1m>[22m[39m[90m 363 |[39m [36mconst[39m settings [33m=[39m ref({
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 364 |[39m   autoRefresh[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 365 |[39m   notifications[33m:[39m [36mtrue[39m[33m,[39m
+   [90m 366 |[39m })[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'closePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m401[39m:[33m7[39m
+
+  [0m [90m 399 |[39m }[33m;[39m
+   [90m 400 |[39m
+  [31m[1m>[22m[39m[90m 401 |[39m [36mconst[39m closePanel [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 402 |[39m   [90m// فقط پنل‌های غیر از Home می‌توانند بسته شوند[39m
+   [90m 403 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m!==[39m [32m"home"[39m) {
+   [90m 404 |[39m     activePanel[33m.[39mvalue [33m=[39m [32m"home"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'closePanel' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m401[39m:[33m7[39m
+
+  [0m [90m 399 |[39m }[33m;[39m
+   [90m 400 |[39m
+  [31m[1m>[22m[39m[90m 401 |[39m [36mconst[39m closePanel [33m=[39m () [33m=>[39m {
+   [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 402 |[39m   [90m// فقط پنل‌های غیر از Home می‌توانند بسته شوند[39m
+   [90m 403 |[39m   [36mif[39m (activePanel[33m.[39mvalue [33m!==[39m [32m"home"[39m) {
+   [90m 404 |[39m     activePanel[33m.[39mvalue [33m=[39m [32m"home"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+4:02:45 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:11:3: Unknown word m
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:427:2
+  9  |    display: flex;
+  10 |    align-items: flex-start;
+  11 |    m
+     |    ^
+  12 |  }
+  13 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:02:45 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:11:3: Unknown word m
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:427:2
+  9  |    display: flex;
+  10 |    align-items: flex-start;
+  11 |    m
+     |    ^
+  12 |  }
+  13 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:07:15 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:11:3: Unknown word bo
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:232:2
+  9  |    display: flex;
+  10 |    align-items: flex-start;
+  11 |    bo
+     |    ^
+  12 |  }
+  13 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:07:15 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:11:3: Unknown word bo
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:232:2
+  9  |    display: flex;
+  10 |    align-items: flex-start;
+  11 |    bo
+     |    ^
+  12 |  }
+  13 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:07:17 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:11:3: Unknown word bor
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:232:2
+  9  |    display: flex;
+  10 |    align-items: flex-start;
+  11 |    bor
+     |    ^
+  12 |  }
+  13 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:07:17 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:11:3: Unknown word bor
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:232:2
+  9  |    display: flex;
+  10 |    align-items: flex-start;
+  11 |    bor
+     |    ^
+  12 |  }
+  13 |  
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:19:14 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:150:15: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:371:14
+  148 |  .sliding-panel {
+  149 |    width: 350px;
+  150 |    height: calc(100%;
+      |                ^
+  151 |    background: var(--bg-primary);
+  152 |    backdrop-filter: blur(20px);
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:19:14 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:150:15: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:371:14
+  148 |  .sliding-panel {
+  149 |    width: 350px;
+  150 |    height: calc(100%;
+      |                ^
+  151 |    background: var(--bg-primary);
+  152 |    backdrop-filter: blur(20px);
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:19:14 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:150:15: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:371:14
+  148 |  .sliding-panel {
+  149 |    width: 350px;
+  150 |    height: calc(100%;
+      |                ^
+  151 |    background: var(--bg-primary);
+  152 |    backdrop-filter: blur(20px);
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:19:51 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:168:15: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:389:14
+  166 |  /* پنل Home در حالت گسترده */
+  167 |  .home-panel.expanded {
+  168 |    height: calc(100%;
+      |                ^
+  169 |    background: rgba(255, 255, 255, 0.1);
+  170 |    backdrop-filter: blur(20px);
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:19:52 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:168:15: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:389:14
+  166 |  /* پنل Home در حالت گسترده */
+  167 |  .home-panel.expanded {
+  168 |    height: calc(100%;
+      |                ^
+  169 |    background: rgba(255, 255, 255, 0.1);
+  170 |    backdrop-filter: blur(20px);
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+4:19:52 PM [vite] Internal server error: [postcss] /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:168:15: Unclosed bracket
+  Plugin: vite:css
+  File: /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue?vue&type=style&index=0&scoped=6e91981e&lang.css:389:14
+  166 |  /* پنل Home در حالت گسترده */
+  167 |  .home-panel.expanded {
+  168 |    height: calc(100%;
+      |                ^
+  169 |    background: rgba(255, 255, 255, 0.1);
+  170 |    backdrop-filter: blur(20px);
+      at Input.error (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unclosedBracket (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:579:22)
+      at Parser.other (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:425:35)
+      at Parser.parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/parse.js:11:12)
+      at new LazyResult (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/lazy-result.js:165:16)
+      at Processor.process (/home/kian/projects/elmer/quasar-project/node_modules/postcss/lib/processor.js:53:14)
+      at runPostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32052:68)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async compilePostCSS (file:///home/kian/projects/elmer/quasar-project/node_modules/vite/dist/node/chunks/config.js:32036:6)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'sidebarHovered' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m188[39m:[33m3[39m
+
+  [0m [90m 186 |[39m   sidebarExpanded[33m.[39mvalue [33m=[39m [33m![39msidebarExpanded[33m.[39mvalue[33m;[39m
+   [90m 187 |[39m   [90m// وقتی کلیک می‌شه، hover رو غیرفعال کن تا منو باز بمونه[39m
+  [31m[1m>[22m[39m[90m 188 |[39m   sidebarHovered[33m.[39mvalue [33m=[39m [36mfalse[39m[33m;[39m
+   [90m     |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 189 |[39m }[33m;[39m
+   [90m 190 |[39m
+   [90m 191 |[39m [36mconst[39m toggleHomePanel [33m=[39m () [33m=>[39m {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'sidebarHovered' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/kian/projects/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m212[39m:[33m5[39m
+
+  [0m [90m 210 |[39m   [36mif[39m ([33m![39msidebarExpanded[33m.[39mvalue) {
+   [90m 211 |[39m     [90m// فقط وقتی که منو با کلیک باز نشده، hover روی آیکون کار کنه[39m
+  [31m[1m>[22m[39m[90m 212 |[39m     sidebarHovered[33m.[39mvalue [33m=[39m isHovered[33m;[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 213 |[39m   }
+   [90m 214 |[39m }[33m;[39m
+   [90m 215 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+Files in the public directory are served at the root path.
+Instead of /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php, use /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php.
+Files in the public directory are served at the root path.
+Instead of /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello, use /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello.
