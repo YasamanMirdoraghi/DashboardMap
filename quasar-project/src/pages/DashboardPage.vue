@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-import MapComponent from 'components/MapComponent.vue';
+import MapComponent from 'components/MapContainer/MapContainer.vue';
 </script>

@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, watch } from "vue";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
@@ -18,114 +18,59 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
 });
 
+const props = defineProps({
+  devices: {
+    type: Array,
+    default: () => []
+  }
+});
+
+const emit = defineEmits(['device-selected']);
+
 const mapContainer = ref(null);
 let map = null;
 let markerClusterGroup = null;
 
-const iotDevices = ref([
-  {
-    id: 1,
-    name: "Camera A1",
-    type: "camera",
-    lat: 35.6892,
-    lng: 51.3890,
-    value: "Online",
-    unit: "",
-    status: "online-moving",
-    location: "میدان آزادی",
-  },
-  {
-    id: 2,
-    name: "Camera B2",
-    type: "camera",
-    lat: 35.7440,
-    lng: 51.3755,
-    value: "Online",
-    unit: "",
-    status: "online-stopped",
-    location: "تجریش",
-  },
-  {
-    id: 3,
-    name: "Sensor C3",
-    type: "sensor",
-    lat: 35.7153,
-    lng: 51.4043,
-    value: "Offline",
-    unit: "",
-    status: "offline",
-    location: "پارک لاله",
-  },
-  {
-    id: 4,
-    name: "Camera D4",
-    type: "camera",
-    lat: 35.7004,
-    lng: 51.3376,
-    value: "Online",
-    unit: "",
-    status: "online-moving",
-    location: "برج میلاد",
-  },
-  {
-    id: 5,
-    name: "Sensor E5",
-    type: "sensor",
-    lat: 35.7595,
-    lng: 51.4381,
-    value: "Offline",
-    unit: "",
-    status: "offline",
-    location: "نیاوران",
-  },
-  // اضافه کردن دستگاه‌های بیشتر برای تست clustering
-  {
-    id: 6,
-    name: "Camera F6",
-    type: "camera",
-    lat: 35.6920,
-    lng: 51.3910,
-    value: "Online",
-    unit: "",
-    status: "online-moving",
-    location: "میدان آزادی",
-  },
-  {
-    id: 7,
-    name: "Sensor G7",
-    type: "sensor",
-    lat: 35.6900,
-    lng: 51.3920,
-    value: "Online",
-    unit: "",
-    status: "online-stopped",
-    location: "میدان آزادی",
-  },
-  {
-    id: 8,
-    name: "Camera H8",
-    type: "camera",
-    lat: 35.7450,
-    lng: 51.3760,
-    value: "Offline",
-    unit: "",
-    status: "offline",
-    location: "تجریش",
-  },
-]);
+// Status Icons
+const onlineMovingSVG = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1db4f9"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>`;
 
-const emit = defineEmits(['device-selected']);
-
-// آیکون‌های SVG برای هر وضعیت
-const onlineSVG = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>`;
+const onlineStoppedSVG = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ff6b30"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>`;
 
 const offlineSVG = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M560-560q0-33-23.5-56.5T480-640q-10 0-19 2t-17 7l107 107q5-8 7-17t2-19Zm168 213-58-58q25-42 37.5-78.5T720-552q0-109-69.5-178.5T480-800q-44 0-82.5 13.5T328-747l-57-57q43-37 97-56.5T480-880q127 0 223.5 89T800-552q0 48-18 98.5T728-347Zm-157 71L244-603q-2 12-3 25t-1 26q0 71 59 162.5T480-186q26-23 48.5-45.5T571-276ZM819-28 627-220q-32 34-68 69t-79 71Q319-217 239.5-334.5T160-552q0-32 5-61t14-55L27-820l57-57L876-85l-57 57ZM408-439Zm91-137Z"/></svg>`;
 
-// ایجاد آیکون سفارشی با Leaflet
-const createCustomIcon = (device) => {
-  const { status } = device;
+// تابع تشخیص وضعیت دستگاه
+const getDeviceStatus = (device) => {
+  if (!device.position) return "offline";
 
-  // ایجاد HTML برای مارکر بر اساس وضعیت
+  // بررسی آنلاین/آفلاین بودن بر اساس آخرین ارتباط
+  const now = Math.floor(Date.now() / 1000);
+  const lastUpdate = device.position.unixtime;
+  const fiveMinutes = 300; // 5 minutes in seconds
+
+  if (now - lastUpdate > fiveMinutes) {
+    return "offline";
+  }
+
+  // بررسی حرکت دستگاه
+  if (device.position.speed > 0) {
+    return "online-moving";
+  } else {
+    return "online-stopped";
+  }
+};
+
+const createCustomIcon = (device) => {
+  const status = getDeviceStatus(device);
+
+  let svg;
+  if (status === "online-moving") {
+    svg = onlineMovingSVG;
+  } else if (status === "online-stopped") {
+    svg = onlineStoppedSVG;
+  } else {
+    svg = offlineSVG;
+  }
+
   let html;
   if (status === "online-moving") {
     html = `
@@ -135,17 +80,7 @@ const createCustomIcon = (device) => {
         <div class="marker-pulse-ring delay-2"></div>
         <div class="marker-main">
           <div class="marker-inner">
-            ${onlineSVG}
-          </div>
-        </div>
-      </div>
-    `;
-  } else if (status === "online-stopped") {
-    html = `
-      <div class="leaflet-custom-marker ${status}">
-        <div class="marker-main">
-          <div class="marker-inner">
-            ${onlineSVG}
+            ${svg}
           </div>
         </div>
       </div>
@@ -155,25 +90,14 @@ const createCustomIcon = (device) => {
       <div class="leaflet-custom-marker ${status}">
         <div class="marker-main">
           <div class="marker-inner">
-            ${offlineSVG}
+            ${svg}
           </div>
         </div>
       </div>
     `;
   }
-
-  // تنظیم سایز و انکر بر اساس وضعیت
-  let size, anchor;
-  if (status === "online-moving") {
-    size = [52, 52];
-    anchor = [26, 26];
-  } else if (status === "online-stopped") {
-    size = [48, 48];
-    anchor = [24, 24];
-  } else {
-    size = [46, 46];
-    anchor = [23, 23];
-  }
+  const size = [52, 52];
+  const anchor = [26, 26];
 
   return L.divIcon({
     html: html,
@@ -183,63 +107,115 @@ const createCustomIcon = (device) => {
   });
 };
 
-// Lifecycle
-onMounted(() => {
-  // سنتر نقشه روی تهران با سطح زوم 11
-  map = L.map(mapContainer.value).setView([35.6892, 51.3890], 11);
+const updateMarkers = () => {
+  if (!map || !markerClusterGroup) return;
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; OpenStreetMap &copy; CARTO'
-  }).addTo(map);
+  markerClusterGroup.clearLayers();
 
-  // ایجاد گروه خوشه‌بندی
-  markerClusterGroup = L.markerClusterGroup({
-    chunkedLoading: true,
-    maxClusterRadius: 80, // شعاع خوشه‌بندی (پیکسل)
-    spiderfyOnMaxZoom: true,
-    showCoverageOnHover: false,
-    zoomToBoundsOnClick: true,
+  // فیلتر دستگاه‌هایی که موقعیت معتبر دارند
+  const validDevices = props.devices.filter(device =>
+    device.position &&
+    device.position.latitude &&
+    device.position.longitude &&
+    Math.abs(device.position.latitude) <= 90 &&
+    Math.abs(device.position.longitude) <= 180
+  );
 
-    // استایل سفارشی برای خوشه‌ها
-  iconCreateFunction: function(cluster) {
-  const count = cluster.getChildCount();
-  let size = 'small';
+  if (validDevices.length === 0) return;
 
-  if (count > 10) {
-    size = 'large';
-  } else if (count > 5) {
-    size = 'medium';
-  }
+  validDevices.forEach((device) => {
+    const marker = L.marker(
+      [device.position.latitude, device.position.longitude],
+      {
+        icon: createCustomIcon(device),
+        title: `Device ${device.deviceid}`
+      }
+    ).addTo(markerClusterGroup);
 
-  return L.divIcon({
-    html: `
-      <div class="cluster-container">
-        <div class="cluster-pulse-ring"></div>
-        <div class="cluster-pulse-ring"></div>
-        <div class="cluster-pulse-ring"></div>
-        <div class="cluster-marker ${size}">${count}</div>
-      </div>
-    `,
-    className: 'marker-cluster-custom',
-    iconSize: L.point(80, 80) // افزایش سایز برای جا دادن حلقه‌ها
-  });
-}
-  });
-
-  // اضافه کردن مارکرهای دستگاه‌ها به گروه خوشه‌بندی
-  iotDevices.value.forEach((device) => {
-    const marker = L.marker([device.lat, device.lng], {
-      icon: createCustomIcon(device),
-    }).addTo(markerClusterGroup);
-
+    // فقط رویداد کلیک - بدون پاپ‌آپ
     marker.on('click', () => {
       emit('device-selected', device);
     });
   });
 
-  // اضافه کردن گروه خوشه‌بندی به نقشه
+  // اگر فقط یک دستگاه داریم، روی آن زوم کن
+  if (validDevices.length === 1) {
+    const device = validDevices[0];
+    map.setView([device.position.latitude, device.position.longitude], 15);
+  } else if (validDevices.length > 0) {
+    // ایجاد bounds برای همه دستگاه‌ها
+    const bounds = L.latLngBounds(
+      validDevices.map(device => [device.position.latitude, device.position.longitude])
+    );
+    map.fitBounds(bounds, { padding: [50, 50] });
+  }
+};
+
+// Lifecycle
+onMounted(() => {
+  map = L.map(mapContainer.value, {
+    zoomControl: false,
+    attributionControl: false
+  }).setView([35.699, 51.369], 12);
+
+  // اضافه کردن کنترل zoom سفارشی
+  L.control.zoom({
+    position: 'topright'
+  }).addTo(map);
+
+  // اضافه کردن attribution
+  L.control.attribution({
+    position: 'bottomright',
+    prefix: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // تایل لایر
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19,
+  }).addTo(map);
+
+  // گروه خوشه‌بندی
+  markerClusterGroup = L.markerClusterGroup({
+    chunkedLoading: true,
+    maxClusterRadius: 80,
+    spiderfyOnMaxZoom: true,
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: true,
+    iconCreateFunction: function(cluster) {
+      const count = cluster.getChildCount();
+
+      // رنگ مشکی برای همه کلاسترها
+      const borderColor = "#000000";
+
+      return L.divIcon({
+        html: `
+          <div class="cluster-custom-marker">
+            <div class="cluster-pulse-ring" style="border-color: ${borderColor}"></div>
+            <div class="cluster-pulse-ring delay-1" style="border-color: ${borderColor}"></div>
+            <div class="cluster-pulse-ring delay-2" style="border-color: ${borderColor}"></div>
+            <div class="cluster-main" style="border-color: ${borderColor}">
+              <div class="cluster-inner">
+                <span class="cluster-count">${count}</span>
+              </div>
+            </div>
+          </div>
+        `,
+        className: 'leaflet-cluster-custom',
+        iconSize: L.point(52, 52),
+        iconAnchor: [26, 26]
+      });
+    }
+  });
+
   map.addLayer(markerClusterGroup);
+  updateMarkers();
 });
+
+watch(() => props.devices, () => {
+  updateMarkers();
+}, { deep: true });
 
 onUnmounted(() => {
   if (map) {
@@ -255,7 +231,6 @@ onUnmounted(() => {
   background: #f8f9fa;
 }
 
-/* استایل‌های اصلی برای مارکرهای Leaflet */
 :deep(.leaflet-custom-marker-container) {
   background: transparent !important;
   border: none !important;
@@ -266,39 +241,37 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 52px;
+  height: 52px;
 }
 
 :deep(.marker-main) {
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.412);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow:
     0 4px 12px rgba(0, 0, 0, 0.4),
     0 0 0 2px rgba(255, 255, 255, 0.1);
-  border: 3px solid;
   position: relative;
   z-index: 10;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* استایل برای آنلاین و در حال حرکت (آبی با انیمیشن) */
-:deep(.leaflet-custom-marker.online-moving .marker-main) {
   width: 52px;
   height: 52px;
+  border: 3px solid;
+  transform-origin: center;
+}
+
+:deep(.leaflet-custom-marker.online-moving .marker-main) {
   border-color: #1db4f9;
 }
 
 :deep(.leaflet-custom-marker.online-stopped .marker-main) {
-  width: 48px;
-  height: 48px;
   border-color: #ff6b30;
 }
 
 :deep(.leaflet-custom-marker.offline .marker-main) {
-  width: 46px;
-  height: 46px;
   border-color: #ffffff;
 }
 
@@ -307,59 +280,37 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-:deep(.leaflet-custom-marker.online-moving .marker-inner) {
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #1f1f1fd1, #141414a3);
-}
-
-:deep(.leaflet-custom-marker.online-stopped .marker-inner) {
-  width: 34px;
-  height: 34px;
-  background: linear-gradient(135deg, #1f1f1fd1, #141414a3);
-}
-
-:deep(.leaflet-custom-marker.offline .marker-inner) {
-  width: 32px;
-  height: 32px;
-  background: linear-gradient(135deg, #1f1f1fd1, #141414a3);
+  background: linear-gradient(135deg, #1f1f1f, #141414);
 }
 
 :deep(.marker-inner svg) {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+  display: block;
 }
 
-:deep(.leaflet-custom-marker.online-moving .marker-inner svg) {
-  width: 24px;
-  height: 24px;
-}
-
+:deep(.leaflet-custom-marker.online-moving .marker-inner svg),
 :deep(.leaflet-custom-marker.online-stopped .marker-inner svg) {
-  width: 22px;
-  height: 22px;
-}
-
-:deep(.leaflet-custom-marker.offline .marker-inner svg) {
   width: 20px;
   height: 20px;
 }
 
-/* حلقه‌های پالس برای آنلاین و در حال حرکت */
+:deep(.leaflet-custom-marker.offline .marker-inner svg) {
+  width: 18px;
+  height: 18px;
+}
+
 :deep(.marker-pulse-ring) {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 3px solid;
   animation: leaflet-pulse 2s infinite;
   opacity: 0.8;
   z-index: 5;
-}
-
-:deep(.leaflet-custom-marker.online-moving .marker-pulse-ring) {
   width: 52px;
   height: 52px;
   border-color: #1db4f9;
@@ -375,16 +326,20 @@ onUnmounted(() => {
 
 @keyframes leaflet-pulse {
   0% {
-    transform: scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.8;
   }
   50% {
     opacity: 0.4;
   }
   100% {
-    transform: scale(2.0);
+    transform: translate(-50%, -50%) scale(2.0);
     opacity: 0;
   }
+}
+
+:deep(.leaflet-custom-marker.online-stopped .marker-pulse-ring) {
+  border-color: #ff6b30;
 }
 
 :deep(.leaflet-custom-marker.online-stopped .marker-pulse-ring),
@@ -392,13 +347,11 @@ onUnmounted(() => {
   display: none;
 }
 
-/* استایل‌های leaflet */
 :deep(.leaflet-container) {
   background: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-/* hover effects */
 :deep(.leaflet-custom-marker-container:hover .marker-main) {
   transform: scale(1.15);
   box-shadow:
@@ -406,206 +359,118 @@ onUnmounted(() => {
     0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
-:deep(.leaflet-custom-marker-container:hover .marker-inner) {
-  transform: scale(1.1);
+/* خوشه‌بندی */
+:deep(.marker-cluster),
+:deep(.marker-cluster-small),
+:deep(.marker-cluster-medium),
+:deep(.marker-cluster-large),
+:deep(.marker-cluster div) {
+  background: transparent !important;
+  border: none !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  text-align: center !important;
+  font: inherit !important;
 }
 
-/* استایل‌های سفارشی برای خوشه‌ها */
-/* استایل‌های سفارشی برای خوشه‌ها */
-:deep(.marker-cluster-custom) {
+:deep(.leaflet-cluster-custom) {
   background: transparent !important;
   border: none !important;
 }
 
-:deep(.cluster-container) {
+:deep(.cluster-custom-marker) {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-:deep(.cluster-marker) {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
-  color: white;
+:deep(.cluster-main) {
+  border-radius: 50% !important;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: 14px;
   box-shadow:
-    0 4px 12px rgba(29, 249, 66, 0.4),
-    0 0 0 3px rgba(255, 255, 255, 0.8);
-  border: 2px solid #fff;
-  transition: all 0.3s ease;
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 0 0 2px rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 52px !important;
+  height: 52px !important;
+  border: 3px solid #ffffff !important; /* مشکی */
+  transform-origin: center;
+  margin: 0 auto;
 }
 
-:deep(.cluster-marker.medium) {
-  width: 50px;
-  height: 50px;
-  font-size: 16px;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
+:deep(.cluster-inner) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  background: linear-gradient(135deg, #1f1f1f, #141414);
+  font-weight: 600;
+  color: white;
+  font-size: 14px !important;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
 }
 
-:deep(.cluster-marker.large) {
-  width: 60px;
-  height: 60px;
-  font-size: 18px;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
-}
-
-/* حلقه‌های انیمیشنی برای خوشه‌ها */
 :deep(.cluster-pulse-ring) {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 2px solid;
-  animation: cluster-pulse 2.5s infinite;
-  opacity: 0.6;
+  border-radius: 50% !important;
+  border: 3px solid #000000; /* مشکی */
+  animation: leaflet-pulse 2s infinite;
+  opacity: 0.8;
   z-index: 5;
+  width: 52px !important;
+  height: 52px !important;
 }
 
-:deep(.cluster-container .cluster-pulse-ring:nth-child(1)) {
-  width: 50px;
-  height: 50px;
-  border-color: #4caf50;
-  animation-delay: 0s;
+:deep(.cluster-pulse-ring.delay-1) {
+  animation-delay: 0.7s;
+  border-color: #000000; /* مشکی */
 }
 
-:deep(.cluster-container .cluster-pulse-ring:nth-child(2)) {
-  width: 60px;
-  height: 60px;
-  border-color: #4caf50;
-  animation-delay: 0.8s;
+:deep(.cluster-pulse-ring.delay-2) {
+  animation-delay: 1.4s;
+  border-color: #000000; /* مشکی */
 }
 
-:deep(.cluster-container .cluster-pulse-ring:nth-child(3)) {
-  width: 70px;
-  height: 70px;
-  border-color: #4caf50;
-  animation-delay: 1.6s;
-}
-
-/* برای خوشه‌های medium */
-:deep(.cluster-container .cluster-marker.medium ~ .cluster-pulse-ring:nth-child(1)) {
-  width: 60px;
-  height: 60px;
-  border-color: #4caf50;
-}
-
-:deep(.cluster-container .cluster-marker.medium ~ .cluster-pulse-ring:nth-child(2)) {
-  width: 70px;
-  height: 70px;
-  border-color: #4caf50;
-}
-
-:deep(.cluster-container .cluster-marker.medium ~ .cluster-pulse-ring:nth-child(3)) {
-  width: 80px;
-  height: 80px;
-  border-color: #4caf50;
-}
-
-/* برای خوشه‌های large */
-:deep(.cluster-container .cluster-marker.large ~ .cluster-pulse-ring:nth-child(1)) {
-  width: 70px;
-  height: 70px;
-  border-color: #4caf50;
-}
-
-:deep(.cluster-container .cluster-marker.large ~ .cluster-pulse-ring:nth-child(2)) {
-  width: 80px;
-  height: 80px;
-  border-color: #4caf50;
-}
-
-:deep(.cluster-container .cluster-marker.large ~ .cluster-pulse-ring:nth-child(3)) {
-  width: 90px;
-  height: 90px;
-  border-color: #4caf50;
-}
-
-@keyframes cluster-pulse {
-  0% {
-    transform: translate(-50%, -50%) scale(0.8);
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1.4);
-    opacity: 0;
-  }
-}
-
-:deep(.cluster-marker:hover) {
+:deep(.leaflet-cluster-custom:hover .cluster-main) {
   transform: scale(1.15);
   box-shadow:
-    0 6px 20px rgba(29, 249, 33, 0.6),
-    0 0 0 4px rgba(255, 255, 255, 0.9);
+    0 6px 20px rgba(0, 0, 0, 0.6),
+    0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
-/* انیمیشن برای زمانی که خوشه hover می‌شود */
-:deep(.cluster-container:hover .cluster-pulse-ring) {
-  animation-duration: 1.5s;
-}
-
-:deep(.cluster-container:hover .cluster-marker) {
-  animation: cluster-bounce 0.5s ease;
-}
-
-@keyframes cluster-bounce {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-/* بهبود برای موبایل */
+/* Responsive */
 @media (max-width: 768px) {
-  :deep(.leaflet-custom-marker.online-moving .marker-main) {
-    width: 48px;
-    height: 48px;
-  }
-
-  :deep(.leaflet-custom-marker.online-stopped .marker-main) {
+  :deep(.leaflet-custom-marker) {
     width: 44px;
     height: 44px;
   }
 
-  :deep(.leaflet-custom-marker.offline .marker-main) {
-    width: 42px;
-    height: 42px;
+  :deep(.marker-main) {
+    width: 44px;
+    height: 44px;
   }
 
-  :deep(.leaflet-custom-marker.online-moving .marker-inner) {
+  :deep(.marker-inner) {
     width: 32px;
     height: 32px;
   }
 
-  :deep(.leaflet-custom-marker.online-stopped .marker-inner) {
-    width: 30px;
-    height: 30px;
-  }
-
-  :deep(.leaflet-custom-marker.offline .marker-inner) {
-    width: 28px;
-    height: 28px;
-  }
-
-  :deep(.leaflet-custom-marker.online-moving .marker-inner svg) {
-    width: 20px;
-    height: 20px;
-  }
-
+  :deep(.leaflet-custom-marker.online-moving .marker-inner svg),
   :deep(.leaflet-custom-marker.online-stopped .marker-inner svg) {
     width: 18px;
     height: 18px;
@@ -616,27 +481,31 @@ onUnmounted(() => {
     height: 16px;
   }
 
-  :deep(.leaflet-custom-marker.online-moving .marker-pulse-ring) {
-    width: 48px;
-    height: 48px;
+  :deep(.marker-pulse-ring) {
+    width: 44px;
+    height: 44px;
   }
 
-  :deep(.cluster-marker) {
-    width: 35px;
-    height: 35px;
-    font-size: 12px;
+  :deep(.cluster-main) {
+    width: 44px !important;
+    height: 44px !important;
   }
 
-  :deep(.cluster-marker.medium) {
-    width: 45px;
-    height: 45px;
-    font-size: 14px;
+  :deep(.cluster-inner) {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
   }
 
-  :deep(.cluster-marker.large) {
-    width: 55px;
-    height: 55px;
-    font-size: 16px;
+  :deep(.cluster-pulse-ring) {
+    width: 44px !important;
+    height: 44px !important;
   }
+}
+
+:deep(.cluster-custom-marker),
+:deep(.cluster-main),
+:deep(.cluster-inner) {
+  border-radius: 50% !important;
 }
 </style>
