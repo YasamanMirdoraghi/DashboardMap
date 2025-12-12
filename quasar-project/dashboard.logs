@@ -756,3 +756,482 @@ Y88b.Y8b88P Y88b 888 888  888      X88 888  888 888
       at Object.parse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
       at Object.parse$1 [as parse] (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
       at createDescriptor (file:///home/mirdoraghi/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m48[39m:[33m8[39m
+
+  [0m [90m 46 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 47 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 48 |[39m  [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m 
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 49 |[39m
+   [90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'fiveMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m50[39m:[33m26[39m
+
+  [0m [90m 48 |[39m  [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m 
+   [90m 49 |[39m
+  [31m[1m>[22m[39m[90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 52 |[39m   }
+   [90m 53 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m48[39m:[33m8[39m
+
+  [0m [90m 46 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 47 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 48 |[39m  [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m  
+   [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 49 |[39m
+   [90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'fiveMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m50[39m:[33m26[39m
+
+  [0m [90m 48 |[39m  [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m  
+   [90m 49 |[39m
+  [31m[1m>[22m[39m[90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 52 |[39m   }
+   [90m 53 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m48[39m:[33m9[39m
+
+  [0m [90m 46 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 47 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 48 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m  
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 49 |[39m
+   [90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'fiveMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m50[39m:[33m26[39m
+
+  [0m [90m 48 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m  
+   [90m 49 |[39m
+  [31m[1m>[22m[39m[90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 52 |[39m   }
+   [90m 53 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token ) (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m50[39m:[33m25[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m48[39m:[33m9[39m
+
+  [0m [90m 46 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 47 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 48 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m  
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 49 |[39m
+   [90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'fiveMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m50[39m:[33m26[39m
+
+  [0m [90m 48 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m  
+   [90m 49 |[39m
+  [31m[1m>[22m[39m[90m 50 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m    |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 51 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 52 |[39m   }
+   [90m 53 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'nextTick' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m6[39m:[33m46[39m
+
+  [0m [90m 4 |[39m
+   [90m 5 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { ref[33m,[39m onMounted[33m,[39m onUnmounted[33m,[39m watch[33m,[39m nextTick } [36mfrom[39m [32m"vue"[39m[33m;[39m
+   [90m   |[39m                                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m 8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+   [90m 9 |[39m [36mimport[39m [32m"leaflet.markercluster/dist/MarkerCluster.css"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'nextTick' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m6[39m:[33m46[39m
+
+  [0m [90m 4 |[39m
+   [90m 5 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { ref[33m,[39m onMounted[33m,[39m onUnmounted[33m,[39m watch[33m,[39m nextTick } [36mfrom[39m [32m"vue"[39m[33m;[39m
+   [90m   |[39m                                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m 8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+   [90m 9 |[39m [36mimport[39m [32m"leaflet.markercluster/dist/MarkerCluster.css"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m94[39m:[33m38[39m
+
+  [0m [90m 92 |[39m [90m// Methods[39m
+   [90m 93 |[39m [36mconst[39m handleDeviceSelected [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+   [90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m 97 |[39m   } [36melse[39m {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m96[39m:[33m5[39m
+
+  [0m [90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+  [31m[1m>[22m[39m[90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 97 |[39m   } [36melse[39m {
+   [90m 98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+   [90m 99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m99[39m:[33m5[39m
+
+  [0m [90m  97 |[39m   } [36melse[39m {
+   [90m  98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+  [31m[1m>[22m[39m[90m  99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m   }
+   [90m 101 |[39m }[33m;[39m
+   [90m 102 |[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m94[39m:[33m38[39m
+
+  [0m [90m 92 |[39m [90m// Methods[39m
+   [90m 93 |[39m [36mconst[39m handleDeviceSelected [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+   [90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m 97 |[39m   } [36melse[39m {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m96[39m:[33m5[39m
+
+  [0m [90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+  [31m[1m>[22m[39m[90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 97 |[39m   } [36melse[39m {
+   [90m 98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+   [90m 99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m99[39m:[33m5[39m
+
+  [0m [90m  97 |[39m   } [36melse[39m {
+   [90m  98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+  [31m[1m>[22m[39m[90m  99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m   }
+   [90m 101 |[39m }[33m;[39m
+   [90m 102 |[39m[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneHourAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m129[39m:[33m9[39m
+
+  [0m [90m 127 |[39m [36mconst[39m initializeDevices [33m=[39m () [33m=>[39m {
+   [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'twoHoursAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m130[39m:[33m9[39m
+
+  [0m [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneDayAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m131[39m:[33m9[39m
+
+  [0m [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'threeDaysAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m132[39m:[33m9[39m
+
+  [0m [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [
+   [90m 135 |[39m     [90m// ... (همان آرایه devices شما بدون تغییر)[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m94[39m:[33m38[39m
+
+  [0m [90m 92 |[39m [90m// Methods[39m
+   [90m 93 |[39m [36mconst[39m handleDeviceSelected [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+   [90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m 97 |[39m   } [36melse[39m {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m96[39m:[33m5[39m
+
+  [0m [90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+  [31m[1m>[22m[39m[90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 97 |[39m   } [36melse[39m {
+   [90m 98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+   [90m 99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m99[39m:[33m5[39m
+
+  [0m [90m  97 |[39m   } [36melse[39m {
+   [90m  98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+  [31m[1m>[22m[39m[90m  99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m   }
+   [90m 101 |[39m }[33m;[39m
+   [90m 102 |[39m[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneHourAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m129[39m:[33m9[39m
+
+  [0m [90m 127 |[39m [36mconst[39m initializeDevices [33m=[39m () [33m=>[39m {
+   [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'twoHoursAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m130[39m:[33m9[39m
+
+  [0m [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneDayAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m131[39m:[33m9[39m
+
+  [0m [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'threeDaysAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m132[39m:[33m9[39m
+
+  [0m [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [
+   [90m 135 |[39m     [90m// ... (همان آرایه devices شما بدون تغییر)[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneHourAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m129[39m:[33m9[39m
+
+  [0m [90m 127 |[39m [36mconst[39m initializeDevices [33m=[39m () [33m=>[39m {
+   [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'twoHoursAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m130[39m:[33m9[39m
+
+  [0m [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneDayAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m131[39m:[33m9[39m
+
+  [0m [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'threeDaysAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m132[39m:[33m9[39m
+
+  [0m [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [
+   [90m 135 |[39m     [90m// ... (همان آرایه devices شما بدون تغییر)[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneHourAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m129[39m:[33m9[39m
+
+  [0m [90m 127 |[39m [36mconst[39m initializeDevices [33m=[39m () [33m=>[39m {
+   [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+  [31m[1m>[22m[39m[90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'twoHoursAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m130[39m:[33m9[39m
+
+  [0m [90m 128 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'oneDayAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m131[39m:[33m9[39m
+
+  [0m [90m 129 |[39m   [36mconst[39m oneHourAgo [33m=[39m now [33m-[39m [35m3600[39m[33m;[39m
+   [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'threeDaysAgo' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m132[39m:[33m9[39m
+
+  [0m [90m 130 |[39m   [36mconst[39m twoHoursAgo [33m=[39m now [33m-[39m [35m7200[39m[33m;[39m
+   [90m 131 |[39m   [36mconst[39m oneDayAgo [33m=[39m now [33m-[39m [35m86400[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 132 |[39m   [36mconst[39m threeDaysAgo [33m=[39m now [33m-[39m [35m259200[39m[33m;[39m
+   [90m     |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 133 |[39m
+   [90m 134 |[39m   devices[33m.[39mvalue [33m=[39m [
+   [90m 135 |[39m     [90m// ... (همان آرایه devices شما بدون تغییر)[39m[0m
+
+[31m[ESLint] Found 4 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m94[39m:[33m38[39m
+
+  [0m [90m 92 |[39m [90m// Methods[39m
+   [90m 93 |[39m [36mconst[39m handleDeviceSelected [33m=[39m (device) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m    |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+   [90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m 97 |[39m   } [36melse[39m {[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m96[39m:[33m5[39m
+
+  [0m [90m 94 |[39m    [36mif[39m (device [33m&&[39m device[33m.[39mdeviceid [33m===[39m selectedDeviceId[33m.[39mvalue) {
+   [90m 95 |[39m     [90m// کلیک دوم: بستن جزئیات و از زوم خارج شدن[39m
+  [31m[1m>[22m[39m[90m 96 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m [36mnull[39m[33m;[39m
+   [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 97 |[39m   } [36melse[39m {
+   [90m 98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+   [90m 99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'selectedDeviceId' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/App.vue:[33m99[39m:[33m5[39m
+
+  [0m [90m  97 |[39m   } [36melse[39m {
+   [90m  98 |[39m     [90m// کلیک اول: باز کردن جزئیات و زوم کردن[39m
+  [31m[1m>[22m[39m[90m  99 |[39m     selectedDeviceId[33m.[39mvalue [33m=[39m device[33m?[39m[33m.[39mdeviceid [33m||[39m [36mnull[39m[33m;[39m
+   [90m     |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 100 |[39m   }
+   [90m 101 |[39m }[33m;[39m
+   [90m 102 |[39m[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token < (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m193[39m:[33m2[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'nextTick' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m6[39m:[33m46[39m
+
+  [0m [90m 4 |[39m
+   [90m 5 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { ref[33m,[39m onMounted[33m,[39m onUnmounted[33m,[39m watch[33m,[39m nextTick } [36mfrom[39m [32m"vue"[39m[33m;[39m
+   [90m   |[39m                                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m 8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+   [90m 9 |[39m [36mimport[39m [32m"leaflet.markercluster/dist/MarkerCluster.css"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'nextTick' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m6[39m:[33m46[39m
+
+  [0m [90m 4 |[39m
+   [90m 5 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { ref[33m,[39m onMounted[33m,[39m onUnmounted[33m,[39m watch[33m,[39m nextTick } [36mfrom[39m [32m"vue"[39m[33m;[39m
+   [90m   |[39m                                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m 8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+   [90m 9 |[39m [36mimport[39m [32m"leaflet.markercluster/dist/MarkerCluster.css"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'nextTick' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/MapContainer/MapContainer.vue:[33m6[39m:[33m46[39m
+
+  [0m [90m 4 |[39m
+   [90m 5 |[39m [33m<[39m[33mscript[39m setup[33m>[39m
+  [31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m { ref[33m,[39m onMounted[33m,[39m onUnmounted[33m,[39m watch[33m,[39m nextTick } [36mfrom[39m [32m"vue"[39m[33m;[39m
+   [90m   |[39m                                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 7 |[39m [36mimport[39m [33mL[39m [36mfrom[39m [32m"leaflet"[39m[33m;[39m
+   [90m 8 |[39m [36mimport[39m [32m"leaflet/dist/leaflet.css"[39m[33m;[39m
+   [90m 9 |[39m [36mimport[39m [32m"leaflet.markercluster/dist/MarkerCluster.css"[39m[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m

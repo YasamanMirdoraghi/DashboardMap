@@ -1,9 +1,12 @@
 <template>
-  <!-- کانتینر اصلی با قاب و پدینگ -->
   <div class="main-frame">
     <div class="dashboard-container" :class="themeClass">
       <!-- نقشه -->
-      <MapContainer @device-selected="handleDeviceSelected" :devices="devices" />
+      <MapContainer 
+        @device-selected="handleDeviceSelected" 
+        :devices="devices"
+        :selected-device-id="selectedDeviceId" 
+      />
 
       <!-- منوی داشبورد -->
       <DashboardMenu
@@ -11,12 +14,13 @@
         :devices="devices"
         @toggle-dark-mode="isDarkMode = $event"
         @device-selected="handleDeviceSelected"
+        :selected-device-id="selectedDeviceId"
       />
 
       <!-- کارت های شناور -->
       <FloatingCards
         :selected-device="selectedDevice"
-        @close-device="selectedDevice = null"
+        @close-device="closeDeviceDetails"
       />
     </div>
   </div>
@@ -30,52 +34,31 @@ import FloatingCards from "./components/FloatingCards/FloatingCards.vue";
 
 // Reactive state
 const selectedDevice = ref(null);
+const selectedDeviceId = ref(null);
 const isDarkMode = ref(true);
 const devices = ref([]);
 let updateInterval = null;
 
-// تابع برای محاسبه زمان گذشته از lastUpdate تا الآن (انگلیسی)
+// تابع برای محاسبه زمان گذشته
 const calculateLastSeen = (unixtime) => {
   const now = Math.floor(Date.now() / 1000);
   const diffInSeconds = now - unixtime;
 
-  if (diffInSeconds < 5) {
-    return "Just now";
-  } else if (diffInSeconds < 60) {
-    return `${diffInSeconds} seconds ago`;
-  } else if (diffInSeconds < 120) {
-    return "1 minute ago";
-  } else if (diffInSeconds < 3600) {
-    const minutes = Math.floor(diffInSeconds / 60);
-    return `${minutes} minutes ago`;
-  } else if (diffInSeconds < 7200) {
-    return "1 hour ago";
-  } else if (diffInSeconds < 86400) {
-    const hours = Math.floor(diffInSeconds / 3600);
-    return `${hours} hours ago`;
-  } else if (diffInSeconds < 172800) {
-    return "1 day ago";
-  } else if (diffInSeconds < 2592000) {
-    // 30 روز
-    const days = Math.floor(diffInSeconds / 86400);
-    return `${days} days ago`;
-  } else if (diffInSeconds < 5184000) {
-    // 60 روز
-    return "1 month ago";
-  } else if (diffInSeconds < 31536000) {
-    // 365 روز
-    const months = Math.floor(diffInSeconds / 2592000);
-    return `${months} months ago`;
-  } else if (diffInSeconds < 63072000) {
-    // 2 سال
-    return "1 year ago";
-  } else {
-    const years = Math.floor(diffInSeconds / 31536000);
-    return `${years} years ago`;
-  }
+  if (diffInSeconds < 5) return "Just now";
+  if (diffInSeconds < 60) return `${diffInSeconds} seconds ago`;
+  if (diffInSeconds < 120) return "1 minute ago";
+  if (diffInSeconds < 3600) return `${Math.floor(diffInSeconds / 60)} minutes ago`;
+  if (diffInSeconds < 7200) return "1 hour ago";
+  if (diffInSeconds < 86400) return `${Math.floor(diffInSeconds / 3600)} hours ago`;
+  if (diffInSeconds < 172800) return "1 day ago";
+  if (diffInSeconds < 2592000) return `${Math.floor(diffInSeconds / 86400)} days ago`;
+  if (diffInSeconds < 5184000) return "1 month ago";
+  if (diffInSeconds < 31536000) return `${Math.floor(diffInSeconds / 2592000)} months ago`;
+  if (diffInSeconds < 63072000) return "1 year ago";
+  return `${Math.floor(diffInSeconds / 31536000)} years ago`;
 };
 
-// تابع برای به‌روزرسانی lastSeen همه دستگاه‌ها
+// تابع برای به‌روزرسانی lastSeen
 const updateLastSeen = () => {
   devices.value = devices.value.map((device) => ({
     ...device,
@@ -89,12 +72,31 @@ const themeClass = computed(() => ({
   "light-theme": !isDarkMode.value,
 }));
 
-// Methods
+// مدیریت انتخاب دستگاه
 const handleDeviceSelected = (device) => {
-  selectedDevice.value = device;
+  if (!device) {
+    closeDeviceDetails();
+    return;
+  }
+  
+  if (device.deviceid === selectedDeviceId.value) {
+    closeDeviceDetails();
+  } else {
+    openDeviceDetails(device);
+  }
 };
 
-// داده‌های نمونه برای دستگاه‌ها با ساختار صحیح
+const openDeviceDetails = (device) => {
+  selectedDevice.value = device;
+  selectedDeviceId.value = device.deviceid;
+};
+
+const closeDeviceDetails = () => {
+  selectedDevice.value = null;
+  selectedDeviceId.value = null;
+};
+
+// داده‌های نمونه
 const initializeDevices = () => {
   const now = Math.floor(Date.now() / 1000);
   const oneHourAgo = now - 3600;
@@ -142,7 +144,6 @@ const initializeDevices = () => {
       sim2_id: null,
       type: 1,
       operator: "MCI",
-
     },
     {
       deviceid: 2,
@@ -426,24 +427,17 @@ const initializeDevices = () => {
 
 onMounted(() => {
   initializeDevices();
-
-  // هر 30 ثانیه lastSeen را به‌روز کنید
   updateInterval = setInterval(updateLastSeen, 30000);
 });
 
 onBeforeUnmount(() => {
-  // حذف interval وقتی کامپوننت از بین می‌رود
-  if (updateInterval) {
-    clearInterval(updateInterval);
-  }
+  if (updateInterval) clearInterval(updateInterval);
 });
 </script>
 
 <style>
-/* فونت مدرن */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
-/* متغیرهای تم */
 .dark-theme {
   --bg-primary: rgba(255, 255, 255, 0.201);
   --bg-secondary: rgba(156, 156, 156, 0.9);
@@ -470,7 +464,6 @@ onBeforeUnmount(() => {
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* قاب اصلی با پدینگ */
 .main-frame {
   width: 100%;
   height: 100vh;
@@ -487,14 +480,14 @@ onBeforeUnmount(() => {
   height: 100%;
   position: relative;
   background: white;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25), 
+              0 0 0 1px rgba(255, 255, 255, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
   overflow: hidden;
   font-family: "Inter", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* حالت‌های تم */
 .dashboard-container.dark-theme {
   background: var(--bg-primary);
   color: var(--text-primary);
@@ -505,14 +498,8 @@ onBeforeUnmount(() => {
   color: var(--text-primary);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .main-frame {
-    padding: 0;
-  }
-
-  .dashboard-container {
-    border-radius: 0;
-  }
+  .main-frame { padding: 0; }
+  .dashboard-container { border-radius: 0; }
 }
 </style>
