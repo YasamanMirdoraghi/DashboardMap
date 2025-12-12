@@ -31,3 +31,728 @@ Y88b.Y8b88P Y88b 888 888  888      X88 888  888 888
  App •  TIP  • 🚀  You are using the --port parameter. It is recommended to use a different devServer port for each Quasar mode to avoid browser cache issues
  App • Scheduled to apply quasar.config changes in 550ms
  App • Applying quasar.config file changes...
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getFixedStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1185[39m:[33m7[39m
+
+  [0m [90m 1183 |[39m
+   [90m 1184 |[39m
+  [31m[1m>[22m[39m[90m 1185 |[39m [36mconst[39m getFixedStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1186 |[39m   [36mreturn[39m flags[33m.[39misFixed [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1189[39m:[33m7[39m
+
+  [0m [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m
+  [31m[1m>[22m[39m[90m 1189 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1190 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1191 |[39m }[33m;[39m
+   [90m 1192 |[39m [90m// Computed Properties[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getFixedStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1185[39m:[33m7[39m
+
+  [0m [90m 1183 |[39m
+   [90m 1184 |[39m
+  [31m[1m>[22m[39m[90m 1185 |[39m [36mconst[39m getFixedStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1186 |[39m   [36mreturn[39m flags[33m.[39misFixed [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1189[39m:[33m7[39m
+
+  [0m [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m
+  [31m[1m>[22m[39m[90m 1189 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1190 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1191 |[39m }[33m;[39m
+   [90m 1192 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1189[39m:[33m7[39m
+
+  [0m [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m
+  [31m[1m>[22m[39m[90m 1189 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1190 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1191 |[39m }[33m;[39m
+   [90m 1192 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getSateliteStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1177[39m:[33m7[39m
+
+  [0m [90m 1175 |[39m }[33m;[39m
+   [90m 1176 |[39m
+  [31m[1m>[22m[39m[90m 1177 |[39m [36mconst[39m getSateliteStatus [33m=[39m (satellites) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1178 |[39m   [36mif[39m (satellites [33m>=[39m [35m5[39m) [36mreturn[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1179 |[39m   [36mif[39m (satellites [33m<=[39m [35m5[39m) [36mreturn[39m [32m"status-good"[39m[33m;[39m
+   [90m 1180 |[39m   [36mreturn[39m [32m"status-warning"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1189[39m:[33m7[39m
+
+  [0m [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m
+  [31m[1m>[22m[39m[90m 1189 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1190 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1191 |[39m }[33m;[39m
+   [90m 1192 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1189[39m:[33m7[39m
+
+  [0m [90m 1187 |[39m }[33m;[39m
+   [90m 1188 |[39m
+  [31m[1m>[22m[39m[90m 1189 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1190 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1191 |[39m }[33m;[39m
+   [90m 1192 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1187[39m:[33m7[39m
+
+  [0m [90m 1185 |[39m }[33m;[39m
+   [90m 1186 |[39m
+  [31m[1m>[22m[39m[90m 1187 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1188 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1189 |[39m }[33m;[39m
+   [90m 1190 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1187[39m:[33m7[39m
+
+  [0m [90m 1185 |[39m }[33m;[39m
+   [90m 1186 |[39m
+  [31m[1m>[22m[39m[90m 1187 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1188 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1189 |[39m }[33m;[39m
+   [90m 1190 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1187[39m:[33m7[39m
+
+  [0m [90m 1185 |[39m }[33m;[39m
+   [90m 1186 |[39m
+  [31m[1m>[22m[39m[90m 1187 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1188 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1189 |[39m }[33m;[39m
+   [90m 1190 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1187[39m:[33m7[39m
+
+  [0m [90m 1185 |[39m }[33m;[39m
+   [90m 1186 |[39m
+  [31m[1m>[22m[39m[90m 1187 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1188 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1189 |[39m }[33m;[39m
+   [90m 1190 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1187[39m:[33m7[39m
+
+  [0m [90m 1185 |[39m }[33m;[39m
+   [90m 1186 |[39m
+  [31m[1m>[22m[39m[90m 1187 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1188 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1189 |[39m }[33m;[39m
+   [90m 1190 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1187[39m:[33m7[39m
+
+  [0m [90m 1185 |[39m }[33m;[39m
+   [90m 1186 |[39m
+  [31m[1m>[22m[39m[90m 1187 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1188 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1189 |[39m }[33m;[39m
+   [90m 1190 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1175[39m:[33m7[39m
+
+  [0m [90m 1173 |[39m }[33m;[39m
+   [90m 1174 |[39m
+  [31m[1m>[22m[39m[90m 1175 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1176 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1177 |[39m }[33m;[39m
+   [90m 1178 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1177[39m:[33m7[39m
+
+  [0m [90m 1175 |[39m }[33m;[39m
+   [90m 1176 |[39m
+  [31m[1m>[22m[39m[90m 1177 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1178 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1179 |[39m }[33m;[39m
+   [90m 1180 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1175[39m:[33m7[39m
+
+  [0m [90m 1173 |[39m }[33m;[39m
+   [90m 1174 |[39m
+  [31m[1m>[22m[39m[90m 1175 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1176 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1177 |[39m }[33m;[39m
+   [90m 1178 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1087[39m:[33m7[39m
+
+  [0m [90m 1085 |[39m }[33m;[39m
+   [90m 1086 |[39m
+  [31m[1m>[22m[39m[90m 1087 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1088 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1089 |[39m }[33m;[39m
+   [90m 1090 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: invalid-first-character-of-tag-name. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m922[39m:[33m24[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1087[39m:[33m7[39m
+
+  [0m [90m 1085 |[39m }[33m;[39m
+   [90m 1086 |[39m
+  [31m[1m>[22m[39m[90m 1087 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1088 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1089 |[39m }[33m;[39m
+   [90m 1090 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: invalid-first-character-of-tag-name. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m922[39m:[33m25[39m
+
+  [0m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1087[39m:[33m7[39m
+
+  [0m [90m 1085 |[39m }[33m;[39m
+   [90m 1086 |[39m
+  [31m[1m>[22m[39m[90m 1087 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1088 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1089 |[39m }[33m;[39m
+   [90m 1090 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+2:55:00 PM [vite] Internal server error: Element is missing end tag.
+  Plugin: vite:vue
+  File: /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:172:13
+  170 |          <div class="home-content-wrapper" :class="{ expanded: homeExpanded }">
+  171 |            <q-card class="home-content-panel" elevated>
+  172 |              <div class="home-expanded-content">
+      |               ^
+  173 |                <div class="devices-section">
+  174 |                  <div class="devices-list">
+      at createCompilerError (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at Object.onclosetag (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2350:13)
+      at Tokenizer.stateInClosingTagName (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:785:16)
+      at Tokenizer.parse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1143:16)
+      at Object.baseParse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/mirdoraghi/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)
+      at handleHotUpdate (file:///home/mirdoraghi/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:1475:25)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1087[39m:[33m7[39m
+
+  [0m [90m 1085 |[39m }[33m;[39m
+   [90m 1086 |[39m
+  [31m[1m>[22m[39m[90m 1087 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1088 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1089 |[39m }[33m;[39m
+   [90m 1090 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1166[39m:[33m7[39m
+
+  [0m [90m 1164 |[39m }[33m;[39m
+   [90m 1165 |[39m
+  [31m[1m>[22m[39m[90m 1166 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1167 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1168 |[39m }[33m;[39m
+   [90m 1169 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'getCIDValidStatus' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1198[39m:[33m7[39m
+
+  [0m [90m 1196 |[39m }[33m;[39m
+   [90m 1197 |[39m
+  [31m[1m>[22m[39m[90m 1198 |[39m [36mconst[39m getCIDValidStatus [33m=[39m (flags) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1199 |[39m   [36mreturn[39m flags[33m.[39misCIDValid [33m?[39m [32m"status-good"[39m [33m:[39m [32m"status-critical"[39m[33m;[39m
+   [90m 1200 |[39m }[33m;[39m
+   [90m 1201 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unterminated comment (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1198[39m:[33m[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unterminated regular expression (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1133[39m:[33m28[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token ; (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1133[39m:[33m22[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:18:58 PM [vite] Internal server error: [vue/compiler-sfc] Unexpected token (67:22)
+
+/home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue
+1131|    const now = Math.floor(Date.now() / 1000);
+1132|    const lastUpdate = device.position.unixtime;
+1133|    const fiveMinutes = ; 
+   |                        ^
+1134|  
+1135|    if (now - lastUpdate > fiveMinutes) {
+  Plugin: vite:vue
+  File: /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:67:22
+  42 |                    >
+  43 |                      <path
+  44 |  ...360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+     |                                                                 ^
+  45 |                      />
+  46 |                    </svg>
+      at constructor (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:367:19)
+      at Parser.raise (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:6624:19)
+      at Parser.unexpected (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:6644:16)
+      at Parser.parseExprAtom (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:11508:22)
+      at Parser.parseExprSubscripts (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:11145:23)
+      at Parser.parseUpdate (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:11130:21)
+      at Parser.parseMaybeUnary (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:11110:23)
+      at Parser.parseMaybeUnaryOrPrivate (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:10963:61)
+      at Parser.parseExprOps (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:10968:23)
+      at Parser.parseMaybeConditional (/home/mirdoraghi/elmer/quasar-project/node_modules/@babel/parser/lib/index.js:10945:23)
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'Minutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1133[39m:[33m9[39m
+
+  [0m [90m 1131 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 1132 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 1133 |[39m   [36mconst[39m [33mMinutes[39m [33m=[39m [35m1800[39m[33m;[39m 
+   [90m      |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1134 |[39m
+   [90m 1135 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m 1136 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'fiveMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1135[39m:[33m26[39m
+
+  [0m [90m 1133 |[39m   [36mconst[39m [33mMinutes[39m [33m=[39m [35m1800[39m[33m;[39m 
+   [90m 1134 |[39m
+  [31m[1m>[22m[39m[90m 1135 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m      |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1136 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 1137 |[39m   }
+   [90m 1138 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1133[39m:[33m9[39m
+
+  [0m [90m 1131 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 1132 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 1133 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m 
+   [90m      |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1134 |[39m
+   [90m 1135 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m 1136 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'fiveMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1135[39m:[33m26[39m
+
+  [0m [90m 1133 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m 
+   [90m 1134 |[39m
+  [31m[1m>[22m[39m[90m 1135 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m fiveMinutes) {
+   [90m      |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1136 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 1137 |[39m   }
+   [90m 1138 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutes' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1133[39m:[33m9[39m
+
+  [0m [90m 1131 |[39m   [36mconst[39m now [33m=[39m [33mMath[39m[33m.[39mfloor([33mDate[39m[33m.[39mnow() [33m/[39m [35m1000[39m)[33m;[39m
+   [90m 1132 |[39m   [36mconst[39m lastUpdate [33m=[39m device[33m.[39mposition[33m.[39munixtime[33m;[39m
+  [31m[1m>[22m[39m[90m 1133 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m 
+   [90m      |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1134 |[39m
+   [90m 1135 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m halfMinutesMinutes) {
+   [90m 1136 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'halfMinutesMinutes' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1135[39m:[33m26[39m
+
+  [0m [90m 1133 |[39m   [36mconst[39m halfMinutes [33m=[39m [35m1800[39m[33m;[39m 
+   [90m 1134 |[39m
+  [31m[1m>[22m[39m[90m 1135 |[39m   [36mif[39m (now [33m-[39m lastUpdate [33m>[39m halfMinutesMinutes) {
+   [90m      |[39m                          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1136 |[39m     [36mreturn[39m [32m"offline"[39m[33m;[39m
+   [90m 1137 |[39m   }
+   [90m 1138 |[39m[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Identifier 'formatGNSS' has already been declared (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m6[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'format' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m format [33m=[39m (pdop) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (pdop) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m () [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1114[39m:[33m13[39m
+
+  [0m [90m 1112 |[39m }[33m;[39m
+   [90m 1113 |[39m [36mconst[39m formatType [33m=[39m () [33m=>[39m {
+  [31m[1m>[22m[39m[90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m
+   [90m 1117 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'type' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m21[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1114[39m:[33m13[39m
+
+  [0m [90m 1112 |[39m }[33m;[39m
+   [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+  [31m[1m>[22m[39m[90m 1114 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1115 |[39m }[33m;[39m
+   [90m 1116 |[39m
+   [90m 1117 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'type' is defined but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m21[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1115[39m:[33m13[39m
+
+  [0m [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m 1114 |[39m   
+  [31m[1m>[22m[39m[90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1116 |[39m }[33m;[39m
+   [90m 1117 |[39m
+   [90m 1118 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 3 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token ) (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1114[39m:[33m5[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type)
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1115[39m:[33m13[39m
+
+  [0m [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m 1114 |[39m   [36mif[39m(type)
+  [31m[1m>[22m[39m[90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1116 |[39m }[33m;[39m
+   [90m 1117 |[39m
+   [90m 1118 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: Unexpected token ) (null)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1114[39m:[33m12[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m[35m1[39m)
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1115[39m:[33m13[39m
+
+  [0m [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m[35m1[39m)
+  [31m[1m>[22m[39m[90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1116 |[39m }[33m;[39m
+   [90m 1117 |[39m
+   [90m 1118 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m[35m1[39m )
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1115[39m:[33m13[39m
+
+  [0m [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m[35m1[39m )
+  [31m[1m>[22m[39m[90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1116 |[39m }[33m;[39m
+   [90m 1117 |[39m
+   [90m 1118 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m )
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1115[39m:[33m13[39m
+
+  [0m [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m )
+  [31m[1m>[22m[39m[90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1116 |[39m }[33m;[39m
+   [90m 1117 |[39m
+   [90m 1118 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m ) 
+   [90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'pdop' is not defined. (no-undef)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1115[39m:[33m13[39m
+
+  [0m [90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m ) 
+  [31m[1m>[22m[39m[90m 1115 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m      |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1116 |[39m }[33m;[39m
+   [90m 1117 |[39m
+   [90m 1118 |[39m [36mconst[39m getLockText [33m=[39m (flags) [33m=>[39m {[0m
+
+[31m[ESLint] Found 2 errors and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m ) 
+   [90m 1115 |[39m   [36mreturn[39m [32m''[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m ) 
+   [90m 1115 |[39m   [36mreturn[39m [32m'MCI'[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m 'formatType' is assigned a value but never used. (no-unused-vars)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m1113[39m:[33m7[39m
+
+  [0m [90m 1111 |[39m   [36mreturn[39m [32m`${pdop}`[39m[33m;[39m
+   [90m 1112 |[39m }[33m;[39m
+  [31m[1m>[22m[39m[90m 1113 |[39m [36mconst[39m formatType [33m=[39m (type) [33m=>[39m {
+   [90m      |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 1114 |[39m   [36mif[39m(type [33m==[39m [35m1[39m ) 
+   [90m 1115 |[39m   [36mreturn[39m [32m'MCI'[39m[33m;[39m
+   [90m 1116 |[39m }[33m;[39m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+[1m[30m[101m ERROR(ESLint) [49m[39m[22m Parsing error: eof-in-tag. (vue/no-parsing-error)
+[1m[30m[106m FILE [49m[39m[22m /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:[33m89[39m:[33m263[39m
+
+  [0m[0m
+
+[31m[ESLint] Found 1 error and 0 warning[39m
+3:26:13 PM [vite] Internal server error: Error parsing JavaScript expression: Unexpected token, expected "," (1:28)
+  Plugin: vite:vue
+  File: /home/mirdoraghi/elmer/quasar-project/src/components/DashboardMenu/DashboardMenu.vue:1031:55
+  1029 |                              </svg>
+  1030 |                            </div>
+  1031 |                            <div class="detail-text">{{ formatType(device.operator }}</div>
+       |                                                         ^
+  1032 |                          </div>
+  1033 |                        </div>
+      at createCompilerError (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1364:17)
+      at emitError (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2991:5)
+      at createExp (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2984:7)
+      at Object.oninterpolation (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:2320:16)
+      at Tokenizer.stateInterpolationClose (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:582:18)
+      at Tokenizer.parse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1083:16)
+      at Object.baseParse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:3030:13)
+      at Object.parse (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js:910:23)
+      at Object.parse$1 [as parse] (/home/mirdoraghi/elmer/quasar-project/node_modules/@vue/compiler-sfc/dist/compiler-sfc.cjs.js:1801:24)
+      at createDescriptor (file:///home/mirdoraghi/elmer/quasar-project/node_modules/@vitejs/plugin-vue/dist/index.js:79:42)

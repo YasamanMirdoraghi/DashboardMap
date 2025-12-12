@@ -359,7 +359,7 @@
                       <!-- Other Status Icons -->
                       <div class="status-icons-right">
                         <!-- Lock Status -->
-                        <!-- Lock Status -->
+                 
                         <div
                           v-if="
                             getLockStatus(device.position.flags) === 'status-critical' ||
@@ -511,11 +511,11 @@
                         <!-- GNSS Status -->
                         <div
                           v-if="
-                            getGNSSStatus(device.position.pdop) === 'status-warning' ||
-                            getGNSSStatus(device.position.pdop) === 'status-critical'
+                            getFixedStatus(device.position.pdop) === 'status-warning' ||
+                            getFixedStatus(device.position.pdop) === 'status-critical'
                           "
                           class="status-icon"
-                          :class="getGNSSStatus(device.position.pdop)"
+                          :class="getFixedStatus(device.position.pdop)"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -536,13 +536,13 @@
                         <!-- Satelite Status -->
                         <div
                           v-if="
-                            getSateliteStatus(device.position.satellites) ===
+                            getFixedStatus(device.position.satellites) ===
                               'status-warning' ||
-                            getSateliteStatus(device.position.satellites) ===
+                            getFixedStatus(device.position.satellites) ===
                               'status-critical'
                           "
                           class="status-icon"
-                          :class="getSateliteStatus(device.position.satellites)"
+                          :class="getFixedStatus(device.position.satellites)"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -829,7 +829,7 @@
                         <!-- GNSS -->
                         <div
                           class="detail-item"
-                          :class="getGNSSStatus(device.position.pdop)"
+                          :class="getFixedStatus(device.position.pdop)"
                         >
                           <div class="detail-icon">
                             <svg
@@ -878,7 +878,7 @@
                         <!-- Satellite -->
                         <div
                           class="detail-item"
-                          :class="getSateliteStatus(device.position.satellites)"
+                          :class="getFixedStatus(device.position.satellites)"
                         >
                           <div class="detail-icon">
                             <svg
@@ -919,16 +919,26 @@
                       </div>
 
                       <!-- Row 4: Network Info -->
+                      <!-- Row 4: Network Info -->
                       <div class="details-row">
                         <!-- LAC -->
-                        <div class="detail-item">
+                        <div
+                          class="detail-item"
+                          :style="{
+                            color: device.position.flags.isCIDValid
+                              ? '#4CAF50'
+                              : '#F44336',
+                          }"
+                        >
                           <div class="detail-icon">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               height="17px"
                               viewBox="0 -960 960 960"
                               width="17px"
-                              fill="#4caf50"
+                              :fill="
+                                device.position.flags.isCIDValid ? '#4CAF50' : '#F44336'
+                              "
                             >
                               <path
                                 d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"
@@ -939,14 +949,23 @@
                         </div>
 
                         <!-- CID -->
-                        <div class="detail-item">
+                        <div
+                          class="detail-item"
+                          :style="{
+                            color: device.position.flags.isCIDValid
+                              ? '#4CAF50'
+                              : '#F44336',
+                          }"
+                        >
                           <div class="detail-icon">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               height="17px"
                               viewBox="0 -960 960 960"
                               width="17px"
-                              fill="#4caf50"
+                              :fill="
+                                device.position.flags.isCIDValid ? '#4CAF50' : '#F44336'
+                              "
                             >
                               <path
                                 d="M196-276q-57-60-86.5-133T80-560q0-78 29.5-151T196-844l48 48q-48 48-72 110.5T148-560q0 63 24 125.5T244-324l-48 48Zm96-96q-39-39-59.5-88T212-560q0-51 20.5-100t59.5-88l48 48q-30 27-45 64t-15 76q0 36 15 73t45 67l-48 48ZM280-80l135-405q-16-14-25.5-33t-9.5-42q0-42 29-71t71-29q42 0 71 29t29 71q0 23-9.5 42T545-485L680-80h-80l-26-80H387l-27 80h-80Zm133-160h134l-67-200-67 200Zm255-132-48-48q30-27 45-64t15-76q0-36-15-73t-45-67l48-48q39 39 58 88t22 100q0 51-20.5 100T668-372Zm96 96-48-48q48-48 72-110.5T812-560q0-63-24-125.5T716-796l48-48q57 60 86.5 133T880-560q0 78-28 151t-88 133Z"
@@ -955,57 +974,61 @@
                           </div>
                           <div class="detail-text">CID: {{ device.position.cid }}</div>
                         </div>
-                        <!-- Operator با آیکون تکنولوژی -->
-                        
-                        <div class="detail-item">
+
+                        <!-- Operator -->
+                        <div
+                          class="detail-item"
+                          :style="{
+                            color: device.position.flags.isCIDValid
+                              ? '#4CAF50'
+                              : '#F44336',
+                          }"
+                        >
                           <div class="detail-icon">
-                            <!-- 3G -->
                             <svg
                               v-if="device.position.technology === '3G'"
                               xmlns="http://www.w3.org/2000/svg"
                               height="17px"
                               viewBox="0 -960 960 960"
                               width="17px"
-                              :fill="'#FFC107'"
-                           
-                              >
+                              :fill="
+                                device.position.flags.isCIDValid ? '#4CAF50' : '#F44336'
+                              "
+                            >
                               <path
                                 d="M120-120q-33 0-56.5-23.5T40-200v-560q0-33 23.5-56.5T120-840h720q33 0 56.5 23.5T920-760v560q0 33-23.5 56.5T840-120H120Zm0-80h720v-560H120v560Zm0 0v-560 560Zm640-320H640v80h40v80H560v-240h200q0-33-23.5-56.5T680-680H560q-33 0-56.5 23.5T480-600v240q0 33 23.5 56.5T560-280h120q33 0 56.5-23.5T760-360v-160ZM200-280h160q33 0 56.5-23.5T440-360v-60q0-25-17.5-42.5T380-480q25 0 42.5-17.5T440-540v-60q0-33-23.5-56.5T360-680H200v80h160v80H200v80h160v80H200v80Z"
                               />
                             </svg>
-
-                            <!-- 4G -->
                             <svg
                               v-else-if="device.position.technology === '4G'"
                               xmlns="http://www.w3.org/2000/svg"
                               height="17px"
                               viewBox="0 -960 960 960"
                               width="17px"
-                              :fill="'#4CAF50'"
-
-                              >
+                              :fill="
+                                device.position.flags.isCIDValid ? '#4CAF50' : '#F44336'
+                              "
+                            >
                               <path
                                 d="M120-120q-33 0-56.5-23.5T40-200v-560q0-33 23.5-56.5T120-840h720q33 0 56.5 23.5T920-760v560q0 33-23.5 56.5T840-120H120Zm0-80h720v-560H120v560Zm0 0v-560 560Zm680-320H660v80h60v80H600v-240h200q0-33-23.5-56.5T720-680H600q-33 0-56.5 23.5T520-600v240q0 33 23.5 56.5T600-280h120q33 0 56.5-23.5T800-360v-160ZM320-280h80v-120h80v-80h-80v-200h-80v200h-80v-200h-80v280h160v120Z"
                               />
                             </svg>
-
-                            <!-- 2G -->
                             <svg
                               v-else
                               xmlns="http://www.w3.org/2000/svg"
                               height="17px"
                               viewBox="0 -960 960 960"
                               width="17px"
-                              :fill="'#F44336'"
-                              >
+                              :fill="
+                                device.position.flags.isCIDValid ? '#4CAF50' : '#F44336'
+                              "
+                            >
                               <path
                                 d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Zm120 480h320v-80H400v-80h200v-80H400v-80h240v-80H320v400Z"
                               />
                             </svg>
                           </div>
-                          <div class="detail-text">
-                            {{ device.operator }}
-                          </div>
+                          <div class="detail-text">{{ formatType(device.type) }}</div>
                         </div>
                       </div>
                     </div>
@@ -1087,6 +1110,10 @@ const formatGSM = (gsm_sig) => {
 const formatGNSS = (pdop) => {
   return `${pdop}`;
 };
+const formatType = (type) => {
+  if(type == 1 ) 
+  return 'MCI';
+};
 
 const getLockText = (flags) => {
   return flags.isCoilActive ? "Locked" : "Unlocked";
@@ -1104,16 +1131,13 @@ const getRopeText = (flags) => {
 
 // Status Detection Functions
 const getDeviceStatus = (device) => {
-  // Check if device is offline (last update > 5 minutes ago)
   const now = Math.floor(Date.now() / 1000);
   const lastUpdate = device.position.unixtime;
-  const fiveMinutes = 300; // 5 minutes in seconds
+  const halfMinutes = 1800; 
 
-  if (now - lastUpdate > fiveMinutes) {
+  if (now - lastUpdate > halfMinutes) {
     return "offline";
   }
-
-  // Check if device is moving or stopped
   if (device.position.flags.isStop) {
     return "online-stopped";
   } else {
@@ -1154,17 +1178,6 @@ const getRopeStatus = (flags) => {
   }
 };
 
-const getGNSSStatus = (pdop) => {
-  if (pdop >= 3) return "status-critical";
-  if (pdop <= 3) return "status-good";
-  return "status-warning";
-};
-const getSateliteStatus = (satellites) => {
-  if (satellites >= 5) return "status-critical";
-  if (satellites <= 5) return "status-good";
-  return "status-warning";
-};
-
 const getTemperatureStatus = (temperature) => {
   if (temperature >= 15 && temperature <= 30) return "status-good";
   if ((temperature >= 10 && temperature < 15) || (temperature > 30 && temperature <= 35))
@@ -1178,6 +1191,14 @@ const getHumidityStatus = (humidity) => {
     return "status-warning";
   return "status-critical";
 };
+
+const getFixedStatus = (flags) => {
+  return flags.isFixed ? "status-good" : "status-critical";
+};
+
+/*const getCIDValidStatus = (flags) => {
+  return flags.isCIDValid ? "status-good" : "status-critical";
+};*/
 
 // Computed Properties
 const totalDevices = computed(() => props.devices.length);

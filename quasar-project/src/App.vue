@@ -222,7 +222,6 @@ const initializeDevices = () => {
       sim1_id: null,
       sim2_id: null,
       type: 1,
-      operator: "MCI",
     },
     {
       deviceid: 4,
@@ -262,7 +261,6 @@ const initializeDevices = () => {
       sim1_id: null,
       sim2_id: null,
       type: 1,
-      operator: "MCI",
     },
     {
       deviceid: 5,
@@ -302,7 +300,6 @@ const initializeDevices = () => {
       sim1_id: null,
       sim2_id: null,
       type: 1,
-      operator: "MCI",
     },
     {
       deviceid: 6,
@@ -342,7 +339,6 @@ const initializeDevices = () => {
       sim1_id: null,
       sim2_id: null,
       type: 1,
-      operator: "MCI",
     },
     {
       deviceid: 7,
@@ -382,7 +378,6 @@ const initializeDevices = () => {
       sim1_id: null,
       sim2_id: null,
       type: 1,
-      operator: "MCI",
     },
     {
       deviceid: 8,
@@ -422,7 +417,6 @@ const initializeDevices = () => {
       sim1_id: null,
       sim2_id: null,
       type: 1,
-      operator: "MCI",
     },
   ].map((device) => ({
     ...device,
