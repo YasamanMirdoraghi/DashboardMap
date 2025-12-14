@@ -181,7 +181,7 @@
                       { 'pinned-device': isDevicePinned(device.deviceid) },
                       { expanded: expandedDeviceId === device.deviceid },
                     ]"
-                    @click="toggleDeviceDetails(device)"
+                    @click="toggleDeviceDetails(device,$event);"
                   >
                     <div class="device-row-first">
                       <div class="device-column icon-column">
@@ -359,7 +359,7 @@
                       <!-- Other Status Icons -->
                       <div class="status-icons-right">
                         <!-- Lock Status -->
-                 
+
                         <div
                           v-if="
                             getLockStatus(device.position.flags) === 'status-critical' ||
@@ -1111,8 +1111,7 @@ const formatGNSS = (pdop) => {
   return `${pdop}`;
 };
 const formatType = (type) => {
-  if(type == 1 ) 
-  return 'MCI';
+  if (type == 1) return "MCI";
 };
 
 const getLockText = (flags) => {
@@ -1133,7 +1132,7 @@ const getRopeText = (flags) => {
 const getDeviceStatus = (device) => {
   const now = Math.floor(Date.now() / 1000);
   const lastUpdate = device.position.unixtime;
-  const halfMinutes = 1800; 
+  const halfMinutes = 1800;
 
   if (now - lastUpdate > halfMinutes) {
     return "offline";
@@ -1265,16 +1264,51 @@ const isDevicePinned = (deviceId) => {
   return pinnedDevices.value.includes(deviceId);
 };
 
-// Device Details Functions
-const toggleDeviceDetails = (device) => {
-  if (expandedDeviceId.value === device.deviceid) {
-    expandedDeviceId.value = null;
+//
+// // Device Details Functions
+// const toggleDeviceDetails = (device) => {
+//   const el = event.currentTarget;
+//   if (expandedDeviceId.value === device.deviceid) {
+//     // expandedDeviceId.value = null;
+//     el.classList.remove("black-bg");
+//     emit("device-selected", null);
+//   } else {
+//     // expandedDeviceId.value = device.deviceid;
+//     emit("device-selected", device);
+//     el.classList.add("black-bg");
+//   }
+
+//   // if (el.classList.contains("black-bg")) {
+//   // } else {
+//   // }
+// };
+
+
+let previousSelectedElement = null;
+
+const toggleDeviceDetails = (device, event) => {
+  const el = event.currentTarget;
+
+  // اگر روی همون آیتم قبلی کلیک شد
+  if (el === previousSelectedElement) {
+    el.classList.remove("black-bg");
+    previousSelectedElement = null;
     emit("device-selected", null);
-  } else {
-    expandedDeviceId.value = device.deviceid;
-    emit("device-selected", device);
+    return;
   }
+
+  // اگر آیتم قبلی وجود داره، کلاسش رو حذف کن
+  if (previousSelectedElement) {
+    previousSelectedElement.classList.remove("black-bg");
+  }
+
+  // آیتم جدید رو اضافه کن
+  el.classList.add("black-bg");
+  previousSelectedElement = el;
+  emit("device-selected", device);
 };
+// const toggleBlack = (event) => {
+// };
 
 // Sidebar Functions
 const toggleSidebar = () => {
@@ -1792,6 +1826,10 @@ const getPanelTitle = (panelId) => {
   background: rgba(30, 30, 30, 0.833);
   border-radius: 6px;
 }
+.device-item.active {
+  background: rgba(30, 30, 30, 0.833);
+  border-radius: 6px;
+}
 
 .device-item.pinned-device {
   background: rgba(12, 12, 12, 0.486);
@@ -2247,4 +2285,11 @@ const getPanelTitle = (panelId) => {
 :deep(::-webkit-scrollbar-thumb:hover) {
   background: rgba(255, 255, 255, 0.5);
 }
+
+
+.black-bg {
+  background-color:#000000 !important;
+  /* color: white; */
+}
+
 </style>

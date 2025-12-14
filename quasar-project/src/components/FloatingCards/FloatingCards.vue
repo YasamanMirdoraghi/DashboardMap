@@ -12,6 +12,9 @@
             <div class="device-title-section">
               <h3 class="device-name">Device {{ selectedDevice.deviceid }}</h3>
               <div class="device-id">Serial: {{ selectedDevice.serialnumber }}</div>
+              <div class="device-type" v-if="selectedDevice.type">
+                {{ formatType(selectedDevice.type) }}
+              </div>
             </div>
           </div>
 
@@ -52,16 +55,22 @@
           <div class="coordinates">
             <div class="coord-item">
               <span class="coord-label">Lat:</span>
-              <span class="coord-value">{{ selectedDevice.position.latitude.toFixed(6) }}</span>
+              <span class="coord-value">{{ selectedDevice.position.latitude?.toFixed(6) || 'N/A' }}</span>
             </div>
             <div class="coord-item">
               <span class="coord-label">Lng:</span>
-              <span class="coord-value">{{ selectedDevice.position.longitude.toFixed(6) }}</span>
+              <span class="coord-value">{{ selectedDevice.position.longitude?.toFixed(6) || 'N/A' }}</span>
             </div>
           </div>
           <div class="address-info" v-if="selectedDevice.position.address">
             <q-icon name="place" size="12px" />
             <span>{{ selectedDevice.position.address }}</span>
+          </div>
+          <div class="fixed-status" v-if="selectedDevice.position.flags">
+            <div class="fixed-badge" :class="getFixedStatus(selectedDevice.position.flags)">
+              <q-icon :name="selectedDevice.position.flags.isFixed ? 'check_circle' : 'gps_off'" size="12px" />
+              <span>{{ selectedDevice.position.flags.isFixed ? 'Fixed' : 'Not Fixed' }}</span>
+            </div>
           </div>
         </div>
 
@@ -85,14 +94,14 @@
             </div>
             <div class="stat-info">
               <div class="stat-label">Speed</div>
-              <div class="stat-value">{{ selectedDevice.position.speed }} km/h</div>
+              <div class="stat-value">{{ selectedDevice.position.speed || 0 }} km/h</div>
             </div>
           </div>
 
           <!-- Lock -->
           <div class="stat-card" :class="getLockStatus(selectedDevice.position.flags)">
             <div class="stat-icon">
-              <q-icon :name="selectedDevice.position.flags.isCoilActive ? 'lock' : 'lock_open'" />
+              <q-icon :name="selectedDevice.position.flags?.isCoilActive ? 'lock' : 'lock_open'" />
             </div>
             <div class="stat-info">
               <div class="stat-label">Lock</div>
@@ -101,13 +110,13 @@
           </div>
 
           <!-- GSM -->
-          <div class="stat-card" :class="getGSMStatus(selectedDevice.position.gsm_sig, selectedDevice.position.technology)">
+          <div class="stat-card" :class="getGSMStatus(selectedDevice.position.gsm_sig)">
             <div class="stat-icon">
               <q-icon name="signal_cellular_alt" />
             </div>
             <div class="stat-info">
               <div class="stat-label">GSM</div>
-              <div class="stat-value">{{ formatGSM(selectedDevice.position.gsm_sig, selectedDevice.position.technology) }}</div>
+              <div class="stat-value">{{ formatGSM(selectedDevice.position.gsm_sig) }}</div>
             </div>
           </div>
 
@@ -118,7 +127,7 @@
             </div>
             <div class="stat-info">
               <div class="stat-label">GNSS</div>
-              <div class="stat-value">{{ formatGNSS(selectedDevice.position.satellites, selectedDevice.position.pdop) }}</div>
+              <div class="stat-value">{{ formatGNSS(selectedDevice.position.pdop) }}</div>
             </div>
           </div>
 
@@ -129,7 +138,7 @@
             </div>
             <div class="stat-info">
               <div class="stat-label">Temperature</div>
-              <div class="stat-value">{{ selectedDevice.position.temperature }}°C</div>
+              <div class="stat-value">{{ selectedDevice.position.temperature || 0 }}°C</div>
             </div>
           </div>
 
@@ -140,7 +149,7 @@
             </div>
             <div class="stat-info">
               <div class="stat-label">Humidity</div>
-              <div class="stat-value">{{ selectedDevice.position.humidity }}%</div>
+              <div class="stat-value">{{ selectedDevice.position.humidity || 0 }}%</div>
             </div>
           </div>
 
@@ -151,7 +160,7 @@
             </div>
             <div class="stat-info">
               <div class="stat-label">Network</div>
-              <div class="stat-value">LAC:{{ selectedDevice.position.lac }}</div>
+              <div class="stat-value">LAC:{{ selectedDevice.position.lac || 'N/A' }}</div>
             </div>
           </div>
         </div>
@@ -189,7 +198,6 @@
             class="glass-action-btn"
             @click="Details"
           />
-
         </div>
       </div>
     </div>
@@ -197,31 +205,28 @@
 </template>
 
 <script setup>
-// import { computed } from "vue";
-
 const props = defineProps({
   selectedDevice: Object
 });
 
-const emit = defineEmits(['close-device', 'view-history', 'track-device']);
+const emit = defineEmits(['close-device', 'view-history']);
 
 const closeCard = () => {
   emit('close-device');
 };
 
-// Helper Functions (همانند DashboardMenu)
+// Status Helper Functions - مطابق DashboardMenu
 const getDeviceStatus = (device) => {
   if (!device.position) return "offline";
 
   const now = Math.floor(Date.now() / 1000);
   const lastUpdate = device.position.unixtime;
-  const fiveMinutes = 300;
+  const halfMinutes = 1800;
 
-  if (now - lastUpdate > fiveMinutes) {
+  if (now - lastUpdate > halfMinutes) {
     return "offline";
   }
-
-  if (device.position.flags.isStop) {
+  if (device.position.flags?.isStop) {
     return "online-stopped";
   } else {
     return "online-moving";
@@ -246,63 +251,83 @@ const getStatusText = (status) => {
   return texts[status] || 'Unknown';
 };
 
+// Format Functions - مطابق DashboardMenu
+const formatGSM = (gsm_sig) => {
+  return `${gsm_sig}%`;
+};
+
+const formatGNSS = (pdop) => {
+  return `${pdop}`;
+};
+
+const formatType = (type) => {
+  if (type == 1) return "MCI";
+  return type || "Unknown";
+};
+
 const formatBattery = (batt_v) => {
+  // batt_v in millivolts
   const voltage = batt_v / 1000;
   return `${voltage.toFixed(2)}V`;
 };
 
-const getBatteryStatus = (batt_v) => {
-  const voltage = batt_v / 1000;
-  if (voltage >= 3.5) return 'status-good';
-  if (voltage >= 3.2) return 'status-warning';
-  return 'status-critical';
-};
-
-const getLockStatus = (flags) => {
-  return flags.isCoilActive ? 'status-critical' : 'status-good';
-};
-
 const getLockText = (flags) => {
-  return flags.isCoilActive ? 'Locked' : 'Unlocked';
-};
-
-const formatGSM = (gsm_sig, technology) => {
-  return `${technology} (${gsm_sig}%)`;
-};
-
-const getGSMStatus = (gsm_sig) => {
-  if (gsm_sig >= 70) return 'status-good';
-  if (gsm_sig >= 40) return 'status-warning';
-  return 'status-critical';
-};
-
-const getSpeedStatus = (speed) => {
-  if (speed === 0) return 'status-good';
-  if (speed > 0 && speed <= 80) return 'status-warning';
-  return 'status-critical';
-};
-
-const getRopeStatus = (flags) => {
-  if (flags.isRopeClosed && flags.isMechanicClosed) {
-    return 'status-good';
-  } else if (!flags.isRopeClosed && !flags.isMechanicClosed) {
-    return 'status-critical';
-  } else {
-    return 'status-warning';
-  }
+  if (!flags) return "Unknown";
+  return flags.isCoilActive ? "Locked" : "Unlocked";
 };
 
 const getRopeText = (flags) => {
+  if (!flags) return "Unknown";
   if (flags.isRopeClosed && flags.isMechanicClosed) {
-    return 'Rope Closed';
+    return "Closed";
   } else if (!flags.isRopeClosed && !flags.isMechanicClosed) {
-    return 'Rope Open';
+    return "Open";
   } else {
-    return 'Rope Partially';
+    return "Partially";
+  }
+};
+
+// Status Detection Functions - مطابق DashboardMenu
+const getBatteryStatus = (batt_v) => {
+  if (!batt_v) return "status-critical";
+  const voltage = batt_v;
+  if (voltage >= 3400) return "status-good";
+  if (voltage >= 3200) return "status-warning";
+  return "status-critical";
+};
+
+const getLockStatus = (flags) => {
+  if (!flags) return "status-critical";
+  return flags.isCoilActive ? "status-critical" : "status-good";
+};
+
+const getGSMStatus = (gsm_sig) => {
+  if (!gsm_sig) return "status-critical";
+  if (gsm_sig >= 70) return "status-good";
+  if (gsm_sig >= 40) return "status-warning";
+  return "status-critical";
+};
+
+const getSpeedStatus = (speed) => {
+  if (speed === undefined || speed === null) return "status-good";
+  if (speed >= 0 && speed <= 60) return "status-good";
+  if (speed > 60 && speed <= 90) return "status-warning";
+  return "status-critical";
+};
+
+const getRopeStatus = (flags) => {
+  if (!flags) return "status-critical";
+  if (flags.isRopeClosed && flags.isMechanicClosed) {
+    return "status-good";
+  } else if (!flags.isRopeClosed && !flags.isMechanicClosed) {
+    return "status-critical";
+  } else {
+    return "status-warning";
   }
 };
 
 const getRopeIcon = (flags) => {
+  if (!flags) return "help";
   if (flags.isRopeClosed && flags.isMechanicClosed) {
     return 'check_circle';
   } else if (!flags.isRopeClosed && !flags.isMechanicClosed) {
@@ -312,26 +337,32 @@ const getRopeIcon = (flags) => {
   }
 };
 
-const formatGNSS = (satellites, pdop) => {
-  return `${satellites} sat (PDOP: ${pdop})`;
-};
-
 const getGNSSStatus = (satellites, pdop) => {
-  if (satellites >= 7 && pdop <= 2) return 'status-good';
-  if (satellites >= 4 && pdop <= 5) return 'status-warning';
-  return 'status-critical';
+  if (!satellites || !pdop) return "status-critical";
+  if (satellites >= 7 && pdop <= 2) return "status-good";
+  if (satellites >= 4 && pdop <= 5) return "status-warning";
+  return "status-critical";
 };
 
 const getTemperatureStatus = (temperature) => {
-  if (temperature >= 15 && temperature <= 30) return 'status-good';
-  if ((temperature >= 10 && temperature < 15) || (temperature > 30 && temperature <= 35)) return 'status-warning';
-  return 'status-critical';
+  if (temperature === undefined || temperature === null) return "status-good";
+  if (temperature >= 15 && temperature <= 30) return "status-good";
+  if ((temperature >= 10 && temperature < 15) || (temperature > 30 && temperature <= 35))
+    return "status-warning";
+  return "status-critical";
 };
 
 const getHumidityStatus = (humidity) => {
-  if (humidity >= 30 && humidity <= 60) return 'status-good';
-  if ((humidity >= 20 && humidity < 30) || (humidity > 60 && humidity <= 70)) return 'status-warning';
-  return 'status-critical';
+  if (humidity === undefined || humidity === null) return "status-good";
+  if (humidity >= 30 && humidity <= 60) return "status-good";
+  if ((humidity >= 20 && humidity < 30) || (humidity > 60 && humidity <= 70))
+    return "status-warning";
+  return "status-critical";
+};
+
+const getFixedStatus = (flags) => {
+  if (!flags) return "status-critical";
+  return flags.isFixed ? "status-good" : "status-critical";
 };
 
 const formatDate = (unixtime) => {
@@ -350,17 +381,16 @@ const formatDate = (unixtime) => {
 const Details = () => {
   emit('view-history', props.selectedDevice);
 };
-
-
 </script>
 
 <style scoped>
-/* Glass Morphism Device Card */
+/* Glass Morphism Device Card - Base Styles */
 .glass-device-card {
   position: fixed;
-  bottom: 15px;
+  bottom: 5px;
   right: 20px;
   width: 420px;
+  /* max-height: 95vh; */
   background: rgba(37, 37, 36, 0.95);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -372,6 +402,15 @@ const Details = () => {
   z-index: 1000;
   overflow: hidden;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-content {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow-y: auto;
+  flex: 1;
 }
 
 /* Header with gradient */
@@ -379,6 +418,7 @@ const Details = () => {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0.15));
   padding: 16px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
 }
 
 .header-content {
@@ -435,6 +475,16 @@ const Details = () => {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.device-type {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 2px;
+  display: inline-block;
+}
+
 .header-actions {
   display: flex;
   gap: 8px;
@@ -451,12 +501,6 @@ const Details = () => {
 
 .glass-btn:hover {
   background: rgba(255, 255, 255, 0.2);
-}
-
-/* Content */
-.glass-content {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.05);
 }
 
 /* Status Section */
@@ -565,6 +609,32 @@ const Details = () => {
   color: rgba(255, 255, 255, 0.8);
   padding-top: 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fixed-status {
+  margin-top: 8px;
+}
+
+.fixed-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.fixed-badge.status-good {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.fixed-badge.status-critical {
+  background: rgba(219, 0, 0, 0.1);
+  color: #db0000;
+  border: 1px solid rgba(219, 0, 0, 0.2);
 }
 
 /* Stats Grid */
@@ -708,7 +778,7 @@ const Details = () => {
 /* Action Buttons */
 .action-buttons {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   gap: 12px;
 }
 
@@ -748,22 +818,270 @@ const Details = () => {
   transform: translateY(20px) scale(0.98);
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  .glass-device-card {
-    bottom: 16px;
-    right: 16px;
-    left: 16px;
-    width: auto;
-    max-width: 100%;
-  }
+/* Responsive Design */
 
+/* لپ‌تاپ متوسط */
+@media (max-width: 1200px) {
+  .glass-device-card {
+    width: 380px;
+  }
+}
+
+/* تبلت و لپ‌تاپ کوچک */
+@media (max-width: 992px) {
+  .glass-device-card {
+    width: 350px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .stat-card {
+    padding: 10px;
+  }
+  
+  .stat-value {
+    font-size: 13px;
+  }
+}
+
+/* تبلت کوچک */
+@media (max-width: 768px) {
+  .glass-device-card {
+    width: 320px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .glass-header {
+    padding: 14px 16px;
+  }
+  
+  .glass-content {
+    padding: 16px;
+  }
+  
+  .device-name {
+    font-size: 16px;
+  }
+  
+  .status-indicator {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .stat-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+  }
+  
+  .stat-value {
+    font-size: 12px;
+  }
+}
+
+/* موبایل بزرگ */
+@media (max-width: 576px) {
+  .glass-device-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    max-height: 85vh;
+    bottom: auto;
+    right: auto;
+    border-radius: 16px;
+  }
+  
+  .glass-header {
+    padding: 12px 14px;
+  }
+  
+  .header-content {
+    flex-wrap: wrap;
+  }
+  
+  .device-main-info {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .device-name {
+    font-size: 15px;
+  }
+  
+  .device-id {
+    font-size: 11px;
+  }
+  
+  .glass-content {
+    padding: 14px;
+    max-height: calc(85vh - 60px);
+  }
+  
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
+  .section-title {
+    font-size: 13px;
+  }
+  
   .action-buttons {
     grid-template-columns: 1fr;
+  }
+  
+  .glass-action-btn {
+    font-size: 12px;
+    height: 38px;
+  }
+}
+
+/* موبایل کوچک */
+@media (max-width: 480px) {
+  .glass-device-card {
+    width: 95%;
+    max-height: 90vh;
+    border-radius: 14px;
+  }
+  
+  .glass-header {
+    padding: 10px 12px;
+  }
+  
+  .status-indicator {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .glass-content {
+    padding: 12px;
+    max-height: calc(90vh - 52px);
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  
+  .stat-card {
+    padding: 8px;
+  }
+  
+  .stat-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .stat-info {
+    min-width: 0;
+  }
+  
+  .stat-label {
+    font-size: 9px;
+  }
+  
+  .stat-value {
+    font-size: 11px;
+  }
+  
+  .coordinates {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .coord-label {
+    font-size: 10px;
+  }
+  
+  .coord-value {
+    font-size: 12px;
+  }
+  
+  .rope-status,
+  .alarm-status {
+    font-size: 12px;
+  }
+  
+  .glass-action-btn {
+    font-size: 11px;
+    height: 36px;
+  }
+}
+
+/* موبایل خیلی کوچک */
+@media (max-width: 360px) {
+  .glass-device-card {
+    width: 98%;
+    border-radius: 12px;
+  }
+  
+  .device-main-info {
+    min-width: 150px;
+  }
+  
+  .device-name {
+    font-size: 14px;
+  }
+  
+  .device-id {
+    font-size: 10px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-card {
+    padding: 10px;
+  }
+  
+  .stat-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+  }
+  
+  .stat-value {
+    font-size: 12px;
+  }
+  
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* جهت landscape */
+@media (max-height: 600px) and (orientation: landscape) {
+  .glass-device-card {
+    max-height: 85vh;
+  }
+  
+  .glass-content {
+    max-height: calc(85vh - 60px);
+    overflow-y: auto;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 </style>
