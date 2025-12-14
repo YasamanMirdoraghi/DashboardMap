@@ -1269,6 +1269,7 @@ const isDevicePinned = (deviceId) => {
 const toggleDeviceDetails = (device) => {
   if (expandedDeviceId.value === device.deviceid) {
     expandedDeviceId.value = null;
+    emit("device-selected", null);
   } else {
     expandedDeviceId.value = device.deviceid;
     emit("device-selected", device);

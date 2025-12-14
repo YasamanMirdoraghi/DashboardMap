@@ -404,7 +404,7 @@ const initializeDevices = () => {
         humidity: 65,
         id: 659,
         lac: 45230,
-        latitude: 35.7450,
+        latitude: 35.750,
         longitude: 51.3760,
         pdop: 1.1,
         positionUnixtime: threeDaysAgo,

@@ -21,15 +21,15 @@ L.Icon.Default.mergeOptions({
 const props = defineProps({
   devices: {
     type: Array,
-    default: () => []
+    default: () => [],
   },
   selectedDeviceId: {
     type: [Number, String],
-    default: null
-  }
+    default: null,
+  },
 });
 
-const emit = defineEmits(['device-selected']);
+const emit = defineEmits(["device-selected"]);
 
 const mapContainer = ref(null);
 let map = null;
@@ -37,7 +37,6 @@ let markerClusterGroup = null;
 let markers = new Map();
 let selectedMarker = null;
 let allDevicesBounds = null;
-let isZoomingFromClick = false;
 
 // Status Icons
 const onlineMovingSVG = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1db4f9"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>`;
@@ -52,7 +51,7 @@ const getDeviceStatus = (device) => {
 
   const now = Math.floor(Date.now() / 1000);
   const lastUpdate = device.position.unixtime;
-  const halfMinutes = 1800;  
+  const halfMinutes = 1800;
 
   if (now - lastUpdate > halfMinutes) {
     return "offline";
@@ -102,7 +101,7 @@ const createCustomIcon = (device, isSelected = false) => {
       </div>
     `;
   }
-  
+
   const size = isSelected ? [60, 60] : [52, 52];
   const anchor = isSelected ? [30, 30] : [26, 26];
 
@@ -110,7 +109,7 @@ const createCustomIcon = (device, isSelected = false) => {
     html: html,
     className: `leaflet-custom-marker-container ${status} ${selectedClass}`,
     iconSize: size,
-    iconAnchor: anchor
+    iconAnchor: anchor,
   });
 };
 
@@ -121,61 +120,65 @@ const updateMarkers = () => {
   markers.clear();
 
   // فیلتر دستگاه‌هایی که موقعیت معتبر دارند
-  const validDevices = props.devices.filter(device =>
-    device.position &&
-    device.position.latitude &&
-    device.position.longitude &&
-    Math.abs(device.position.latitude) <= 90 &&
-    Math.abs(device.position.longitude) <= 180
+  const validDevices = props.devices.filter(
+    (device) =>
+      device.position &&
+      device.position.latitude &&
+      device.position.longitude &&
+      Math.abs(device.position.latitude) <= 90 &&
+      Math.abs(device.position.longitude) <= 180
   );
 
   if (validDevices.length === 0) return;
 
   // ذخیره محدوده همه دستگاه‌ها
-  const latLngs = validDevices.map(device => [
+  const latLngs = validDevices.map((device) => [
     device.position.latitude,
-    device.position.longitude
+    device.position.longitude,
   ]);
   allDevicesBounds = L.latLngBounds(latLngs);
 
   validDevices.forEach((device) => {
     const isSelected = props.selectedDeviceId === device.deviceid;
-    const marker = L.marker(
-      [device.position.latitude, device.position.longitude],
-      {
-        icon: createCustomIcon(device, isSelected),
-        title: `Device ${device.deviceid}`,
-        zIndexOffset: isSelected ? 1000 : 0
-      }
-    );
-    
+    const marker = L.marker([device.position.latitude, device.position.longitude], {
+      icon: createCustomIcon(device, isSelected),
+      title: `Device ${device.deviceid}`,
+      zIndexOffset: isSelected ? 1000 : 0,
+    });
+
     // اضافه کردن marker به cluster group
     marker.addTo(markerClusterGroup);
-    
+
     // ذخیره مارکر در Map
     markers.set(device.deviceid, marker);
-    
+
     if (isSelected) {
       selectedMarker = marker;
     }
-    
+
     // رویداد کلیک - جلوگیری از باز شدن خودکار cluster
-    marker.on('click', (e) => {
+    marker.on("click", (e) => {
       L.DomEvent.stopPropagation(e);
-      
+
+      // 🔥 تغییر اصلی: اگر دستگاه قبلاً انتخاب شده بود، آن را لغو کن
+      if (props.selectedDeviceId === device.deviceid) {
+        emit("device-selected", null);
+        return;
+      }
+
       // باز کردن خوشه اگر در یک خوشه است
       if (markerClusterGroup.hasLayer(marker)) {
         const visibleParent = markerClusterGroup.getVisibleParent(marker);
         if (visibleParent && visibleParent !== marker && visibleParent._childCount > 1) {
           // باز کردن خوشه
           markerClusterGroup.zoomToShowLayer(marker, () => {
-            emit('device-selected', device);
+            emit("device-selected", device);
           });
           return;
         }
       }
-      
-      emit('device-selected', device);
+
+      emit("device-selected", device);
     });
   });
 
@@ -190,23 +193,11 @@ const updateMarkers = () => {
 
 const zoomToMarker = (marker) => {
   if (!map || !marker) return;
-  
-  isZoomingFromClick = true;
-  
   const latLng = marker.getLatLng();
   map.flyTo(latLng, 17, {
     duration: 0.8,
     easeLinearity: 0.25
   });
-  
-  // بعد از پایان انیمیشن، flag را بازنشانی کن
-  setTimeout(() => {
-    isZoomingFromClick = false;
-    // اگر هنوز دستگاه انتخاب شده‌ای وجود ندارد، فیت تو مپ کن
-    if (!props.selectedDeviceId) {
-      fitToAllDevices();
-    }
-  }, 800);
 };
 
 const fitToAllDevices = () => {
@@ -216,23 +207,25 @@ const fitToAllDevices = () => {
     }
     return;
   }
-  
+
   try {
     // بررسی اندازه bounds
-    const boundsSize = allDevicesBounds.getNorthEast().distanceTo(allDevicesBounds.getSouthWest());
-    
+    const boundsSize = allDevicesBounds
+      .getNorthEast()
+      .distanceTo(allDevicesBounds.getSouthWest());
+
     if (boundsSize < 100) {
       const center = allDevicesBounds.getCenter();
       map.flyTo(center, 15, {
         duration: 0.8,
-        easeLinearity: 0.25
+        easeLinearity: 0.25,
       });
     } else {
       map.flyToBounds(allDevicesBounds, {
         padding: [50, 50],
         duration: 0.8,
         easeLinearity: 0.25,
-        maxZoom: 15
+        maxZoom: 15,
       });
     }
   } catch (error) {
@@ -244,84 +237,92 @@ const fitToAllDevices = () => {
 };
 
 // تماشای تغییرات selectedDeviceId
-watch(() => props.selectedDeviceId, (newDeviceId, oldDeviceId) => {
-  if (!map) return;
-  
-  // حذف حالت انتخاب از مارکر قبلی
-  if (oldDeviceId && markers.has(oldDeviceId)) {
-    const oldMarker = markers.get(oldDeviceId);
-    const oldDevice = props.devices.find(d => d.deviceid === oldDeviceId);
-    if (oldMarker && oldDevice) {
-      oldMarker.setIcon(createCustomIcon(oldDevice, false));
-      oldMarker.setZIndexOffset(0);
+watch(
+  () => props.selectedDeviceId,
+  (newDeviceId, oldDeviceId) => {
+    if (!map) return;
+
+    // حذف حالت انتخاب از مارکر قبلی
+    if (oldDeviceId && markers.has(oldDeviceId)) {
+      const oldMarker = markers.get(oldDeviceId);
+      const oldDevice = props.devices.find((d) => d.deviceid === oldDeviceId);
+      if (oldMarker && oldDevice) {
+        oldMarker.setIcon(createCustomIcon(oldDevice, false));
+        oldMarker.setZIndexOffset(0);
+      }
     }
-  }
-  
-  // اعمال حالت انتخاب به مارکر جدید
-  if (newDeviceId && markers.has(newDeviceId)) {
-    const newMarker = markers.get(newDeviceId);
-    const newDevice = props.devices.find(d => d.deviceid === newDeviceId);
-    if (newMarker && newDevice) {
-      newMarker.setIcon(createCustomIcon(newDevice, true));
-      newMarker.setZIndexOffset(1000);
-      selectedMarker = newMarker;
-      
-      // باز کردن خوشه اگر در یک خوشه است
-      if (markerClusterGroup.hasLayer(newMarker)) {
-        const visibleParent = markerClusterGroup.getVisibleParent(newMarker);
-        if (visibleParent && visibleParent !== newMarker) {
-          markerClusterGroup.zoomToShowLayer(newMarker, () => {
-            // پس از باز شدن خوشه، روی مارکر زوم کن
-            setTimeout(() => {
-              zoomToMarker(newMarker);
-            }, 300);
-          });
+
+    // اعمال حالت انتخاب به مارکر جدید
+    if (newDeviceId && markers.has(newDeviceId)) {
+      const newMarker = markers.get(newDeviceId);
+      const newDevice = props.devices.find((d) => d.deviceid === newDeviceId);
+      if (newMarker && newDevice) {
+        newMarker.setIcon(createCustomIcon(newDevice, true));
+        newMarker.setZIndexOffset(1000);
+        selectedMarker = newMarker;
+
+        // باز کردن خوشه اگر در یک خوشه است
+        if (markerClusterGroup.hasLayer(newMarker)) {
+          const visibleParent = markerClusterGroup.getVisibleParent(newMarker);
+          if (visibleParent && visibleParent !== newMarker) {
+            markerClusterGroup.zoomToShowLayer(newMarker, () => {
+              // پس از باز شدن خوشه، روی مارکر زوم کن
+              setTimeout(() => {
+                zoomToMarker(newMarker);
+              }, 300);
+            });
+          } else {
+            zoomToMarker(newMarker);
+          }
         } else {
           zoomToMarker(newMarker);
         }
-      } else {
-        zoomToMarker(newMarker);
       }
-    }
-  } else {
-    // اگر دستگاه انتخاب شده نیست، از زوم خارج شو
-    selectedMarker = null;
-    
-    // اگر در حال زوم نیستیم، بلافاصله فیت تو مپ کن
-    if (!isZoomingFromClick) {
-      fitToAllDevices();
     } else {
-      // اگر در حال زوم هستیم، صبر کن تا زوم تمام شود
-      // (تابع zoomToMarker پس از اتمام، خودش fitToAllDevices را صدا می‌زند)
+      // اگر دستگاه انتخاب شده نیست، از زوم خارج شو
+      selectedMarker = null;
+
+      // 🔧 تغییر اصلی اینجاست: همیشه و بلافاصله فیت تو مپ کن
+      // حذف شرط بررسی isZoomingFromClick
+      fitToAllDevices();
     }
-  }
-}, { immediate: true });
+  },
+  { immediate: true }
+);
 
 // Lifecycle
 onMounted(() => {
   map = L.map(mapContainer.value, {
     zoomControl: false,
     attributionControl: false,
-    preferCanvas: true
+    preferCanvas: true,
   }).setView([35.699, 51.369], 12);
 
   // اضافه کردن کنترل zoom سفارشی
-  L.control.zoom({
-    position: 'topright'
-  }).addTo(map);
+  L.control
+    .zoom({
+      position: "topright",
+    })
+    .addTo(map);
 
   // اضافه کردن attribution
-  L.control.attribution({
-    position: 'bottomright',
-    prefix: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
+  L.control
+    .attribution({
+      position: "bottomright",
+      prefix: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    })
+    .addTo(map);
 
   // تایل لایر
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 19,
-  }).addTo(map);
+  L.tileLayer(
+    "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+    {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: "abcd",
+      maxZoom: 19,
+    }
+  ).addTo(map);
 
   // گروه خوشه‌بندی با تنظیمات بهبود یافته
   markerClusterGroup = L.markerClusterGroup({
@@ -329,9 +330,9 @@ onMounted(() => {
     maxClusterRadius: 60,
     spiderfyOnMaxZoom: true,
     showCoverageOnHover: false,
-    zoomToBoundsOnClick: false,
+    zoomToBoundsOnClick: false, 
     disableClusteringAtZoom: 16,
-    iconCreateFunction: function(cluster) {
+    iconCreateFunction: function (cluster) {
       const count = cluster.getChildCount();
       const borderColor = "#000000";
 
@@ -348,19 +349,25 @@ onMounted(() => {
             </div>
           </div>
         `,
-        className: 'leaflet-cluster-custom',
+        className: "leaflet-cluster-custom",
         iconSize: L.point(52, 52),
-        iconAnchor: [26, 26]
+        iconAnchor: [26, 26],
       });
-    }
+    },
   });
 
   map.addLayer(markerClusterGroup);
-  
+
+  // 🔥 اضافه کردن رویداد کلیک روی خوشه‌ها
+  markerClusterGroup.on('clusterclick', function (cluster) {
+    // اجازه می‌دهد خوشه باز شود (رفتار پیش‌فرض)
+    cluster.layer.zoomToBounds();
+  });
+
   // اضافه کردن کنترل بازگشت به نمای کلی
-  const customControl = L.control({ position: 'topright' });
-  customControl.onAdd = function() {
-    const div = L.DomUtil.create('div', 'custom-map-control');
+  const customControl = L.control({ position: "topright" });
+  customControl.onAdd = function () {
+    const div = L.DomUtil.create("div", "custom-map-control");
     div.innerHTML = `
       <button class="reset-view-btn" title="نمای کلی">
         <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
@@ -368,32 +375,39 @@ onMounted(() => {
         </svg>
       </button>
     `;
-    
-    div.addEventListener('click', () => {
-      emit('device-selected', null);
+
+    div.addEventListener("click", () => {
+      emit("device-selected", null);
       fitToAllDevices();
     });
-    
+
     return div;
   };
   customControl.addTo(map);
-  
+
   // رویداد کلیک روی نقشه برای deselect
-  map.on('click', (e) => {
-    if (e.originalEvent && e.originalEvent.target && 
-        !e.originalEvent.target.closest('.leaflet-marker-icon') &&
-        !e.originalEvent.target.closest('.leaflet-cluster-custom') &&
-        !e.originalEvent.target.closest('.custom-map-control')) {
-      emit('device-selected', null);
+  map.on("click", (e) => {
+    if (
+      e.originalEvent &&
+      e.originalEvent.target &&
+      !e.originalEvent.target.closest(".leaflet-marker-icon") &&
+      !e.originalEvent.target.closest(".leaflet-cluster-custom") &&
+      !e.originalEvent.target.closest(".custom-map-control")
+    ) {
+      emit("device-selected", null);
     }
   });
-  
+
   updateMarkers();
 });
 
-watch(() => props.devices, () => {
-  updateMarkers();
-}, { deep: true });
+watch(
+  () => props.devices,
+  () => {
+    updateMarkers();
+  },
+  { deep: true }
+);
 
 onUnmounted(() => {
   if (map) {
@@ -437,9 +451,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.4),
-    0 0 0 2px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 10;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -453,9 +465,7 @@ onUnmounted(() => {
   width: 60px;
   height: 60px;
   border-width: 4px;
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.6),
-    0 0 0 3px rgba(255, 255, 255, 0.3),
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.3),
     0 0 0 6px rgba(255, 107, 48, 0.2);
 }
 
@@ -465,9 +475,7 @@ onUnmounted(() => {
 
 :deep(.leaflet-custom-marker.selected.online-moving .marker-main) {
   border-color: #1db4f9;
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.6),
-    0 0 0 3px rgba(255, 255, 255, 0.3),
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.3),
     0 0 0 6px rgba(29, 180, 249, 0.2);
 }
 
@@ -477,9 +485,7 @@ onUnmounted(() => {
 
 :deep(.leaflet-custom-marker.selected.online-stopped .marker-main) {
   border-color: #ff6b30;
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.6),
-    0 0 0 3px rgba(255, 255, 255, 0.3),
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.3),
     0 0 0 6px rgba(255, 107, 48, 0.2);
 }
 
@@ -489,9 +495,7 @@ onUnmounted(() => {
 
 :deep(.leaflet-custom-marker.selected.offline .marker-main) {
   border-color: #ffffff;
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.6),
-    0 0 0 3px rgba(255, 255, 255, 0.3),
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.3),
     0 0 0 6px rgba(255, 255, 255, 0.2);
 }
 
@@ -583,7 +587,7 @@ onUnmounted(() => {
     opacity: 0.4;
   }
   100% {
-    transform: translate(-50%, -50%) scale(2.0);
+    transform: translate(-50%, -50%) scale(2);
     opacity: 0;
   }
 }
@@ -598,14 +602,12 @@ onUnmounted(() => {
 
 :deep(.leaflet-container) {
   background: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 :deep(.leaflet-custom-marker-container:hover .marker-main) {
   transform: scale(1.15);
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.6),
-    0 0 0 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
 :deep(.leaflet-custom-marker-container.selected:hover .marker-main) {
@@ -647,9 +649,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.4),
-    0 0 0 2px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 10;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -671,7 +671,7 @@ onUnmounted(() => {
   font-weight: 600;
   color: white;
   font-size: 14px !important;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1;
 }
 
@@ -701,9 +701,7 @@ onUnmounted(() => {
 
 :deep(.leaflet-cluster-custom:hover .cluster-main) {
   transform: scale(1.15);
-  box-shadow:
-    0 6px 20px rgba(0, 0, 0, 0.6),
-    0 0 0 3px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
 /* دکمه بازگشت به نمای کلی */
