@@ -21,6 +21,11 @@ const routes = [
       { path: '', component: () => import('pages/DashboardPage.vue') }
     ]
   },
+  {
+  path: '/dashboard/map',
+  name: 'DashboardMap',
+  component: () => import('src/components/View/RouteDashboardMap.vue')
+},
 
   // Always leave this as last one,
   // but you can also remove it

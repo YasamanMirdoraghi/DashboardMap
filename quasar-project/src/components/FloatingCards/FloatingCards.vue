@@ -196,7 +196,7 @@
             icon="history"
             label="Details"
             class="glass-action-btn"
-            @click="Details"
+            @click="openDeviceDetails"
           />
         </div>
       </div>
@@ -209,13 +209,22 @@ const props = defineProps({
   selectedDevice: Object
 });
 
-const emit = defineEmits(['close-device', 'view-history']);
+// Emit برای close-device و open-single-device
+const emit = defineEmits(['close-device', 'open-single-device']);
 
 const closeCard = () => {
   emit('close-device');
 };
 
-// Status Helper Functions - مطابق DashboardMenu
+// تابع برای باز کردن صفحه تک دستگاه
+const openDeviceDetails = () => {
+  console.log('Opening device details for:', props.selectedDevice?.deviceid);
+  if (props.selectedDevice) {
+    emit('open-single-device', props.selectedDevice);
+  }
+};
+
+// Status Helper Functions
 const getDeviceStatus = (device) => {
   if (!device.position) return "offline";
 
@@ -251,7 +260,7 @@ const getStatusText = (status) => {
   return texts[status] || 'Unknown';
 };
 
-// Format Functions - مطابق DashboardMenu
+// Format Functions
 const formatGSM = (gsm_sig) => {
   return `${gsm_sig}%`;
 };
@@ -287,7 +296,7 @@ const getRopeText = (flags) => {
   }
 };
 
-// Status Detection Functions - مطابق DashboardMenu
+// Status Detection Functions
 const getBatteryStatus = (batt_v) => {
   if (!batt_v) return "status-critical";
   const voltage = batt_v;
@@ -377,20 +386,15 @@ const formatDate = (unixtime) => {
     second: '2-digit'
   });
 };
-
-const Details = () => {
-  emit('view-history', props.selectedDevice);
-};
 </script>
 
 <style scoped>
 /* Glass Morphism Device Card - Base Styles */
 .glass-device-card {
   position: fixed;
-  bottom: 5px;
+  bottom: 20px;
   right: 20px;
   width: 420px;
-  /* max-height: 95vh; */
   background: rgba(37, 37, 36, 0.95);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -783,11 +787,11 @@ const Details = () => {
 }
 
 .glass-action-btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 107, 48, 0.15);
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 107, 48, 0.3);
   border-radius: 10px;
-  color: #ffff;
+  color: #ff6b30;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
@@ -797,8 +801,8 @@ const Details = () => {
 }
 
 .glass-action-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 107, 48, 0.25);
+  border-color: rgba(255, 107, 48, 0.5);
   transform: translateY(-1px);
 }
 
@@ -819,15 +823,12 @@ const Details = () => {
 }
 
 /* Responsive Design */
-
-/* لپ‌تاپ متوسط */
 @media (max-width: 1200px) {
   .glass-device-card {
     width: 380px;
   }
 }
 
-/* تبلت و لپ‌تاپ کوچک */
 @media (max-width: 992px) {
   .glass-device-card {
     width: 350px;
@@ -849,7 +850,6 @@ const Details = () => {
   }
 }
 
-/* تبلت کوچک */
 @media (max-width: 768px) {
   .glass-device-card {
     width: 320px;
@@ -893,7 +893,6 @@ const Details = () => {
   }
 }
 
-/* موبایل بزرگ */
 @media (max-width: 576px) {
   .glass-device-card {
     position: fixed;
@@ -952,7 +951,6 @@ const Details = () => {
   }
 }
 
-/* موبایل کوچک */
 @media (max-width: 480px) {
   .glass-device-card {
     width: 95%;
@@ -988,10 +986,6 @@ const Details = () => {
     height: 24px;
   }
   
-  .stat-info {
-    min-width: 0;
-  }
-  
   .stat-label {
     font-size: 9px;
   }
@@ -1024,7 +1018,6 @@ const Details = () => {
   }
 }
 
-/* موبایل خیلی کوچک */
 @media (max-width: 360px) {
   .glass-device-card {
     width: 98%;
@@ -1069,7 +1062,6 @@ const Details = () => {
   }
 }
 
-/* جهت landscape */
 @media (max-height: 600px) and (orientation: landscape) {
   .glass-device-card {
     max-height: 85vh;

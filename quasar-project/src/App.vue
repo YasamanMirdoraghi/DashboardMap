@@ -1,27 +1,40 @@
 <template>
   <div class="main-frame">
     <div class="dashboard-container" :class="themeClass">
-      <!-- نقشه -->
-      <MapContainer 
-        @device-selected="handleDeviceSelected" 
-        :devices="devices"
-        :selected-device-id="selectedDeviceId" 
-      />
+      <!-- حالت عادی (داشبورد) -->
+      <div v-if="!showSingleDeviceMap" class="dashboard-mode">
+        <!-- نقشه -->
+        <MapContainer 
+          @device-selected="handleDeviceSelected" 
+          :devices="devices"
+          :selected-device-id="selectedDeviceId" 
+        />
 
-      <!-- منوی داشبورد -->
-      <DashboardMenu
-        :is-dark-mode="isDarkMode"
-        :devices="devices"
-        @toggle-dark-mode="isDarkMode = $event"
-        @device-selected="handleDeviceSelected"
-        :selected-device-id="selectedDeviceId"
-      />
+        <!-- منوی داشبورد -->
+        <DashboardMenu
+          :is-dark-mode="isDarkMode"
+          :devices="devices"
+          @toggle-dark-mode="isDarkMode = $event"
+          @device-selected="handleDeviceSelected"
+          @open-single-device="openSingleDeviceView"
+          :selected-device-id="selectedDeviceId"
+        />
 
-      <!-- کارت های شناور -->
-      <FloatingCards
-        :selected-device="selectedDevice"
-        @close-device="closeDeviceDetails"
-      />
+        <!-- کارت های شناور -->
+        <FloatingCards
+          :selected-device="selectedDevice"
+          @close-device="closeDeviceDetails"
+          @open-single-device="openSingleDeviceView"
+        />
+      </div>
+
+      <!-- حالت نمایش تک دستگاه -->
+      <div v-else class="single-device-mode">
+        <RoutedDashboardMap
+          :device="selectedDevice"
+          @go-back="goBackToDashboard"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -31,12 +44,14 @@ import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import MapContainer from "./components/MapContainer/MapContainer.vue";
 import DashboardMenu from "./components/DashboardMenu/DashboardMenu.vue";
 import FloatingCards from "./components/FloatingCards/FloatingCards.vue";
+import RoutedDashboardMap from "./components/View/RouteDashboardMap.vue";
 
 // Reactive state
 const selectedDevice = ref(null);
 const selectedDeviceId = ref(null);
 const isDarkMode = ref(true);
 const devices = ref([]);
+const showSingleDeviceMap = ref(false); // حالت نمایش تک دستگاه
 let updateInterval = null;
 
 // تابع برای محاسبه زمان گذشته
@@ -72,7 +87,7 @@ const themeClass = computed(() => ({
   "light-theme": !isDarkMode.value,
 }));
 
-// مدیریت انتخاب دستگاه
+// مدیریت انتخاب دستگاه (از نقشه یا منو)
 const handleDeviceSelected = (device) => {
   if (!device) {
     closeDeviceDetails();
@@ -86,11 +101,29 @@ const handleDeviceSelected = (device) => {
   }
 };
 
+// باز کردن صفحه تک دستگاه (از دکمه Details در کارت شناور)
+const openSingleDeviceView = (device) => {
+  console.log('Opening single device view for:', device?.deviceid);
+  if (device) {
+    openDeviceDetails(device);
+    showSingleDeviceMap.value = true;
+  }
+};
+
+// بازگشت به داشبورد
+const goBackToDashboard = () => {
+  console.log('Going back to dashboard');
+  showSingleDeviceMap.value = false;
+  closeDeviceDetails();
+};
+
+// باز کردن جزئیات دستگاه
 const openDeviceDetails = (device) => {
   selectedDevice.value = device;
   selectedDeviceId.value = device.deviceid;
 };
 
+// بستن جزئیات دستگاه
 const closeDeviceDetails = () => {
   selectedDevice.value = null;
   selectedDeviceId.value = null;
@@ -496,6 +529,13 @@ onBeforeUnmount(() => {
 .dashboard-container.light-theme {
   background: var(--bg-primary);
   color: var(--text-primary);
+}
+
+.dashboard-mode,
+.single-device-mode {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 @media (max-width: 768px) {
