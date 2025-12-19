@@ -1832,7 +1832,7 @@ const getPanelTitle = (panelId) => {
 }
 
 .device-item.pinned-device {
-  background: rgba(12, 12, 12, 0.486);
+  /*background: rgba(12, 12, 12, 0.486);*/
   border-left: 3px solid #ff6b30;
 }
 
@@ -2288,7 +2288,7 @@ const getPanelTitle = (panelId) => {
 
 
 .black-bg {
-  background-color:#000000 !important;
+  background: rgba(12, 12, 12, 0.486) !important;
   /* color: white; */
 }
 

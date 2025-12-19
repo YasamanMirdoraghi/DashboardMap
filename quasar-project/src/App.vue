@@ -4,10 +4,12 @@
       <!-- حالت عادی (داشبورد) -->
       <div v-if="!showSingleDeviceMap" class="dashboard-mode">
         <!-- نقشه -->
-        <MapContainer 
+        <UnifiedMapContainer 
           @device-selected="handleDeviceSelected" 
           :devices="devices"
-          :selected-device-id="selectedDeviceId" 
+          :selected-device-id="selectedDeviceId"
+          mode="devices"
+          @go-back="goBackToDashboard"
         />
 
         <!-- منوی داشبورد -->
@@ -30,8 +32,11 @@
 
       <!-- حالت نمایش تک دستگاه -->
       <div v-else class="single-device-mode">
-        <RoutedDashboardMap
-          :device="selectedDevice"
+        <UnifiedMapContainer
+          :devices="devices"
+          :selected-device-id="selectedDeviceId"
+          :route-data="routeData"
+          mode="route"
           @go-back="goBackToDashboard"
         />
       </div>
@@ -40,19 +45,150 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from "vue";
-import MapContainer from "./components/MapContainer/MapContainer.vue";
+import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
+import UnifiedMapContainer from "./components/MapContainer/MapContainer.vue";
 import DashboardMenu from "./components/DashboardMenu/DashboardMenu.vue";
 import FloatingCards from "./components/FloatingCards/FloatingCards.vue";
-import RoutedDashboardMap from "./components/View/RouteDashboardMap.vue";
 
 // Reactive state
 const selectedDevice = ref(null);
 const selectedDeviceId = ref(null);
 const isDarkMode = ref(true);
 const devices = ref([]);
-const showSingleDeviceMap = ref(false); // حالت نمایش تک دستگاه
+const showSingleDeviceMap = ref(false);
 let updateInterval = null;
+
+// داده‌های مسیر نمونه
+const routeData = ref([
+  {
+    alarm: "Unknown Alarm: 230.",
+    alarm_code: 230,
+    batt_v: 3023,
+    bearing: 51,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: false,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 94,
+    humidity: 24,
+    id: 1381,
+    lac: 42218,
+    latitude: 35.623432,
+    longitude: 60.41451,
+    pdop: 1.3,
+    positionUnixtime: 1765190776,
+    satellites: 8,
+    speed: 26,
+    technology: "4G",
+    temperature: 19,
+    unixtime: 1765203376,
+  },
+  {
+    alarm: "Unknown Alarm: 231.",
+    alarm_code: 231,
+    batt_v: 3010,
+    bearing: 257,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: true,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 94,
+    humidity: 24,
+    id: 1380,
+    lac: 42218,
+    latitude: 36.623386,
+    longitude: 57.414528,
+    pdop: 1.34,
+    positionUnixtime: 1765190045,
+    satellites: 8,
+    speed: 36,
+    technology: "4G",
+    temperature: 19,
+    unixtime: 1765202645,
+  },
+  {
+    alarm: "Unknown Alarm: 230.",
+    alarm_code: 230,
+    batt_v: 3010,
+    bearing: 257,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: false,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 94,
+    humidity: 24,
+    id: 1379,
+    lac: 42218,
+    latitude: 35.623367,
+    longitude: 58.414593,
+    pdop: 1.58,
+    positionUnixtime: 1765190041,
+    satellites: 6,
+    speed: 45,
+    technology: "4G",
+    temperature: 19,
+    unixtime: 1765202641,
+  },
+  {
+    alarm: "Unknown Alarm: 221.",
+    alarm_code: 221,
+    batt_v: 2991,
+    bearing: 257,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: false,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 91,
+    humidity: 24,
+    id: 1378,
+    lac: 42218,
+    latitude: 35.6233,
+    longitude: 59.414516,
+    pdop: 1.24,
+    positionUnixtime: 1765189004,
+    satellites: 9,
+    speed: 1,
+    technology: "4G",
+    temperature: 21,
+    unixtime: 1765201970,
+  },
+]);
 
 // تابع برای محاسبه زمان گذشته
 const calculateLastSeen = (unixtime) => {
@@ -465,6 +601,11 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   if (updateInterval) clearInterval(updateInterval);
+});
+
+// واچر برای تغییر حالت
+watch(showSingleDeviceMap, (newVal) => {
+  console.log('showSingleDeviceMap changed to:', newVal);
 });
 </script>
 
