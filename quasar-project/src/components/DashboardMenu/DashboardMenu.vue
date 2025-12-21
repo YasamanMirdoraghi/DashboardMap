@@ -181,7 +181,7 @@
                       { 'pinned-device': isDevicePinned(device.deviceid) },
                       { expanded: expandedDeviceId === device.deviceid },
                     ]"
-                    @click="toggleDeviceDetails(device,$event);"
+                    @click="toggleDeviceDetails(device, $event)"
                   >
                     <div class="device-row-first">
                       <div class="device-column icon-column">
@@ -1145,6 +1145,7 @@ const getDeviceStatus = (device) => {
 };
 
 const getBatteryStatus = (batt_v) => {
+  if (!batt_v) return "status-critical";
   const voltage = batt_v;
   if (voltage >= 3400) return "status-good";
   if (voltage >= 3200) return "status-warning";
@@ -1162,6 +1163,7 @@ const getGSMStatus = (gsm_sig) => {
 };
 
 const getSpeedStatus = (speed) => {
+  if (speed === undefined || speed === null) return "status-good";
   if (speed >= 0 && speed <= 60) return "status-good";
   if (speed > 60 && speed <= 90) return "status-warning";
   return "status-critical";
@@ -1282,7 +1284,6 @@ const isDevicePinned = (deviceId) => {
 //   // } else {
 //   // }
 // };
-
 
 let previousSelectedElement = null;
 
@@ -1832,7 +1833,7 @@ const getPanelTitle = (panelId) => {
 }
 
 .device-item.pinned-device {
-  background: rgba(12, 12, 12, 0.486);
+  /*background: rgba(12, 12, 12, 0.486);*/
   border-left: 3px solid #ff6b30;
 }
 
@@ -2286,10 +2287,8 @@ const getPanelTitle = (panelId) => {
   background: rgba(255, 255, 255, 0.5);
 }
 
-
 .black-bg {
-  background-color:#000000 !important;
+  background: rgba(12, 12, 12, 0.486) !important;
   /* color: white; */
 }
-
 </style>

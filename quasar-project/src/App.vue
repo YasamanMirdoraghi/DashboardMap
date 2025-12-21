@@ -1,34 +1,52 @@
 <template>
   <div class="main-frame">
     <div class="dashboard-container" :class="themeClass">
-      <!-- نقشه -->
-      <MapContainer 
-        @device-selected="handleDeviceSelected" 
-        :devices="devices"
-        :selected-device-id="selectedDeviceId" 
-      />
+      <!-- حالت عادی (داشبورد) -->
+      <div v-if="!showSingleDeviceMap" class="dashboard-mode">
+        <!-- نقشه -->
+        <UnifiedMapContainer 
+          @device-selected="handleDeviceSelected" 
+          :devices="devices"
+          :selected-device-id="selectedDeviceId"
+          mode="devices"
+          @go-back="goBackToDashboard"
+        />
 
-      <!-- منوی داشبورد -->
-      <DashboardMenu
-        :is-dark-mode="isDarkMode"
-        :devices="devices"
-        @toggle-dark-mode="isDarkMode = $event"
-        @device-selected="handleDeviceSelected"
-        :selected-device-id="selectedDeviceId"
-      />
+        <!-- منوی داشبورد -->
+        <DashboardMenu
+          :is-dark-mode="isDarkMode"
+          :devices="devices"
+          @toggle-dark-mode="isDarkMode = $event"
+          @device-selected="handleDeviceSelected"
+          @open-single-device="openSingleDeviceView"
+          :selected-device-id="selectedDeviceId"
+        />
 
-      <!-- کارت های شناور -->
-      <FloatingCards
-        :selected-device="selectedDevice"
-        @close-device="closeDeviceDetails"
-      />
+        <!-- کارت های شناور -->
+        <FloatingCards
+          :selected-device="selectedDevice"
+          @close-device="closeDeviceDetails"
+          @open-single-device="openSingleDeviceView"
+        />
+      </div>
+
+      <!-- حالت نمایش تک دستگاه -->
+      <div v-else class="single-device-mode">
+        <UnifiedMapContainer
+          :devices="devices"
+          :selected-device-id="selectedDeviceId"
+          :route-data="routeData"
+          mode="route"
+          @go-back="goBackToDashboard"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from "vue";
-import MapContainer from "./components/MapContainer/MapContainer.vue";
+import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
+import UnifiedMapContainer from "./components/MapContainer/MapContainer.vue";
 import DashboardMenu from "./components/DashboardMenu/DashboardMenu.vue";
 import FloatingCards from "./components/FloatingCards/FloatingCards.vue";
 
@@ -37,7 +55,140 @@ const selectedDevice = ref(null);
 const selectedDeviceId = ref(null);
 const isDarkMode = ref(true);
 const devices = ref([]);
+const showSingleDeviceMap = ref(false);
 let updateInterval = null;
+
+// داده‌های مسیر نمونه
+const routeData = ref([
+  {
+    alarm: "Unknown Alarm: 230.",
+    alarm_code: 230,
+    batt_v: 3023,
+    bearing: 51,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: false,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 94,
+    humidity: 24,
+    id: 1381,
+    lac: 42218,
+    latitude: 35.623432,
+    longitude: 60.41451,
+    pdop: 1.3,
+    positionUnixtime: 1765190776,
+    satellites: 8,
+    speed: 26,
+    technology: "4G",
+    temperature: 19,
+    unixtime: 1765203376,
+  },
+  {
+    alarm: "Unknown Alarm: 231.",
+    alarm_code: 231,
+    batt_v: 3010,
+    bearing: 257,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: true,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 94,
+    humidity: 24,
+    id: 1380,
+    lac: 42218,
+    latitude: 36.623386,
+    longitude: 57.414528,
+    pdop: 1.34,
+    positionUnixtime: 1765190045,
+    satellites: 8,
+    speed: 36,
+    technology: "4G",
+    temperature: 19,
+    unixtime: 1765202645,
+  },
+  {
+    alarm: "Unknown Alarm: 230.",
+    alarm_code: 230,
+    batt_v: 3010,
+    bearing: 257,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: false,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 94,
+    humidity: 24,
+    id: 1379,
+    lac: 42218,
+    latitude: 35.623367,
+    longitude: 58.414593,
+    pdop: 1.58,
+    positionUnixtime: 1765190041,
+    satellites: 6,
+    speed: 165,
+    technology: "4G",
+    temperature: 19,
+    unixtime: 1765202641,
+  },
+  {
+    alarm: "Unknown Alarm: 221.",
+    alarm_code: 221,
+    batt_v: 2991,
+    bearing: 257,
+    cid: 61899,
+    flags: {
+      isCIDValid: true,
+      isCharging: false,
+      isCoilActive: false,
+      isFixed: false,
+      isMechanicClosed: true,
+      isRopeClosed: true,
+      isSimTwo: false,
+      isStop: true,
+      isUnlockAllowed: false,
+    },
+    geofenceStatus: 256,
+    gsm_sig: 91,
+    humidity: 24,
+    id: 1378,
+    lac: 42218,
+    latitude: 35.6233,
+    longitude: 59.414516,
+    pdop: 1.24,
+    positionUnixtime: 1765189004,
+    satellites: 9,
+    speed: 1,
+    technology: "4G",
+    temperature: 21,
+    unixtime: 1765201970,
+  },
+]);
 
 // تابع برای محاسبه زمان گذشته
 const calculateLastSeen = (unixtime) => {
@@ -72,7 +223,7 @@ const themeClass = computed(() => ({
   "light-theme": !isDarkMode.value,
 }));
 
-// مدیریت انتخاب دستگاه
+// مدیریت انتخاب دستگاه (از نقشه یا منو)
 const handleDeviceSelected = (device) => {
   if (!device) {
     closeDeviceDetails();
@@ -86,11 +237,29 @@ const handleDeviceSelected = (device) => {
   }
 };
 
+// باز کردن صفحه تک دستگاه (از دکمه Details در کارت شناور)
+const openSingleDeviceView = (device) => {
+  console.log('Opening single device view for:', device?.deviceid);
+  if (device) {
+    openDeviceDetails(device);
+    showSingleDeviceMap.value = true;
+  }
+};
+
+// بازگشت به داشبورد
+const goBackToDashboard = () => {
+  console.log('Going back to dashboard');
+  showSingleDeviceMap.value = false;
+  closeDeviceDetails();
+};
+
+// باز کردن جزئیات دستگاه
 const openDeviceDetails = (device) => {
   selectedDevice.value = device;
   selectedDeviceId.value = device.deviceid;
 };
 
+// بستن جزئیات دستگاه
 const closeDeviceDetails = () => {
   selectedDevice.value = null;
   selectedDeviceId.value = null;
@@ -433,6 +602,11 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (updateInterval) clearInterval(updateInterval);
 });
+
+// واچر برای تغییر حالت
+watch(showSingleDeviceMap, (newVal) => {
+  console.log('showSingleDeviceMap changed to:', newVal);
+});
 </script>
 
 <style>
@@ -496,6 +670,13 @@ onBeforeUnmount(() => {
 .dashboard-container.light-theme {
   background: var(--bg-primary);
   color: var(--text-primary);
+}
+
+.dashboard-mode,
+.single-device-mode {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 @media (max-width: 768px) {
