@@ -151,7 +151,7 @@ const routeData = ref([
     pdop: 1.58,
     positionUnixtime: 1765190041,
     satellites: 6,
-    speed: 45,
+    speed: 165,
     technology: "4G",
     temperature: 19,
     unixtime: 1765202641,
