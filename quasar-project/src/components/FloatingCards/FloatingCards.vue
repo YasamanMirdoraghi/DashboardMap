@@ -5,10 +5,8 @@
       <!-- Header with gradient -->
       <div class="glass-header">
         <div class="header-content">
-          <!-- سمت چپ: ایکون وضعیت و سریال نامبر -->
           <div class="device-main-info">
             <div class="status-indicator" :class="getDeviceStatus(selectedDevice)">
-              <!-- ایکون وضعیت دستگاه -->
               <div
                 v-if="getDeviceStatus(selectedDevice) === 'online-moving'"
                 class="custom-svg-icon"
@@ -60,32 +58,29 @@
                 </svg>
               </div>
             </div>
-            
-            <!-- سریال نامبر در کنار ایکون -->
+
             <div class="serial-info">
               <div class="serial-title">Serial Number</div>
               <div class="serial-number">{{ selectedDevice.serialnumber }}</div>
             </div>
           </div>
 
-          <!-- سمت راست: وضعیت حرکت و دکمه بستن -->
           <div class="header-right-section">
             <div class="status-container">
               <div class="moving-status-small" :class="getDeviceStatus(selectedDevice)">
                 {{ getStatusText(getDeviceStatus(selectedDevice)) }}
               </div>
-            </div>
-            
-            <div class="header-actions">
-              <q-btn
-                flat
-                round
-                dense
-                icon="close"
-                size="sm"
-                class="glass-btn"
-                @click="closeCard"
-              />
+              <div class="header-actions">
+                <q-btn
+                  flat
+                  round
+                  dense
+                  icon="close"
+                  size="sm"
+                  class="glass-btn"
+                  @click="closeCard"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -305,7 +300,10 @@
           </div>
 
           <!-- Satelite -->
-          <div class="stat-card" :class="getSatelliteStatus(selectedDevice.position.flags)">
+          <div
+            class="stat-card"
+            :class="getSatelliteStatus(selectedDevice.position.flags)"
+          >
             <div class="stat-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -402,10 +400,7 @@
           </div>
 
           <!-- Rope -->
-          <div
-            class="stat-card"
-            :class="getRopeStatus(selectedDevice.position.flags)"
-          >
+          <div class="stat-card" :class="getRopeStatus(selectedDevice.position.flags)">
             <div class="stat-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -421,7 +416,9 @@
             </div>
             <div class="stat-info">
               <div class="stat-label">Rope</div>
-              <div class="stat-value">{{ getRopeText(selectedDevice.position.flags) }}</div>
+              <div class="stat-value">
+                {{ getRopeText(selectedDevice.position.flags) }}
+              </div>
             </div>
           </div>
         </div>
@@ -468,17 +465,7 @@
             @click="openDeviceDetails"
           >
             <template v-slot:icon>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="20px"
-                viewBox="0 -960 960 960"
-                width="20px"
-                fill="currentColor"
-              >
-                <path
-                  d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"
-                />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="m80-120 400-720 400 720H80Zm136-80h224v-403L216-200Zm304 0h224L520-603v403Z"/></svg>
             </template>
           </q-btn>
         </div>
@@ -626,19 +613,14 @@ const getOperatorStatus = (flags) => {
   return flags.isCIDValid ? "status-good" : "status-critical";
 };
 
-
 const getRopeStatus = (flags) => {
   if (!flags) return "status-critical";
-  
+
   if (!flags.isRopeClosed && !flags.isMechanicClosed) {
     return "status-good";
-  } 
- 
-  else if (flags.isRopeClosed && flags.isMechanicClosed) {
+  } else if (flags.isRopeClosed && flags.isMechanicClosed) {
     return "status-critical";
-  } 
- 
-  else {
+  } else {
     return "status-warning";
   }
 };
@@ -808,14 +790,15 @@ const getRopeStatus = (flags) => {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 10px;
+  padding: 2px 8px;
   border-radius: 8px;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.3px;
   white-space: nowrap;
+  margin-right: 4px;
 }
 
 .moving-status-small.online-moving {
@@ -840,7 +823,7 @@ const getRopeStatus = (flags) => {
 
 .glass-btn {
   color: white;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1);*/
   backdrop-filter: blur(5px);
   width: 32px;
   height: 32px;
@@ -849,7 +832,7 @@ const getRopeStatus = (flags) => {
 }
 
 .glass-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 /* Info Sections */
