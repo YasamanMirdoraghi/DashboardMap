@@ -477,12 +477,16 @@
 <script setup>
 const props = defineProps({
   selectedDevice: Object,
+
+
 });
 
 const emit = defineEmits(["close-device", "open-single-device"]);
 
 const closeCard = () => {
   emit("close-device");
+
+  
 };
 
 const openDeviceDetails = () => {
