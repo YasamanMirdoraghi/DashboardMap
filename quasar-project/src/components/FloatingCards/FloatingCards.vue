@@ -351,6 +351,7 @@
             </div>
           </div>
 
+
           <!-- Humidity -->
           <div
             class="stat-card"
@@ -422,7 +423,6 @@
             </div>
           </div>
         </div>
-
         <!-- Alarm Status -->
         <div v-if="selectedDevice.position.alarm" class="alarm-section">
           <div class="section-title">
@@ -482,7 +482,6 @@ const props = defineProps({
 });
 
 const emit = defineEmits(["close-device", "open-single-device"]);
-
 
 const closeCard = () => {
   emit("close-device");
