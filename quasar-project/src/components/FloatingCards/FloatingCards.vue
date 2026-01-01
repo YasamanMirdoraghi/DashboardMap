@@ -85,7 +85,6 @@
           </div>
         </div>
       </div>
-
       <!-- Card Content -->
       <div class="glass-content">
         <!-- Location Info -->
@@ -133,7 +132,6 @@
             <span>{{ selectedDevice.position.address }}</span>
           </div>
         </div>
-
         <!-- Device Stats Grid -->
         <div class="stats-grid">
           <!-- Battery -->
@@ -197,7 +195,6 @@
               </div>
             </div>
           </div>
-
           <!-- Speed -->
           <div class="stat-card" :class="getSpeedStatus(selectedDevice.position.speed)">
             <div class="stat-icon">
@@ -218,7 +215,6 @@
               <div class="stat-value">{{ selectedDevice.position.speed || 0 }} km/h</div>
             </div>
           </div>
-
           <!-- Lock -->
           <div class="stat-card" :class="getLockStatus(selectedDevice.position.flags)">
             <div class="stat-icon">
@@ -254,7 +250,6 @@
               </div>
             </div>
           </div>
-
           <!-- GSM -->
           <div class="stat-card" :class="getGSMStatus(selectedDevice.position.gsm_sig)">
             <div class="stat-icon">
@@ -277,7 +272,6 @@
               </div>
             </div>
           </div>
-
           <!-- GNSS -->
           <div class="stat-card" :class="getGNSSStatus(selectedDevice.position.flags)">
             <div class="stat-icon">
@@ -298,7 +292,6 @@
               <div class="stat-value">{{ formatGNSS(selectedDevice.position.pdop) }}</div>
             </div>
           </div>
-
           <!-- Satelite -->
           <div
             class="stat-card"
@@ -324,7 +317,6 @@
               </div>
             </div>
           </div>
-
           <!-- Temperature -->
           <div
             class="stat-card"
@@ -350,8 +342,6 @@
               </div>
             </div>
           </div>
-
-
           <!-- Humidity -->
           <div
             class="stat-card"
